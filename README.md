@@ -46,6 +46,7 @@ To use this Coalesce pipeline, you must have the following:
 - Schemas that map to Coalesce Storage Locations
 - Coalesce Markeplace Packages (already included in Git repo)
   - [Base Node Types](https://docs.coalesce.io/page/package_coalesce_base-node-types) (version 1.1.2+)
+  - [Incremental Loading](https://docs.coalesce.io/page/package_coalesce_incremental-loading) (version 1.1.0+)
   - [Dynamic Tables](https://docs.coalesce.io/page/package_coalesce_dynamic-tables) (version 1.1.3+)
 
 ## Step 2: Import the coalesceio SAP repository
