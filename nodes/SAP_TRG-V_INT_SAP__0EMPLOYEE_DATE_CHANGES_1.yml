@@ -1,0 +1,269 @@
+fileVersion: 1
+id: a8195b5c-c18b-49a5-ba91-2c59ab00b412
+name: V_INT_SAP__0EMPLOYEE_DATE_CHANGES_1
+operation:
+  config:
+    clusterKey: false
+    clusterKeyConfig:
+      items:
+        - {}
+    clusterKeyConfigExpressions:
+      items:
+        - {}
+    clusterKeyExpressions: false
+    groupByAll: false
+    insertStrategy: UNION ALL
+    orderby: false
+    orderbycolumn:
+      items:
+        - {}
+    postSQL: ""
+    preSQL: ""
+    secureoption: false
+    selectDistinct: false
+    testsEnabled: false
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: true
+  locationName: SAP_TRG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eab8d58f-13d0-44be-b155-d025ae6adb91
+          stepCounter: a8195b5c-c18b-49a5-ba91-2c59ab00b412
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: PERNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b7e7a7b8-d2ec-4bd9-a39e-d455b643e847
+                stepCounter: 93cd56e2-f441-4049-a95c-72977730810f
+            transform: ""
+          - columnReferences:
+              - columnCounter: 3cb950ef-22bd-401b-9827-5d52afaccecb
+                stepCounter: f8804b5e-1bef-4b43-8883-07d52979df8e
+            transform: ""
+          - columnReferences:
+              - columnCounter: 826c9f68-c8db-4c19-9d5e-47f275e2379c
+                stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+            transform: ""
+          - columnReferences:
+              - columnCounter: edad6adb-6ac9-4c29-9fed-3fec42c68516
+                stepCounter: 51331646-7d2a-4ee7-8974-8bc91aacbff8
+            transform: ""
+          - columnReferences:
+              - columnCounter: b051d024-93be-4aa9-a6fa-b15f138b3f7b
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+            transform: ""
+          - columnReferences:
+              - columnCounter: b7e7a7b8-d2ec-4bd9-a39e-d455b643e847
+                stepCounter: 93cd56e2-f441-4049-a95c-72977730810f
+            transform: ""
+          - columnReferences:
+              - columnCounter: 3cb950ef-22bd-401b-9827-5d52afaccecb
+                stepCounter: f8804b5e-1bef-4b43-8883-07d52979df8e
+            transform: ""
+          - columnReferences:
+              - columnCounter: 826c9f68-c8db-4c19-9d5e-47f275e2379c
+                stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+            transform: ""
+          - columnReferences:
+              - columnCounter: edad6adb-6ac9-4c29-9fed-3fec42c68516
+                stepCounter: 51331646-7d2a-4ee7-8974-8bc91aacbff8
+            transform: ""
+          - columnReferences:
+              - columnCounter: b051d024-93be-4aa9-a6fa-b15f138b3f7b
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 224f650a-8beb-43b1-a01e-e57bc3a0fd3d
+          stepCounter: a8195b5c-c18b-49a5-ba91-2c59ab00b412
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: CHANGE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 53da5208-af18-46cd-9d9a-5d0a4c469dc7
+                stepCounter: 93cd56e2-f441-4049-a95c-72977730810f
+            transform: ""
+          - columnReferences:
+              - columnCounter: 3195ff5e-ec82-4f0c-ae03-adc44e2c9a9c
+                stepCounter: f8804b5e-1bef-4b43-8883-07d52979df8e
+            transform: ""
+          - columnReferences:
+              - columnCounter: e79b58ed-424d-4bb2-a023-be84b3302659
+                stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+            transform: ""
+          - columnReferences:
+              - columnCounter: 65f86546-a506-44b4-9fca-bd31b73bfdec
+                stepCounter: 51331646-7d2a-4ee7-8974-8bc91aacbff8
+            transform: ""
+          - columnReferences:
+              - columnCounter: 2ce0845d-5404-41e9-b511-fe0de5d48932
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+            transform: ""
+          - columnReferences:
+              - columnCounter: 7ba35c44-2d12-431f-aea7-4b8c545243f2
+                stepCounter: 93cd56e2-f441-4049-a95c-72977730810f
+            transform: |-
+              case when endda = '99991231' then endda
+              	else to_char(dateadd(day, 1, to_date(endda, 'YYYYMMDD')), 'YYYYMMDD')
+              end
+          - columnReferences:
+              - columnCounter: 3195ff5e-ec82-4f0c-ae03-adc44e2c9a9c
+                stepCounter: f8804b5e-1bef-4b43-8883-07d52979df8e
+            transform: |-
+              case when endda = '99991231' then endda
+              	else to_char(dateadd(day, 1, to_date(endda, 'YYYYMMDD')), 'YYYYMMDD')
+              end
+          - columnReferences:
+              - columnCounter: e79b58ed-424d-4bb2-a023-be84b3302659
+                stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+            transform: |-
+              case when endda = '99991231' then endda
+              	else to_char(dateadd(day, 1, to_date(endda, 'YYYYMMDD')), 'YYYYMMDD')
+              end
+          - columnReferences:
+              - columnCounter: 65f86546-a506-44b4-9fca-bd31b73bfdec
+                stepCounter: 51331646-7d2a-4ee7-8974-8bc91aacbff8
+            transform: |-
+              case when endda = '99991231' then endda
+              	else to_char(dateadd(day, 1, to_date(endda, 'YYYYMMDD')), 'YYYYMMDD')
+              end
+          - columnReferences:
+              - columnCounter: 2ce0845d-5404-41e9-b511-fe0de5d48932
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+            transform: |-
+              case when endda = '99991231' then endda
+              	else to_char(dateadd(day, 1, to_date(endda, 'YYYYMMDD')), 'YYYYMMDD')
+              end
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_SAP__PA0000: 93cd56e2-f441-4049-a95c-72977730810f
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__PA0000
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'STG_SAP__PA0000') }} "STG_SAP__PA0000"
+        name: PA0000_BEG
+        noLinkRefs: []
+      - aliases:
+          STG_SAP__PA0001: f8804b5e-1bef-4b43-8883-07d52979df8e
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__PA0001
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'STG_SAP__PA0001') }} "STG_SAP__PA0001"
+        name: PA0001_BEG
+        noLinkRefs: []
+      - aliases:
+          STG_SAP__PA0007: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__PA0007
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'STG_SAP__PA0007') }} "STG_SAP__PA0007"
+        name: PA0007_BEG
+        noLinkRefs: []
+      - aliases:
+          STG_SAP__PA0008: 51331646-7d2a-4ee7-8974-8bc91aacbff8
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__PA0008
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'STG_SAP__PA0008') }} "STG_SAP__PA0008"
+        name: PA0008_BEG
+        noLinkRefs: []
+      - aliases:
+          STG_SAP__PA0031: 87881e96-3331-4a95-974b-25c66dbfeb79
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__PA0031
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'STG_SAP__PA0031') }} "STG_SAP__PA0031"
+        name: PA0031_BEG
+        noLinkRefs: []
+      - aliases:
+          STG_SAP__PA0000: 93cd56e2-f441-4049-a95c-72977730810f
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__PA0000
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'STG_SAP__PA0000') }} "STG_SAP__PA0000"
+        name: PA0000_END
+        noLinkRefs: []
+      - aliases:
+          STG_SAP__PA0001: f8804b5e-1bef-4b43-8883-07d52979df8e
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__PA0001
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'STG_SAP__PA0001') }} "STG_SAP__PA0001"
+        name: PA0001_END
+        noLinkRefs: []
+      - aliases:
+          STG_SAP__PA0007: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__PA0007
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'STG_SAP__PA0007') }} "STG_SAP__PA0007"
+        name: PA0007_END
+        noLinkRefs: []
+      - aliases:
+          STG_SAP__PA0008: 51331646-7d2a-4ee7-8974-8bc91aacbff8
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__PA0008
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'STG_SAP__PA0008') }} "STG_SAP__PA0008"
+        name: PA0008_END
+        noLinkRefs: []
+      - aliases:
+          STG_SAP__PA0031: 87881e96-3331-4a95-974b-25c66dbfeb79
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__PA0031
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'STG_SAP__PA0031') }} "STG_SAP__PA0031"
+        name: PA0031_END
+        noLinkRefs: []
+  name: V_INT_SAP__0EMPLOYEE_DATE_CHANGES_1
+  overrideSQL: false
+  schema: ""
+  sqlType: BNT112:::188
+  type: sql
+  version: 1
+type: Node

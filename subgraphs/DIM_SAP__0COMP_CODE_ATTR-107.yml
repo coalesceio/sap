@@ -1,0 +1,10 @@
+fileVersion: 1
+id: "107"
+name: DIM_SAP__0COMP_CODE_ATTR
+steps:
+  - 484ffa44-f50e-4d83-b372-5b6b2bff6693
+  - a2374235-9142-4edc-bb1e-88decc06d4be
+  - df0ca75f-561e-40f7-bb98-c30d34485fc5
+  - fd4665de-9c5a-4792-aa76-021484bd3183
+type: Subgraph
+version: 1

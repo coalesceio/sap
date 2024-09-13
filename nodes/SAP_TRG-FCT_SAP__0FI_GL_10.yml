@@ -1,0 +1,495 @@
+fileVersion: 1
+id: b3404b92-750b-4bed-9af8-b7c8baaca089
+name: FCT_SAP__0FI_GL_10
+operation:
+  config:
+    clusterKey: false
+    groupByAll: true
+    insertStrategy: UNION ALL
+    orderby: false
+    orderbycolumn:
+      items:
+        - {}
+    postSQL: ""
+    preSQL: ""
+    selectDistinct: false
+    testsEnabled: false
+    truncateBefore: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAP_TRG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 879ad6b2-fc05-488a-9017-897996565c81
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: NUMBER(38,2)
+        description: Cumulated balance
+        name: ACCUMULATED_BALANCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5621c305-08ee-44f4-845d-899e8816d55c
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: sum("V_INT_SAP__0FI_GL_10_UNPIVOT"."ACCUMULATED_BALANCE")
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c3673e84-8e3b-4aa7-b498-3f777552065f
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(4)
+        description: General ledger (transaction attributes)
+        name: ACTIV
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 89d491f0-2307-4e4c-a24c-8cd2de026403
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b89cc6a7-fe6c-47b5-ae65-95cbbda9a896
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(5)
+        description: Reference transaction
+        name: AWTYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b2ec4032-bfbe-419a-adbf-c47e38e7a3aa
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 99c5804b-ce5c-429c-8107-f70c1cb54554
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(10)
+        description: Cost element
+        name: COST_ELEM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bbb4126c-619d-4ce8-b233-491d7ffe6183
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b000f8a-b84c-41dc-82da-613c1f1a0511
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: NUMBER(38,2)
+        description: Total credit postings
+        name: CREDIT_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 06d5d3b7-4134-4ca2-99e2-e5e9f90a7668
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: sum("V_INT_SAP__0FI_GL_10_UNPIVOT"."CREDIT_AMOUNT")
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5afcd083-173f-4334-bd23-f2bc24abc774
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: Currency type
+        name: CURRENCY_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7dd80678-6416-4528-93d7-35abed49ccc1
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e6772dab-7df0-47f4-8b52-eca69cc7d5d1
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: NUMBER(38,2)
+        description: Total debit postings
+        name: DEBIT_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 49356ce9-3f3f-4c6d-9b87-eae33848cd9e
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: sum("V_INT_SAP__0FI_GL_10_UNPIVOT"."DEBIT_AMOUNT")
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff4c6ef2-f826-4316-9457-f773aeb1930f
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: NUMBER(15)
+        description: UTC time stamp in short form (YYYYMMDDhhmmss)
+        name: FAGLFLEXT_TIMESTAMP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 92721e2d-377c-413a-a426-f4fafc183af4
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 677f334d-449d-455f-b185-94f57a1e6746
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: Fiscal year/period
+        name: FISCAL_PERIOD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ae44a118-49f6-423f-a4ed-ddcfc3b093fd
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d5d40373-5e27-4f77-b71a-61fbd67d02f5
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(4)
+        description: Controlling area
+        name: KOKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9a1f7113-a6b4-4f16-98cd-9ce0153aec49
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ea04ae7a-f002-467a-8419-1471b6d961b6
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(10)
+        description: Logical system
+        name: LOGSYS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ac806111-28b1-4dc6-813c-a2c214b44a94
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6d896ce5-2261-48d9-a78b-a08c0e8ac2c8
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(10)
+        description: Partner profit center
+        name: PPRCTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6e69b068-ff32-4b79-a1df-ed86e6cdd56f
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 36661a07-94ad-4964-8eac-b187fa8af1aa
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(10)
+        description: Profit center
+        name: PRCTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 253e7797-57fd-4e8d-ba7d-3af893734125
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bfae7b97-1d74-4bd1-b9b0-4faa08f1946b
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(10)
+        description: Partner segment for segment reporting
+        name: PSEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 68bb1277-1e19-484e-89bd-73d1f4f03554
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7d1c6134-c448-4de1-99bf-e2f3591503da
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(10)
+        description: Account number
+        name: RACCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b58a6047-19ba-4773-800f-af35d36b309f
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d9ce878-eac2-4725-b604-888bbae0d5b5
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(6)
+        description: Company id of trading partner
+        name: RASSC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aeb29938-d240-4f1e-81da-655d328790fb
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b39d3d4a-3a38-46df-bc14-fc6515c18772
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(6)
+        description: Company code
+        name: RBUKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0413f241-cfb3-44b7-b520-2e7b6d6f37ae
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b62b652f-5407-49f0-8d00-e9a6c77e4f94
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(4)
+        description: Business area
+        name: RBUSA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 46b0a53c-8c5f-4246-82ed-521e6e76d633
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 933e0f1e-7ebd-4673-b2fd-d4f542483f93
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(10)
+        description: Cost center
+        name: RCNTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0c9bbcd3-e5a1-4949-b223-e0461c8ff8f7
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a7492b50-035f-4518-895b-9de663909b4d
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(16)
+        description: Functional area
+        name: RFAREA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 410d88dc-0cac-4238-8e29-d2fdc00f880b
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e9ceef16-9c57-4395-a94f-9f65e6d73f84
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(2)
+        description: Ledgers in general ledger accounting
+        name: RLDNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3ed0d428-3a5e-4b37-92c8-183fa5a17f63
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 637f8772-b36d-4e04-b520-7351e5cb970e
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(3)
+        description: Transaction type
+        name: RMVCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 11ddcd23-1ef7-4dff-856d-d72a13f4e119
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e779f764-7381-4d2f-be0b-d82a81d8e2ee
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(1)
+        description: Record type
+        name: RRCTY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e9efb9cb-8c9d-44ea-8aa7-1eeeda8cee20
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d2329a7-092d-4c95-9b3a-6988efb59a14
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(5)
+        description: Currency key
+        name: RTCUR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cb8ea303-0391-4e79-a54a-61a44bb611df
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 55cc4659-2041-4817-957a-f294c4c50342
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(3)
+        description: Base unit of measurement
+        name: RUNIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e7ec4b51-2385-4f2e-826b-aced547d592c
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6defc488-09de-4f7b-86a0-36c1b98f0076
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(3)
+        description: Version
+        name: RVERS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0227a8e8-b6bb-4834-9c21-69453e105792
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a55050e7-1778-4604-91fe-9ce5a22eee15
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(4)
+        description: Fiscal year
+        name: RYEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0f888d9c-88a2-4fe5-8887-a6bf91b70d08
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 391d5b3a-1548-400e-8c60-f925d2b9d6d5
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(4)
+        description: Business area of the business partner
+        name: SBUSA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 705357b3-2924-4846-9f9b-c1cd51deb664
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a2a70ebe-af99-4ef2-97d5-6ff83e449b16
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(10)
+        description: Sender cost center
+        name: SCNTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1cdf1eb6-6387-4029-9164-5434652cdddf
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a36506d-bc68-493d-b6f8-790761224766
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(10)
+        description: Segment for segment reporting
+        name: SEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a4adb498-d1bf-401f-a6e3-1e5439bb31e3
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d640c366-be48-4acd-b101-2d9d272d1d17
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: VARCHAR(16)
+        description: Partner functional area
+        name: SFAREA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4724211f-fee8-41d5-a365-9a1df1ec2fe3
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 51a8f878-f533-4e52-ad83-eb4abcfd7c77
+          stepCounter: b3404b92-750b-4bed-9af8-b7c8baaca089
+        config: {}
+        dataType: NUMBER(38,2)
+        description: Sales of the period
+        name: TURNOVER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c34f8982-e73d-4d79-a864-ce87df993b7a
+                stepCounter: 559917f4-8719-47f7-86ef-162b53ed8eb3
+            transform: sum("V_INT_SAP__0FI_GL_10_UNPIVOT"."TURNOVER")
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          V_INT_SAP__0FI_GL_10_UNPIVOT: 559917f4-8719-47f7-86ef-162b53ed8eb3
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: V_INT_SAP__0FI_GL_10_UNPIVOT
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'V_INT_SAP__0FI_GL_10_UNPIVOT') }} "V_INT_SAP__0FI_GL_10_UNPIVOT"
+        name: FCT_SAP__0FI_GL_10
+        noLinkRefs: []
+  name: FCT_SAP__0FI_GL_10
+  overrideSQL: false
+  schema: ""
+  sqlType: BNT112:::205
+  type: sql
+  version: 1
+type: Node

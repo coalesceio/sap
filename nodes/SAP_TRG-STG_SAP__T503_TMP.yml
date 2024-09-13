@@ -1,0 +1,323 @@
+fileVersion: 1
+id: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+name: STG_SAP__T503_TMP
+operation:
+  config:
+    incColumn:
+      columnCounter: f9d836d9-85b3-4c96-8c19-cf6a4436f8a6
+      stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+    insertStrategy: INSERT
+    persistTableLocation: SAP_TRG
+    persistTableName: STG_SAP__T503
+    postSQL: ""
+    preSQL: ""
+    refTable: true
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAP_TRG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 95c70c15-63a4-4caa-8e04-7ac0b4fb5f1b
+          stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 70ec187b-19bc-44f7-a006-f68ef2779d37
+                stepCounter: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 53526749-8d79-4a2e-bdb6-14794a7658bc
+          stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_SAP_ARCHIVED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c0c10896-06aa-4b11-921e-ce6a856ddb67
+                stepCounter: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 56623b8d-affd-4555-9585-4abe013f09af
+          stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+        config: {}
+        dataType: VARCHAR(3)
+        description: Client
+        name: MANDT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4c7e87e1-c75b-40f3-87c1-b7f4216d611f
+                stepCounter: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7e405a16-29e8-4d45-b1ce-ee06bdd2ab07
+          stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+        config: {}
+        dataType: VARCHAR(1)
+        description: Employee group
+        name: PERSG
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3e799bdc-ebd5-4cf2-8f02-e4e8f3719a7a
+                stepCounter: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3c659378-6ffc-4895-8f2c-16b21c271a87
+          stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+        config: {}
+        dataType: VARCHAR(2)
+        description: Employee subgroup
+        name: PERSK
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d8d98f4b-6a21-4860-bcfe-8d38ca965800
+                stepCounter: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 77c40da9-3262-4eb1-8f28-177095519def
+          stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+        config: {}
+        dataType: VARCHAR(1)
+        description: ES grouping for collective agreement provision
+        name: TRFKZ
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8fea57e0-fe2e-4640-bb97-cc0710fe0b63
+                stepCounter: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 50cce3e2-1d13-4935-abea-5022f7990861
+          stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+        config: {}
+        dataType: VARCHAR(2)
+        description: Reserved field/unused field of length 2
+        name: MOLGA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 18dca468-4799-482a-8f56-d46d6eafb26d
+                stepCounter: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 48a02e22-7f95-49f7-a2ac-5f54f3573a6e
+          stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+        config: {}
+        dataType: VARCHAR(1)
+        description: Employee category
+        name: ANTYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7877d7f4-1896-408b-a32f-ef50418f7f1a
+                stepCounter: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d3986a4-9bab-4c34-a6a3-0b96665288fe
+          stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+        config: {}
+        dataType: VARCHAR(1)
+        description: Employee subgroup grouping for work schedules
+        name: ZEITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3cbd80ca-d743-48f1-a5a5-4e594c166767
+                stepCounter: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8b4de5a8-7913-47d8-9cc0-433e2eb2527d
+          stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+        config: {}
+        dataType: VARCHAR(1)
+        description: Participation in incentive wages
+        name: INWID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7a9e0234-42f1-4c31-aed3-44e6aa8e08d8
+                stepCounter: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38af398e-5b51-4bb9-a56f-95c8c42e3401
+          stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+        config: {}
+        dataType: VARCHAR(1)
+        description: Employee subgroup grouping for personnel calculation rule
+        name: ABART
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad09e58f-abf3-48ef-9ba7-70acb7f56630
+                stepCounter: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 08958fb3-af6e-4a61-b945-fda73f2744e3
+          stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+        config: {}
+        dataType: VARCHAR(1)
+        description: Employee subgroup grouping for appraisal
+        name: BURKZ
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 147836df-ab4e-4789-841d-b6bcffeded6e
+                stepCounter: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 87a33317-e59c-4704-9d77-0cb14614895c
+          stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+        config: {}
+        dataType: VARCHAR(1)
+        description: Training status
+        name: AUSTA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 411cc7e2-9069-416b-9604-8d75bd6f5a9a
+                stepCounter: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c5bd80b7-7d78-4e5e-8a2b-2b524683f6b3
+          stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+        config: {}
+        dataType: VARCHAR(1)
+        description: Employee subgroup grouping for time quota types
+        name: KONTY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8d575d43-17e5-4633-a244-c4a6a3000851
+                stepCounter: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0a88b764-b8e7-4847-80e9-deb84f16f12c
+          stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+        config: {}
+        dataType: VARCHAR(1)
+        description: Single-character indicator
+        name: TYPSZ
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 93dbb41d-b8d4-4793-8a7b-618b0d327e8a
+                stepCounter: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 40299af0-a431-4913-850f-f139d474b4dc
+          stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+        config: {}
+        dataType: VARCHAR(1)
+        description: Employee subgroup grouping for primary wage tpyes
+        name: ABTYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: acff88e0-629b-4778-bb26-a18e09358379
+                stepCounter: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 18778a60-1587-43b3-849a-9bf20f05ce73
+          stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+        config: {}
+        dataType: VARCHAR(1)
+        description: Employment status
+        name: ANSTA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6a9707a7-93ce-47e3-b359-c8877b1f4629
+                stepCounter: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 71cf2681-5e43-49b2-947c-f785e8d2f960
+          stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+        config: {}
+        dataType: VARCHAR(1)
+        description: Activity status
+        name: AKSTA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 940d0081-d0ca-4da8-93e0-65df4bf1b164
+                stepCounter: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f9d836d9-85b3-4c96-8c19-cf6a4436f8a6
+          stepCounter: 03c9aa8c-90b0-4dac-b7cd-1c671509fc51
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6c7bca2f-cd53-467f-a22d-0a55d0d4c3da
+                stepCounter: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          T503: ab775f7c-0d5a-4c27-8c4b-b399244add0d
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_SRC
+            nodeName: T503
+        join:
+          joinCondition: |
+
+
+            FROM{{ ref('SAP_SRC', 'T503') }} "T503"
+              WHERE "T503"."_FIVETRAN_SYNCED" > 
+              (SELECT COALESCE(MAX("_FIVETRAN_SYNCED"), '1900-01-01') 
+                        FROM {{ ref_no_link('SAP_TRG', 'STG_SAP__T503') }} )
+        name: STG_SAP__T503_TMP
+        noLinkRefs:
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__T503
+  name: STG_SAP__T503_TMP
+  overrideSQL: false
+  schema: ""
+  sqlType: IDL:::230
+  type: sql
+  version: 1
+type: Node

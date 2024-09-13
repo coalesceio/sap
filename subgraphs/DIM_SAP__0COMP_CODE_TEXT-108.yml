@@ -1,0 +1,10 @@
+fileVersion: 1
+id: "108"
+name: DIM_SAP__0COMP_CODE_TEXT
+steps:
+  - 484ffa44-f50e-4d83-b372-5b6b2bff6693
+  - a2374235-9142-4edc-bb1e-88decc06d4be
+  - a311733e-2802-41a1-ad15-ca4042a13eec
+  - fd4665de-9c5a-4792-aa76-021484bd3183
+type: Subgraph
+version: 1

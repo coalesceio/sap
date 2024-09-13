@@ -1,0 +1,1570 @@
+fileVersion: 1
+id: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+name: STG_SAP__FAGLFLEXT
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAP_TRG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6591de19-281b-44b3-ac49-e8ea9c87246e
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in local currency
+        name: HSL12
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 03bfa478-5f88-4dc4-8783-05c150e67e49
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1e1cb17-eb13-405c-86a7-fe5043057d9d
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(3)
+        description: Version
+        name: RVERS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 23df58c4-7ec3-42b9-b68b-44839958f8f0
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7331855c-671f-4bf5-8cbf-e53df99e6ee7
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total transactions for the period in the fourth currency
+        name: OSL02
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2757b8c4-4cb4-487c-90a9-8f383ba0534e
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dd8dcc93-0a70-42c7-b50c-460e6d0a84ef
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in group currency
+        name: KSL08
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f1b7e4aa-4111-41f1-9ebc-68b27c7b9b01
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 33e24d4f-c765-4483-a31e-c292c09e165d
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(3)
+        description: Transaction type
+        name: RMVCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e5c67caf-fa47-4703-b1b0-0d5efd0bb0b3
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c18845dd-7c6a-4980-9c21-ae0c37adc80c
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(4)
+        description: Trading partner's business area
+        name: SBUSA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 113aeb68-bbfc-4825-9950-70d5a8efd412
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4b57a5d3-a794-4680-a613-07b8ba57fb62
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: Object number for table group
+        name: OBJNR03
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ff62fbd3-ecef-4e62-a3b0-b1efec0e3a64
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e00a5e16-bbd0-4dbd-8985-32600c4b4509
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in transaction currency
+        name: TSL13
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e0fc0902-e7d0-486e-98db-1effbbccdb33
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b3b0afa-a3dc-4995-b33d-63dad0454450
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in local currency
+        name: HSL15
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 25e31232-4e78-4dd0-b14f-45c52b5ac7e5
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6e5f8c6a-f270-4fb7-990e-27fd10056ea6
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in group currency
+        name: KSL14
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9042494e-ed8b-4b8c-9fcd-5709a8c15a7f
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4872a762-9636-486a-a81d-cb5687e27103
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(10)
+        description: Logical system
+        name: LOGSYS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5cbdb363-4a9a-4c53-8d3f-c178eddf9973
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: beddfbaa-3324-4499-9e0a-885c1c5193c0
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in group currency
+        name: KSL06
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 35adad7b-c5a7-4ded-845a-d0cab1153b4c
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c19cc490-0cb1-4449-80ba-7a3906fc653d
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in transaction currency
+        name: TSL02
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d98e7417-fa57-4410-a209-792255503793
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 880d2639-6f20-4cc0-8325-6f5e204e2281
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: Object number for table group
+        name: OBJNR06
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9a87e8d0-ed81-44e2-bcad-619293a1fa28
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 90a3e382-3c8c-4c69-bb63-b2b24c23cc52
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in transaction currency
+        name: TSL07
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9ff95348-2a76-4593-838e-6fea584b49bd
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ac714273-5aa6-4b6a-b8d2-6ffe6d4611ae
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total transactions for the period in the fourth currency
+        name: OSL03
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 82a2ea8c-daab-41c6-b9a2-c2d7ebc04ee0
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 71ef3305-6e3f-43a2-8861-6ca2b3c88673
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in transaction currency
+        name: TSL12
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: efc4e84d-8c9d-4115-aa07-0acc0b48762e
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 25e30875-e9f5-4c61-8b54-3e2a8e01e23e
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in group currency
+        name: KSL02
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f66ca2cc-9cfa-45a7-9586-3b8283da6f9e
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7ce17733-59b9-4736-9ed3-5e77cdacb762
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in transaction currency
+        name: TSL14
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8ec4a287-6116-4c13-bccb-ecc52f5bc2c9
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7a633db7-b046-44dd-ba32-d14cfa44ec0e
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in local currency
+        name: HSL11
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b9b959ca-fa51-4695-b8ee-8634d3a41482
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8573bb60-ac2d-446a-8113-1e78b26881d1
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in group currency
+        name: KSL05
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e963ed9e-fee4-488a-9ab8-767f780e6224
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 86acac7c-e81c-4b1c-a238-0f7a998cdf64
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a28cc1cb-facc-48c7-bd50-c529a5c2c124
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3af01fa2-95bf-4961-8102-da0edd5570c4
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in transaction currency
+        name: TSL16
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f73eda4d-9d6f-403a-be1c-f27ec6c8a9af
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 224224e2-dfa7-4276-9b79-7307cbfda84a
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in transaction currency
+        name: TSL10
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8b86a274-adb7-4972-8cbe-b10bee714eb4
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 88ea382a-657c-45fa-a1f8-7ca29a00add4
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(4)
+        description: Controlling area
+        name: KOKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7fb63688-6e9a-4cee-99ed-43ade7984b5a
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4c742bc7-877c-40fd-bfca-06151b04c1bc
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(10)
+        description: Account number
+        name: RACCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 24045ef1-a639-4500-bbea-666ec30e74e2
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 462c938b-9c29-4ed9-b591-3dfb0030b064
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total transactions for the period in the fourth currency
+        name: OSL07
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 72a3b37f-751c-4b60-a9df-e79ae0c5725b
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 74e321d2-ca59-4e40-ad36-f18d663f292d
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(5)
+        description: Currency key
+        name: RTCUR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 873d57bf-87fc-46e1-8c4b-d779014fbf0c
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8547b8ee-9464-4f92-8ff8-27daf5ce813e
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in transaction currency
+        name: TSL09
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 60ffb534-88bc-4ce5-abad-14212d7f841f
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 58fd3eae-e313-4aed-9e80-e9b64d706b52
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Balance carried forward in group currency
+        name: KSLVT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 43ac6c4b-47b4-4d48-ae96-38a415ebe1d2
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 00772fb1-f5d4-4243-8054-bae6bea6d58a
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(3)
+        description: Base unit of measure
+        name: RUNIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 987c0051-1b8a-438e-aaff-d83da6c937a3
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2bac8128-879a-4d94-8625-fdc1f09c771c
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total transactions for the period in the fourth currency
+        name: OSL01
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8666469c-dfd0-4fb4-a588-df8f7dd78d99
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fe247937-aeeb-4e3b-a8bd-4c82b4c32da4
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in group currency
+        name: KSL15
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3dd2bd29-6393-4d1f-a69a-8ba92dda2d5a
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 237a0a98-ca25-4baf-b40c-83d06372f50a
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in local currency
+        name: HSL08
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 84cb1a03-7c08-43ef-9ad8-b8cb2cda91e0
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 134a9996-054b-4598-8928-7183992d0856
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(10)
+        description: Sender cost center
+        name: SCNTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ff66991f-ff7b-48ea-92e3-947cf23c5a93
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3edb24e2-73f8-45b4-8925-de3dc99aa182
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(3)
+        description: Period
+        name: RPMAX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a91d73cc-22db-4367-a585-c75aeffa30ec
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 574e6ca5-a589-400e-8b8c-02d202ab9643
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total transactions for the period in the fourth currency
+        name: OSL14
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8e143570-92d2-49df-91b4-0fb624958ff4
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cee18f90-ce89-433c-a808-c14ca1db56a1
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in group currency
+        name: KSL01
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ab706744-b79a-4211-b59f-4f0dda8702b2
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 671fe175-c8e0-477f-86b7-8fc3d1aea88b
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total transactions for the period in the fourth currency
+        name: OSL09
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8c231290-4186-4f74-9b08-0ccb82757b5d
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7eb7b565-08c4-45e7-a465-c2d0ee4ef83e
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in transaction currency
+        name: TSL03
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3144a6be-0a47-4564-9d23-22d7097d5409
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 63d085a1-e473-4879-965b-4f4ccb3e969d
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in local currency
+        name: HSL06
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 713b95f2-5ec4-429e-ba3d-19099fdc08e1
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 36a237ae-17b7-49c0-98c9-e96db92ca40d
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in transaction currency
+        name: TSL04
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 89155fca-8cef-44ca-8c43-4d9ff9c80687
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8fe050c3-c808-4697-a8e9-cd4bab64af3a
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in local currency
+        name: HSL10
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2fa27896-bbd0-478e-9536-56c0f0a36340
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a21f50c0-8d01-4771-b541-4126fbc96068
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Balance carried forward in transaction currency
+        name: TSLVT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 69ec2149-22b5-4538-adff-402027272cd5
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1b4db666-f4d0-400d-ba20-fa4113be883f
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in local currency
+        name: HSL14
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e935ddc9-194b-42a5-af7a-2ac7a149115f
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ac571f0-4720-4ed0-9d8f-f7377716eab1
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(5)
+        description: Reference transaction
+        name: AWTYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3e40b670-59d3-4477-ae7d-f320ca0d8c0c
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 94435667-c925-430b-bfe3-4057b0ee33e1
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: Object number for table group
+        name: OBJNR07
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 723319d5-5acc-4fa7-ae0c-61b24f68679d
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d359d34-c549-4917-bfb0-ea63396cd6c5
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(16)
+        description: Functional area
+        name: RFAREA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c7303429-b1db-45e6-9b86-585ce5af72ba
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e54e607-3290-4df0-a456-c8076dc0c875
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(10)
+        description: Segment for segmental reporting
+        name: SEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7fd2ee5e-fcde-4000-a651-709a27ffda83
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7c49a8cf-0e81-4b92-9fbf-ce023bdb654c
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(4)
+        description: Company code
+        name: RBUKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0c76c2ad-1acd-4f6f-a805-68014871c21d
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 15295e79-3ae9-4edf-849b-7de7a363048f
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(16)
+        description: Partner functional area
+        name: SFAREA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2e0995c2-3855-4b31-adea-eb00f18ba4fa
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f4cbfddd-2b21-4cdf-a3c6-a08c4ffb6238
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in transaction currency
+        name: TSL08
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0154ba23-dc68-4a68-b2ad-4df27048e61b
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1ce59654-c8d9-4ed7-854b-7ce3e7e69ff5
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in group currency
+        name: KSL16
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 73e176cd-bb7f-4c16-bbef-d501e2028393
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ad182371-2ef8-48f5-a7f5-305dfd5cafd0
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(10)
+        description: Partner profit center
+        name: PPRCTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e7c75eed-d88c-4488-8816-60692696d717
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 980d3e75-5a65-4730-bdcb-097c1131d811
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total transactions for the period in the fourth currency
+        name: OSL13
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 49c5952d-97e6-4a9e-a2e9-c12734af5858
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3c1f3f99-9665-4ff3-bbc6-42e51c8aa9f8
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in local currency
+        name: HSL13
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 129eb42b-415f-4795-be2e-c2d81f41b2f4
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bcab77ad-5302-4e45-9230-3563fdfe967b
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total transactions for the period in the fourth currency
+        name: OSL15
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cb814898-d666-4ae1-bfa5-49ac062de895
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 72a7dd90-9df2-4511-b2cf-9d74059e2b54
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: Object number for table group
+        name: OBJNR00
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 71f5c656-8953-4b68-9b70-935696dd9631
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8808c3c2-c2b0-4c0b-ac2a-698c9ab9a176
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in group currency
+        name: KSL10
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8a216713-a7df-480d-95ac-27bb23bf64cf
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b8b7e073-83a0-483a-ba7c-8e0a9794e2ed
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(4)
+        description: Business area
+        name: RBUSA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 34267df4-b299-48be-945a-dcef1be9ef3c
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e491eaf0-2f7a-4d08-b742-a9356f70b6d3
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in local currency
+        name: HSL02
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: af75afec-fc57-4384-a177-840909e17ec2
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 173f0772-c637-41cd-ab7f-e6a8bda9a1b7
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: Object number for table group
+        name: OBJNR04
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 238218c5-25ff-400e-b417-9519cfa6baae
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6e53e801-f3a0-4e0c-b895-c0fbc3fb9acb
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(4)
+        description: FI-SL business transaction
+        name: ACTIV
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6ab71894-b549-461b-ab23-954a8039b999
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f796541-3809-4efa-9df4-3bd56497d9de
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in local currency
+        name: HSL16
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 242928cf-3937-456c-a37e-7a74aca00b3b
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ccaf3da8-7862-432d-a8e0-47d1ff5e8a67
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in local currency
+        name: HSL09
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 36dbeeda-ae1a-4c6e-a25f-74ee98a902b5
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 90308ca0-65c3-47a5-bde1-b54716ca45bb
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total transactions for the period in the fourth currency
+        name: OSL11
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e2e1dc1b-5e53-4bdd-99f2-824c0c14ae42
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a3664b2-5cbb-4479-b1a4-79180d5d9478
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in group currency
+        name: KSL07
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4b15d501-4674-4217-b987-50a084930e6f
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a7b003ce-bd9a-4b1d-86bd-79e8215522dc
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(6)
+        description: Company id of trading partner
+        name: RASSC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e8f41caa-4704-43e9-a140-07c97463a4e6
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d4c8ba0-78b5-469b-80b9-fc3a37751d1e
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in local currency
+        name: HSL01
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 87ef7d3f-f9f8-4210-8625-4e70bf7d5236
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aac48c55-670b-46a3-b16f-6694de04f760
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in transaction currency
+        name: TSL05
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 46742ba3-236a-472c-9d5e-a05d6a8139b3
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 306c3fce-ca8c-4392-a563-89dfbc514414
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(4)
+        description: Fiscal year
+        name: RYEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6694f2c1-ac78-4ccb-bd99-c3b3286e7507
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 81de42c1-ce5c-4251-a2a7-259fe25d3ce6
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(1)
+        description: Record type
+        name: RRCTY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4f1f6dd1-13d0-4d1a-b153-394ddec4e537
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 297faad8-7983-40d9-899e-4ba032042cc0
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total transactions for the period in the fourth currency
+        name: OSL06
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 53df319d-b17a-4e01-9ae5-71128cb3e0f6
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c0c1c713-b3e5-43d6-8fc5-852e95f50de6
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in group currency
+        name: KSL13
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 851249c8-ab02-4412-9c17-519aa5c152a1
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: df5cee70-8f69-4670-82ff-8d8d6c0f518d
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(10)
+        description: Cost element
+        name: COST_ELEM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7ed80e17-577b-4056-b887-92ee6384c222
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8b5e9f43-6ba7-4006-afba-92fd3f9aa8c8
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total transactions for the period in the fourth currency
+        name: OSL04
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 68da3285-6c63-4182-92ca-f51557061098
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 57788178-4629-4edd-bcbd-753e2937630c
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in transaction currency
+        name: TSL15
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: da6caf29-a062-4d23-aec4-51dd037553c3
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e7632802-0367-4504-8a01-e0795db0a12b
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(5)
+        description: Special region
+        name: ZZSPREG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ebc4c0dd-1837-4206-ab86-1ff845f5ff27
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2be51167-421b-4040-9768-891802e47006
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total transactions for the period in the fourth currency
+        name: OSL08
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 24f845e7-188c-418e-bd7e-39ab0d0d8673
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6cc0ee37-feef-4414-ba0f-125fa7128cd3
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in local currency
+        name: HSL03
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ff638c8b-b2d5-4f95-80c4-b8d9b933706a
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 00043774-96ae-4a56-94f4-29cd412dd6d3
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(3)
+        description: Client
+        name: RCLNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0f766151-98e3-4fc2-bbcc-3b836213274f
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9f7af208-6649-4b15-a10f-8fce896a5eb9
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in local currency
+        name: HSL05
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6ae0d223-90cd-4b2f-96b2-f64baca0bc0d
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 722eba2b-be8c-4e00-897e-7e1ccd4e86a1
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in local currency
+        name: HSL04
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 48445fc1-7d0f-4008-b627-a40fb449ab3a
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ad9e5cad-8f2b-401e-9823-a825f56ec636
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Balance carried forward in local currency
+        name: HSLVT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 86c94bf2-bd56-4454-93c8-e88ecdec99e4
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e2492280-8946-4c07-8870-9631f7ef0430
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in group currency
+        name: KSL03
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2933b763-994e-4ec3-b063-5a5d593f0842
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 07346c73-6ba7-446b-82ba-66c551553bc8
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in group currency
+        name: KSL11
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 47bd9d49-e5b1-4100-9f51-aa0f76f13666
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 29d564d4-6441-417f-ae0e-4197a3f5ac16
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: Object number for table group
+        name: OBJNR01
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fade9e2b-5cbd-4a3f-945b-1a4dc7dc48f2
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 34e61e6b-0cba-47df-ac1c-737135a5c077
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in transaction currency
+        name: TSL01
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 69806586-275f-4aa3-a52d-257608ff8944
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 98473a2f-4351-4b71-a199-8174cf7f3955
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in group currency
+        name: KSL12
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c36e17e1-d29d-4c1b-b192-edc7e48f0d68
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 23f33f06-5cc1-4592-aa2b-e5e0a1d7b43a
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(2)
+        description: Ledger in general ledger accounting
+        name: RLDNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6168f25a-f27e-41d1-8f6c-9f6b4b6c1933
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bf8d1165-9aba-417c-9ce3-8d5d27e88ee8
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: Object number for table group
+        name: OBJNR08
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 95284429-28ca-403a-8f0e-dee31d5b54b9
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 89057fc9-e076-47d8-8069-e64c468f19f1
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in group currency
+        name: KSL09
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 25557253-cc6e-4773-8875-34f1545b78fd
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 33d2a384-b156-498f-8348-dc89d54357bc
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(1)
+        description: Debit/credit indicator
+        name: DRCRK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4fdca3f6-d0cd-465f-be06-79464697f257
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e81ab991-8049-4edb-b2c6-bedc6c73c14c
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in transaction currency
+        name: TSL11
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1c48bd7a-fc40-43d0-96aa-2aa29e4122a0
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 06d08588-e19b-4421-8b9e-db6ea8d0974f
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in group currency
+        name: KSL04
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 88df56a6-5f4f-4e0f-8f6d-ad03944f7c1f
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f916d1e2-b1b7-473c-a4ba-5108c490e65b
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: Object number for table group
+        name: OBJNR02
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4cd09322-b539-49d6-a3ad-a48459d4076c
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf019864-e9f4-4c8e-8c96-deb4bf8ce7ca
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in transaction currency
+        name: TSL06
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9bde6147-d272-4f4e-8dcf-7f97ec0fc5be
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 19b25623-4767-4024-bc4d-7e37a9a3c7c6
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: Object number for table group
+        name: OBJNR05
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d08edf23-7fb8-4216-a873-cb157874b5c0
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 11d34887-4980-4cdf-b2df-e72174e128d9
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d99d82ab-b1f2-4e42-ada2-d84faf69c0d8
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6c067da8-0360-4e27-a87d-2532580deaff
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Balance carried forward in fourth currency
+        name: OSLVT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ca392921-cc5c-4b1e-88f8-499d22346696
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9e04f652-faa4-4258-93c2-4419167efe72
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total transactions for the period in the fourth currency
+        name: OSL12
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7739d6e3-20bd-40cf-8eb0-ecc6bcd3a6f3
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28146556-82e8-4d09-b6bc-559cd56f2fd7
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total transactions for the period in the fourth currency
+        name: OSL10
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 632df23b-4bdb-4c5d-9150-419fb0f87c0d
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 94bdf751-42b8-4159-ba6e-dec08cdc9304
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(10)
+        description: Partner segment for segmental reporting
+        name: PSEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4d53dcb6-0842-43c4-b1c1-1962f7246489
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6ef903d7-e55e-466e-aced-ffcd7687c04e
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total transactions for the period in the fourth currency
+        name: OSL05
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 83e5c00f-5c41-4597-9d28-e0bbfdc458ab
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ddf7bab5-5232-427e-b9d0-1aee97639d22
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total transactions for the period in the fourth currency
+        name: OSL16
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b702b1ef-dc65-483d-917c-8e0e1eddc4ce
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 038e1466-03b3-4334-bb83-791f14cb89a9
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(10)
+        description: Profit center
+        name: PRCTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f497542f-2b21-4a14-bea2-e66c6beb08ac
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f2a678df-c04a-4df4-aeb5-ba9bc0879908
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: VARCHAR(10)
+        description: Cost center
+        name: RCNTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ef14d9eb-6e6d-4348-b43a-70c1f45d0060
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a45590b4-47db-4e92-8bfc-03d6381c2671
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Total of transactions of the period in local currency
+        name: HSL07
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 681c04e8-5f4a-4d5b-936d-69fb6ca41a90
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c94a24dc-b663-414a-8643-2b0f5b61ff2d
+          stepCounter: 316b7e31-4e71-48c7-9af4-001a33dff7a0
+        config: {}
+        dataType: NUMBER(15,0)
+        defaultValue: ""
+        description: UTC timestamp in short form (YYYYMMDDhhmmss)
+        name: FAGLFLEXT_TIMESTAMP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f786101e-9778-4be0-817b-7de07e387ca8
+                stepCounter: 50228741-a65f-4e2c-835d-324ed0815a29
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          STG_SAP__FAGLFLEXT_TMP: 50228741-a65f-4e2c-835d-324ed0815a29
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__FAGLFLEXT_TMP
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'STG_SAP__FAGLFLEXT_TMP') }} "STG_SAP__FAGLFLEXT_TMP"
+        name: STG_SAP__FAGLFLEXT
+        noLinkRefs: []
+  name: STG_SAP__FAGLFLEXT
+  overrideSQL: false
+  schema: ""
+  sqlType: BNT112:::173
+  type: sql
+  version: 1
+type: Node

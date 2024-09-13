@@ -1,0 +1,4075 @@
+fileVersion: 1
+id: 3c697990-38d0-4077-97ca-27a719bdce94
+name: STG_SAP__PA0008_TMP
+operation:
+  config:
+    incColumn:
+      columnCounter: 2a08ee44-6407-4267-8089-e769291459f9
+      stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+    insertStrategy: INSERT
+    persistTableLocation: SAP_TRG
+    persistTableName: STG_SAP__PA0008
+    postSQL: ""
+    preSQL: ""
+    refTable: true
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAP_TRG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 88a103e5-b90a-4c45-a6cd-dbe690d473a8
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fb1fdcdc-dec8-4ace-8d6c-e4193fd30877
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e9f2a79-7355-4580-aa21-c2e45a6ecd4e
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_SAP_ARCHIVED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4b90873c-cbfe-4971-a6bb-fd68a66d1686
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e78aeca3-aab9-4242-ad63-eadee348dcd1
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(8)
+        description: Start date
+        name: BEGDA
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e53e43e0-5340-4dd9-9afd-a815bceac849
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4905d2a3-dd67-48e2-8b9b-c74ce6e569e3
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(8)
+        description: End date
+        name: ENDDA
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cb8699da-3077-4423-89d7-c9b2e6bc6216
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2ebc0fef-57b3-4faf-b446-0d830e044915
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Client
+        name: MANDT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c4fb0ad3-0bfa-4321-a2ed-1bd555c3949f
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7aed6776-b48e-460d-b764-ccbf28c6f6d4
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(2)
+        description: Object identification
+        name: OBJPS
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b43a2e6c-a869-4042-98a2-ee79f193d468
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 39fc04c8-40f6-44ee-881a-abe858ff8b0a
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(8)
+        description: Personnel number
+        name: PERNR
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 078efac8-cfc7-4a9e-ad6f-bc80939d95d5
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b48badcd-9f03-48ec-a09f-11caff490a98
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Number of infotype record with same key
+        name: SEQNR
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d8d0dc99-2994-4b23-9a3d-c5483e10b7e9
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 94500c59-bb9f-46ee-b3a0-7ae746ab7b99
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Lock indicator for HR master data record
+        name: SPRPS
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 61f04c48-f2cf-45d8-85f2-f09adf9766da
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cb4df5b9-c85d-4e66-91de-728d4dc67794
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Subtype
+        name: SUBTY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 28d03dd3-3cf0-4486-bc49-65c5f8318a9a
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fecec106-5cd1-48c6-ac4f-867176889705
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK27
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1f2352c3-3c1c-44a0-9f96-6969e1ff7af9
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1caafd15-c6f7-4e81-86d7-a9ffe970a3e2
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND19
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f0b3bf9d-6a19-4eab-9cdc-c21172fef70d
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8bab4494-aa12-4da9-bed9-b6bdb8966d43
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN23
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7834be31-918e-408c-9cc7-f5e3847a5e14
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 433bfd4e-7916-4735-bd57-d8bceb10e39b
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA06
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9f260925-4cd2-420f-b4b5-94a1a902bd4f
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 970c323a-13ad-4a60-a5c4-f25ca03115a6
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK39
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ab439d0a-4310-44b8-bc4a-e682adbfc4ae
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e2cf80bf-f78d-47f3-9315-868795f2d5cc
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ03
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1b51befd-f510-49ab-b7c4-a8e4d0ef4312
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 61830152-1e72-40ae-a5cb-f53d93fd5e25
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND39
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 20d85eb3-1ca2-4c56-91c3-f97e3e58fb3a
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9a44c0f0-b550-4ca5-a29d-dbc57eebdc2d
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK14
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0f1d16f4-1cbf-46ab-a3c4-97bf708def35
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9dce243d-9882-4c51-be6c-8e99bab81cb0
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET32
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c6819011-1a0b-4fb2-8b60-51f3f79ef884
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 62edd7d9-3268-4835-8f40-7dba838567eb
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Reference fields exist (primary/secondary costs)
+        name: REFEX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a9adce72-031d-4aad-aa10-b26a8224b2a7
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 27921383-64f0-4d8f-b504-d420afc742a7
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN35
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ea0cd2ce-f188-48e3-8025-9789896fdb56
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 57cdf579-cc20-4996-8731-790077c6e52f
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND01
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d154d467-046c-4af8-8aa5-74ce613da556
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 36aac6d9-0520-43f3-ace1-0165dce97819
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ18
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6b3bdaca-2403-47c8-898d-630b4194ea6d
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 18d49159-c00f-4e97-884f-ba75d37ddab0
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK26
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 66636b07-adaf-4510-85c2-d844d922481b
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d5adc677-503e-41e5-8466-1114c1aeeaa6
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA31
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ffcb73bd-f673-42af-b6bc-0b8a4db7b435
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 884f9729-c211-49c6-a1da-bed83957b4a6
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND05
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5f69a0e1-8e6d-4139-ac09-bdcac19d07c9
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ad9ab713-2799-4293-9753-2d3d4fb10931
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(15,2)
+        description: Annual salary
+        name: ANSAL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a36b3499-3ac6-4432-89b6-61b73457ffd3
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f8382b7b-2508-4c77-8c12-e3b1b9fe6a68
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Reserved field/unused field
+        name: FLAG4
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: da752f5c-105e-4e78-a81f-e005b851efd7
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2dd67597-bbd5-4e9a-81a6-789570a803d4
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN22
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: eca5ba73-b107-4589-9c30-69f5b65e4892
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ad74098a-f30c-45f3-9805-4bebcd488de1
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA05
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 43ce83f0-94ff-4f70-802b-96629e64051e
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f686c6d3-1a09-4078-b2f0-82d551edb917
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK38
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 70ab5eed-d2c3-441c-ade1-3e48e4a9a4eb
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ee2d4670-258d-4b73-aa2e-ba84e6bf91dd
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND25
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d7894416-1ef6-46b6-ae69-700d127b79fc
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cd6480a8-f29c-4161-a078-89035d5e4d1b
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET31
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b69f1018-5e7b-4f06-ac83-dfd6ffc2874c
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 498defd7-1f07-49dd-b989-f255a4f6f552
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK13
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1b2ac528-d271-4a36-a4df-621fec549be8
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2f2555a8-fd32-4141-a8ab-26c3f815a33d
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ40
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e14ea580-04e4-4d9b-b70f-a2595ee3a37f
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1389b4f3-cd81-4182-bc7b-cbeaa6182fa0
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN34
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5830e876-b288-42d1-9e55-cd412f1a6627
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b5839581-1a6b-4aec-8ac4-e966b3eb34ab
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ17
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 22479c59-4a64-49fa-b832-e9e4882233e7
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ae588908-58c6-42a0-8b03-b9fc3504ce98
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(5)
+        description: Currency key
+        name: WAERS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 71f88bd1-5db3-42c7-8919-e8ddca7d41ac
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d04e3aca-9f3a-429f-9a9c-e816cec94564
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK25
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6e9e6de2-e3bf-4274-a100-c118b970f296
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bc3d5ebd-c987-4895-9729-1cd8dcc7f1a9
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA30
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ca511803-32b7-4b8a-bdf1-a1a4ccfbf5bd
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: debff7bb-4e26-4e7d-b2f5-d5b4c0a92e93
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ29
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 12a82abc-e903-4b2a-9995-3f40fb3b573b
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5118e3fa-6c14-46be-a6dc-af4072061854
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN21
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6ed3835f-7c7e-45aa-9f60-a4058c6437e4
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ce72603-a602-4e85-8a10-94d111688a60
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(2)
+        description: Comparison pay scale level
+        name: VGLST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4c287b27-81c8-41d4-9e83-8c7c571974c9
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b75cdd78-a151-472b-b8b0-fe929ee90bc8
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND11
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 08f0d47e-c177-4045-b93a-bc088ce15a2e
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 23c65aae-e5cc-4de6-9cdd-e0ab03634c95
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK12
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e1c7e8d4-0079-460a-a5d0-45e229730afc
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7e538e3c-b2a3-4852-b96a-3ae920caf9ba
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET30
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1f3abbda-31b7-46d2-aac8-6c0bb8009328
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4d78942e-2090-4e73-abc1-ee70c792c9b7
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA19
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5b8641ef-16c0-46ce-9fb6-5448a27cfc4d
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7993963f-0333-4368-943d-0d69cd84c6cf
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ16
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9e241041-e5a3-407d-aff4-291265e3a3d6
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c56ee30d-882f-430d-9490-0bf8b0d7247a
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN33
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 03bc8a8b-d2b0-41bf-90dc-e6af5a7acd73
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0f2095e1-420c-4269-89ad-be406ff48f8a
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK24
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 81ed08cb-d7b2-4cc3-ad60-e45e0d0f630e
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e780a4d2-2141-4229-a6d6-c086611cb1b3
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND35
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a3ccf02b-fed4-44ae-897e-e3960c7ccacd
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9bf83387-37d3-429c-b346-874b35a77103
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET19
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fd1775c2-5a3f-4e97-8711-aa020fa4c687
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4fff62de-8e2f-4bbb-8e6b-defda667a1a9
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ28
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fb2851ff-0bcb-40f2-8fda-fa2b433b943f
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 945a9fa6-dbee-4f76-8373-6f34fe897ee8
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(8)
+        description: Date of next increase
+        name: VGLSV
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6f764f7d-14ce-4c78-8603-002dc0d374cd
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e8b3761-200d-4cac-bab7-3e005e0207e7
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN20
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4036e130-0350-4d28-ac70-b4b96d5d60ca
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cfd58eaa-f102-412b-8f77-d1a83d4202f4
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Confirmation fields exist
+        name: ORDEX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f2ff59f4-800f-4e1a-aa9b-0a97186a9dd4
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4925761a-f1ac-4909-9c03-ab7023a6eca7
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK11
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d4e329ed-6397-4546-8693-5796bbd4fcc5
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dabd00e6-7d01-491b-846a-c0fcf644804d
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA18
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a16efab5-5d98-4c63-9d83-0e6f19f05705
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: efe94260-15b4-46a3-ac3e-6cc9a7ada96b
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET06
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 04584251-567f-4337-988b-e3e0273b7bb2
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6763494e-c2a6-4bf6-9f1a-768506601d27
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ15
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 170d8b55-3b27-45bc-b00c-1e73185b978c
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e89b7a54-d684-4a37-8503-95d86abea771
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN32
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 28eb8f3d-70e1-4c73-8e98-7addc415f2db
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f7204654-4d5b-4ea9-9910-a86da1c8413e
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN09
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7df73e1e-f27b-450e-921c-ed18ef9691ac
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8a9cad9a-a26e-4541-b539-582ef5c3e269
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK23
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 285bd5fc-fbe0-4926-af95-058ad3f8fc61
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd6da911-0a51-49c1-b2dc-b584d185737b
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND21
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1ca33c45-3932-49f3-9e82-15f07949a3ad
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3716eb4-98dc-4455-927a-d7a3c48463c1
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET18
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 163e35ec-ac6c-4c8c-a1e9-7924b87d79df
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9ee55ae-f587-40ed-877e-9f32533c0d9d
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND08
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 92b104c2-5165-4a8c-8fb3-9930a489d149
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e9d3429-7c5b-4612-8b72-2dd553062822
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ27
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8b17b962-4f14-48a7-a01a-0b7171135f09
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1e56d92-1319-42cf-b654-f05304e55da7
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ02
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1d7908fc-92bc-4001-9a51-8287aa38b18f
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ad134e4e-0645-468e-9382-0c72a7b04691
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA40
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1c2f3c1e-22ca-46fc-bec0-2042cf45b5e7
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b1677ed-0cc8-4381-b8ac-81cbea9934c1
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK10
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 207dc9c4-8c2d-4b5c-a6cf-7168b3dc60f1
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b97f95c9-ab9d-48c5-b9f1-28503a9b8dbd
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND28
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b1c7763e-6b50-476d-8a77-0d584266ba74
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2290c2e2-4c0d-4abe-818a-9387b2c0dc1f
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA17
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32114a84-fea0-47c0-b7b6-54ae08d08767
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1bb1dbb-e692-4502-978e-9dcb780c2582
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET05
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ed497220-9ac6-43ee-85af-c79e756773b1
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ee801d73-5006-49ae-a7d2-5adf14606ec2
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ14
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 349cbd4c-a5c5-4058-a0c3-114e8ed289dd
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 944059cd-b5b3-4fb1-b52a-63b097936e41
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN31
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7f48a3af-56cc-4d6d-8b11-dfe7fef1a2fe
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 58da875f-e43a-4833-bca5-573861b4f5ed
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN08
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a43f967a-ea84-42a8-8e21-40e9262e3854
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cb85f180-1d50-49af-9b0a-8c4ec75833ad
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK22
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1cc9ef14-8e63-45a8-a578-d7f627572488
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a83de816-9b04-4694-be4b-cfc914bc8143
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(2)
+        description: Cost of living allowance level
+        name: ORZST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 25ea8371-a4fc-4b71-8ec4-de53eed9be26
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eeba90a1-b122-4f1d-9aa3-6b53d2b23ce4
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA29
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aaa0b926-90e8-4cb3-9580-695ce789b770
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c3fa8fb3-ef70-4cb5-931b-7b7b97ea4d46
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(2)
+        description: Comparison pay scale type
+        name: VGLTA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a35b0300-2256-4b07-a48f-1392106c9355
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 12d6c1a4-5b64-4957-86b9-239e10c3b0db
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Historical record flag
+        name: HISTO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4b9fad8e-d6db-4e70-b808-e47f78d6f2f3
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 701aba20-77c0-4cc0-b40e-5c60a2c7bc43
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA04
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0eae9564-bce9-4687-abae-ad46ac3e29a5
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 49451fd9-aa7b-40e2-a20c-c7d5fef944e1
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ01
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 52c1a3a2-a87f-456e-8ce5-5406c1b06c7d
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 266f2795-785a-44e2-b760-dadabe3f8c42
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK37
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4f4f1bd6-b5e5-4e9d-bcce-3d32ea60af31
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6cd8fd0d-5cc7-4191-a459-fdc16548da78
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ26
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 77a6e704-d4d8-4747-add6-24dc9f65dcc0
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd65b4a9-ca0e-4e19-aee2-711918f88b32
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET17
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4b0d2902-1e79-4604-89ec-3769a308f056
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ad8044dd-f5ad-4a3e-8091-7a7c3e667ac3
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND14
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 287552c4-ff12-4aa1-8702-8bc009063424
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5d409c7b-bd39-4ae1-ac35-0b30a79c78d9
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND31
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9a5882e7-e090-4943-8104-e50b0d82527f
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: faa1d9aa-703f-466e-9593-9324f7599076
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA16
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c66a57db-ee50-48af-b431-45e5ebe91021
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6fd6e1b4-6b35-4b0c-8747-134762be572e
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET04
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a2a8d813-7531-440f-aa82-4795e99382d8
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c203dabb-0751-4473-82ba-e787d51a81bd
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ13
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b640e49a-3914-4d72-b683-1cb686bd9c8b
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2ed2665f-18c8-461e-9195-fa0497699b8e
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN30
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7cfe952d-bc44-42d8-8b73-03c91333521a
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d3d3495c-f766-4e4c-8906-ac6bee96ed79
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND18
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 585f7fb0-ef7f-4a5a-9e10-14c664aa3d6f
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cec367e7-bba9-4b38-a83d-f13edc3f3552
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN07
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c1d36778-61b7-4508-856d-82b68aa2cedf
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bdc6a707-0337-412c-b1ef-198c29dfca04
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK21
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0b8ea2ca-86e0-4cda-b5ae-8924e348decc
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 622edaeb-8838-439c-9a5c-0172b41efb5d
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(5)
+        description: Currency key for annual salary
+        name: ANCUR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5aa79756-3861-4122-8c41-0fd5631744f9
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c84120b7-95fc-4be0-b0d3-a3a7bb8166d6
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA28
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4d74d776-8ff1-40d2-b2f5-b24c6d2b48df
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 787a3164-0053-4a21-b301-780e754e6ffc
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET16
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8102690b-fb7c-493f-b938-ef52743dca65
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: edb3a12b-0c23-4633-a9fe-b544e2772f8a
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA03
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 00248c8f-667f-427a-b41f-c0d9125c0c9f
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4a22757a-4e46-4d4e-9a63-699cc69db33b
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND38
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d5358f7b-ac9b-4e41-91b5-65d1a1aafc73
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7fc12392-ceb9-4523-96aa-44d9d793233c
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK36
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6863b09a-6b89-4c6c-9557-a9c6393ea48c
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d0241b46-2338-4de1-8ef8-773ce0bbe4d4
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN19
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 642cb53b-9c4c-4c61-afc9-226520bb836f
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dc07b80d-1ced-4356-b369-88c99cf9ff99
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA15
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9010b32d-c23c-4524-9676-ae96f5d5d028
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: daece93a-7be2-4fca-9679-553b7b7d3bb7
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET03
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f57cb2c6-cdbb-4266-8f1a-26be85a6013e
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5267acfc-4a2c-476f-8eb3-52ba236813b8
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ12
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2928c222-6c15-4260-be6a-10139679362b
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4bc05368-9b73-42f9-a788-715b1bc380d0
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND04
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3485a521-afab-4314-bc09-ac44c39fcafe
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 560beb13-3b68-4a0f-945f-96896125df00
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN06
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c5127d36-d68c-4891-9978-534daacb8951
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a3b52fb-d454-4faa-ad34-42d9b7ad6626
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Reserved field/unused field
+        name: FLAG3
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 173c6e9b-66f9-423e-8d87-d780fc48a5a4
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 393fadda-2c7a-49c4-bb73-96839552f657
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA27
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 804192f2-86ef-456b-b594-73b91455e484
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5163b45c-8e37-4e62-8bb9-61e17680cb8d
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET15
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 92ac0a92-f194-4de8-b719-fb733424e3dd
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 27be9ff9-20ad-41ec-b1f7-e689a358f5fa
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA02
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ecd75df0-75e2-4adc-b1da-794f36b28d7c
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3bd56579-fd34-4630-9a4d-0ff6cd95acf8
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND24
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: caa8f146-33ca-4949-879b-1d1c26cdb5ce
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0bd46972-e7a2-4567-b37e-1c6e77ce3352
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(8)
+        description: Comparison pay scale group
+        name: VGLGR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ebbd6420-d034-4705-8624-7544428bb695
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6f2b7f0e-9607-4a90-8ffc-cffad0d7dd70
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK35
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b50ca19d-1416-4284-91bc-06fb14b99ad9
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6616dc33-d4c5-4d9b-a357-4f22194e953d
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(2)
+        description: Pay scale area
+        name: TRFGB
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3ddbd60f-a72b-4fde-b0bc-d92273265054
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bf01617f-65c0-4609-8eda-24a851217b4e
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ39
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6d2abed6-7737-4d85-8501-e4f52d6fc187
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 040ee708-1fa9-4e8c-84f1-8e03d8ce6777
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(2)
+        description: Reason for changing master data
+        name: PREAS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 53cdda0c-2bc7-4586-a186-3b62387a38df
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f0499ca1-7fa2-421d-bc86-5bbfb9e10616
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA14
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b581c0ad-8d0f-4449-95dd-0ab106a11664
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b905bbc0-0b70-4e54-b75d-11ca7323ed4d
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET02
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c44f0cf3-6ed3-437f-ab9b-14204bab7749
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf3bbef3-629e-4e10-adeb-ec414e376f4c
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ11
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d26001ad-677a-4e73-a5a0-67b7433d7157
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 49252c6d-dfeb-4923-967e-264198e38b4c
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET40
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b9bd987d-6878-4335-9449-c941e85bdc14
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 94a39e01-811d-45a4-88be-a7cee2e2bd0a
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN05
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 80707702-cbcf-46da-ada6-ae6540e1fc44
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6fa6e0dd-e64c-4299-8395-ac00de8f06c9
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND10
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4bb2ca63-cb20-480f-afdc-8a56fb1ca537
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa291d5f-c94c-40c0-a263-0962a32646e1
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET14
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 045beaaf-fbe5-4119-a204-9ef7052f6423
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32ccab4c-ad9a-49fd-86e8-743d57676386
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA01
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 00653e80-983d-4a54-8507-799e5a3b60cc
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 53991388-e7b2-4845-973d-47b76e757946
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK34
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1398d381-615d-461e-9715-57e8f88d070f
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a197e4c7-6ee8-4636-8af1-1978c606b273
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET29
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1cd9a933-c685-49ac-a16b-1c80b89ade76
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 19e36ef5-3443-4aaa-9a17-128153a4342b
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ38
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ab8068c1-c038-47e6-9bdb-4ee06e3bf72e
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 86fb59ab-acbd-4c55-8527-e198db6e8aad
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA13
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b888656f-26ed-45b1-bb57-219c71993424
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 52c308a7-5362-4f52-90f8-4d689bc1a4f4
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND17
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 385eeea5-8653-4c85-a054-58c81e10cc07
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7e0ab90d-b988-49b5-bfdd-bbd4d2908c88
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET01
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1b38fa3b-74cd-48e1-b3d9-66917f713e0a
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 67cf9e4d-2aa6-40ed-bc9d-9b0c5645cbd3
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND34
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2e8eadf0-003e-456f-a36c-654ab98d2ec6
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 29d8c979-97d8-4152-abbc-fff6fe53140d
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ10
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5b3b190c-85e7-40eb-8c28-c2ff6ad1759a
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0ca01558-0cb2-4b0c-84ad-eaa7c7d14ffc
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(8)
+        description: Date of next increase
+        name: STVOR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f30c1868-e60c-439f-a7dc-f49bb0b6edf8
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0917c9ba-a203-4bf7-80e3-f6caeaadf872
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN04
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: de98aa38-47b2-4207-beef-a6e621aefa25
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0f1964f2-cc07-493e-aa61-09021dbce986
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ25
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ae1a596b-6379-4c76-bfd3-95c246018a15
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e607d8a6-fdc3-4ccd-9d8d-8aa01e773640
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET13
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f00e71ef-aab8-4aa3-8737-39c6f4fc6939
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ad1cb0ba-3acd-4ee9-a26e-657d4f940810
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK33
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 83207fc5-a2d5-42e3-8a2d-7be92a6964d1
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ab3f5e6-c78f-4aff-a97f-f2779df6f7e6
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET28
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 20d9d843-a66b-497d-8585-ca9dc17f6988
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 820dbfff-8c86-4cfe-9d1d-c17220e5b0ab
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ37
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 826f40e6-93f9-42be-8367-203e4d21446a
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8dd35901-743b-47f9-bd7e-eb19b01a70ee
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(10)
+        description: Case group catalog
+        name: FALGK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 301753e5-d958-484f-b3da-e41e6c2aa66b
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c99d46f6-f7bb-4f4b-bf8a-297a77e315b5
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA12
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 26c05423-7502-4b75-a192-d1dd8dde95d0
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4dee9d3-be14-48ec-8100-7ec9cd10095e
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND20
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 35039c13-76f5-4e20-8f03-2385252f8e11
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c79a109a-758c-4571-8a10-aa51311e2eb6
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK20
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 42991003-8452-40a0-9952-466493ce4582
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6c5a3f4a-bbb8-4876-b246-717a31f0cb64
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND07
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4ad7acab-8806-44fd-a7b2-c25c4196a083
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c7c43a71-0422-4427-9c08-661e30d9f01f
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN03
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5429b38e-131e-42f7-8b5d-3862ee62697b
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 19471294-e579-4f20-b060-826b26254f71
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ24
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1a2f57cb-b46a-4abf-a2f4-1b14ef0fc9a3
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6035f60f-f06f-4cd8-b4d5-cbb3b7cfc84d
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Text exists for infotype
+        name: ITXEX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9a3864e3-4b3c-43af-94a3-e3a9947905df
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9a5716a-309c-415a-b98e-ed10af9957a7
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET12
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 434bcff6-fb05-423e-99ce-e813583874da
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 74605036-98e2-4312-b1ec-202eb32a9191
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN18
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c7341543-a604-4888-bf1f-3627be3145dd
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 44b36875-3035-40a1-bf96-cbcb466dc592
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK32
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8b4209ca-49ce-4e71-b773-d139d413828c
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8f485172-56a4-49fe-b6e3-187f05f91ef3
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND27
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 57d5f51a-6188-40e7-a18b-2b1453c1c969
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 87bfe75b-eeba-45c4-8479-780fbab2b817
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(5,2)
+        description: Capacity utilization level
+        name: BSGRD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: be34d4d0-de5e-435a-bf2f-c23b541240d4
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6f85adb6-1a3d-43c2-9348-11cc254e3da0
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA39
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 17f1bd52-43c8-4b7e-9860-61c79bd582ea
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 54d270f7-ea33-4b91-9771-5b9f789780b2
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET27
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 24a55441-8707-42c2-93a6-feea87b7b4e3
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 145a1c31-9a9c-41d1-8e3d-c35802caff5c
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK09
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2364afd2-975a-4b60-96ac-b2cd7c02aa37
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4e900c4-e276-4a33-b7a2-671dacdde5df
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ36
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 60c2f259-23d4-48c4-9d29-fc67e44a16c9
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: feabd187-e43b-4a23-958a-4fa57575dba8
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA11
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5ae5455f-8db2-4a77-b20c-799b41da6d0f
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 94d1fadf-2d6e-4fd1-83cd-08997ae0e607
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET39
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bb98e8a1-30a7-4ba0-bb7a-ffe601f99851
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bb22b6f3-d759-4bb0-84b8-915ff9f89ea4
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN02
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b4fa4f91-865c-4148-990f-cc1937b79bff
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d743b4b4-a372-4364-8b51-526af26aa90a
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA26
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 234e1851-ca91-400b-8b32-74e588a604a1
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1238f9c9-6d67-444f-811d-98ab174f347c
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ23
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 950aafe2-4888-41c0-843d-63af90664f0f
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b0a2d0e0-4a38-4190-81bf-669c93e4dfa1
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN40
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 716f48ae-dbe9-421d-8eec-b5346c177a8d
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 18f20266-3574-4166-b581-18d805d18e6a
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN17
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 810f50da-460b-46cd-a66a-6e898b037930
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 65634205-93d6-47cb-a1fb-5bc252842be3
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK31
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 07453b98-3c0d-456d-b00a-6b261a53ed0c
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b65e15a9-5214-4da6-8280-d98bc3d9396f
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND30
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d231a06b-d82a-45f0-b362-6c8ddf8ccd68
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cd87ed70-1b29-41d4-8df8-cda2b2f13d7b
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND13
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ebca25a1-8feb-4889-bf7f-05b07176cb19
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 16857d35-c292-4fb9-9543-9409e0b2410b
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA38
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4021957a-308a-4068-9d8c-6f09e3c0d4d2
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6c808c99-d8c9-4b46-a301-b2ed8e7ffa89
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK08
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2fe3bbc7-0a87-4d31-b2b5-9d63539b652f
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4241638b-b033-4b5f-9cf4-bb939220d310
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET26
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dd0ff9fc-f330-4b93-ac44-ffd61704ff3b
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1f81c409-27c3-4714-a723-8e88a3749a35
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ35
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bb625b15-01ef-46cc-b7ae-86f434c1af4e
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 79321eba-11e3-45cf-82f5-f4a685e9ee12
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA10
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 694db264-10ac-47c7-8735-fd9bff6592cf
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d311b3fa-e8ef-4169-9c08-de1f309e6895
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN29
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 62a7c075-7010-4b9a-9402-899a1883df49
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 67cb1b46-53dd-46b0-88d0-0c89723f7061
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND37
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f45fe40e-8ba9-4018-945a-33d16242da0f
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f3704c81-492a-49db-a547-0952c81bd04b
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET38
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1daf84e8-4988-44a5-a940-b94627614676
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 326db857-4c02-4999-8f2a-d6d9f5bc6ee2
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA25
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 09cfd77c-4fe4-45b1-ab02-58d1bafeb5da
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2db92a4a-f44f-4551-bb97-879282021671
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ22
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 64a1104a-960f-4f76-b587-20aa0e2529e0
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 34b6f1d7-1360-4796-8279-a058dd1f9e86
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(12)
+        description: Name of person who changed object
+        name: UNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 49669dc2-d6cd-40a8-8fb8-93cd2d94e5f4
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 927a03b9-453b-4cca-a676-95a5169795f5
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN16
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a5088c57-03ef-4744-b5ec-21c2279a7eba
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6cc5788a-b2a1-4074-bf15-415f97cab840
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK30
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 48ae4a70-2543-4076-bf0a-150c79f3cfd2
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a8584d8f-58a8-4424-b8a6-13fba965eaa3
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA37
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f0b4405f-b23a-4f60-bf65-c8a2a5f52c01
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5df5b375-47fc-48a9-bc11-a6670e2ec9f4
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK07
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5b30f081-5c8d-41f5-b6fb-958011861845
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cc15b5f1-4a69-4028-9f91-333217f455a8
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(5,2)
+        description: Working hours per payroll period
+        name: DIVGV
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 830c8f1e-a4be-496c-8598-be4f3b2405a4
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ea179ec6-91aa-4f2f-ac9b-6442919f2db1
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(2)
+        description: Reserved field/unused field of length 2
+        name: RESE2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0abc2666-d104-43d7-b40c-267b885498f6
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f8038f83-04bb-46b9-8c95-fd8a6ae81209
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET25
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d456f722-d7f6-43c4-abfb-dcfee330bfc5
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3bcf91bd-71fc-404b-93dc-2b038fc33c7a
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ34
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 234bc799-8015-4d15-a927-f63c56bb84ef
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32b01afd-ef16-49f7-9113-f7cf507454d2
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND03
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 88945ccb-dd57-4c19-a19e-facc51117ebf
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b32fad66-8003-4c74-8be5-e0c41fedc699
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN28
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 414c02ec-3288-4901-80e4-f23ba67ebeeb
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d8bfd23-92ab-4087-9705-a5a47884f4dc
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Reserved field/unused field
+        name: FLAG2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7140d677-0389-4367-a0b0-babb558f2077
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b592b9b7-4bf4-46bb-9edd-21b34becf6d1
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND23
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4e470958-3d2f-4111-b411-cd2f4ae40edb
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: caf014d9-bd4e-4a25-864f-acca8c389533
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND40
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0c6cea16-7f2f-4cfb-aa66-380cdf013cce
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 009bf531-7c0f-49c8-8ff4-55a2b3a6d598
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA24
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5e3b4068-66eb-4b14-b032-8c78cef45454
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f8312fee-d59f-4c56-bbc5-a2ebb791f75d
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET37
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 26755de6-55c1-45b1-837a-d726c479b6f5
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ac1eb4d-0822-45f6-8b4b-27a46ec1887a
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK19
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9992dbdd-e2ba-4e34-ba5f-7bd4674232df
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1255d283-6db5-451f-b93a-09fb71c3d7b4
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ21
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b0a77e28-95fa-412e-a844-3557f78068b1
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f250666d-9605-4bcd-9c17-64b073a033b1
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(8)
+        description: Changed on
+        name: AEDTM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 61e890fd-16f2-4a9d-83eb-6a67770edd59
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a23b3dd2-d685-4bfe-8a59-b6aa72fc3c32
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN15
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ace7cebd-5435-467c-9bb3-675fdc8750fa
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba881055-ad57-4995-b045-a3cb0c750f26
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA36
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: baf89c21-3c3c-4171-9e4e-726fe21d46b2
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9b3675ea-de8a-472c-9216-43081592d28b
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK06
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b671ac38-22ef-4f43-a57a-4181d3bdb53e
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 554a271f-4985-447a-989a-f718cb0bfb38
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET24
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ac993a28-0a31-4f41-8ef8-0babff6eb246
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9642c409-fe5f-48f7-a69e-47e04d30b273
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ33
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d5db72bb-ccfb-4571-9c51-a63a0274b0ed
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d1b03bc-da0f-45a4-abbd-1a37b4ec0a58
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN27
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7144e0f5-df7d-4710-8226-c4bbafdb3256
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: df920115-a21e-4be4-b872-9531e70bf324
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET36
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 386d3f05-eecb-4617-b7ba-24d25bcfc334
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 758f8ba0-2121-4c24-b8da-152cc28a0220
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA23
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a04648a7-9719-4d8e-aa2a-1679c0ca3012
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8d504b0f-548a-4cc7-8ac8-7eb844398410
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET11
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 38a49654-2892-4c3d-81c9-5b869fe2d861
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d2d7b872-c0a9-41c2-97a8-599aa17d37d8
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK18
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6f16d99b-781d-4567-9b6e-3a6f67e7be96
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2ea2c0fd-4bd8-4b8f-9d1f-10ab7497aa83
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ20
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 348c014d-7d6f-4753-acb2-136559d11332
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dafce06d-5de7-43c7-9540-9248ba99c323
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN14
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 11241fb3-b920-434d-a80b-1596562fc9bb
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b25eaebc-04ff-45db-a6e6-93fdedea7fdf
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND16
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e50ab142-1194-47dd-be23-d905ac315caf
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 845a87ba-a36a-4288-be34-901f90f09523
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA35
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b12fcdde-8aa9-4118-b2f5-ccff7592e8eb
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0f47b1ea-9cc8-4c6d-8ccd-86ccc1df749c
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(2)
+        description: Partnership
+        name: PARTN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dbd6809c-ea00-4d9f-8375-92a67e6211b0
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fbe284c7-ccb8-4f63-9bf4-1fa05fcae082
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET23
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2bd2c8c6-8536-4d94-a116-49a4ce399f8a
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8005544c-c263-4b65-9039-06067327cbb5
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ32
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 68bba346-64d4-4e00-ab28-2e5969881381
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 02701123-8c53-44e3-9b7a-59df34b3f099
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND33
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1d0dba45-e409-436e-991c-5af5a23eab5e
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 528336da-720f-4a14-9c22-2b76d1681bd7
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK05
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f23001d6-668c-45c0-97a4-457153154074
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 56424c08-5392-476f-8046-58bf53134d60
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ09
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c1012ab5-e0d5-47c2-8c16-cebabaa3694c
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ef3cd2c6-86a2-4483-94ad-44f12d434a1a
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN26
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c98f7b17-6696-4276-a874-b3f3a8d90867
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 56a844b2-dac7-4880-adbd-8e105b485d36
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN01
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b008491b-849d-474b-bbd0-e376367bafe5
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3cae7cdc-35ed-4547-a1b5-564c49886211
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK17
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bb530637-4b67-4afe-9bd9-f4c250ed158c
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 26d3e74b-c1b6-4dee-a920-51e9707ee8d6
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET35
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 13896d7f-8893-413f-9654-dd4dbea2b2dc
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a9d7c7d-83d4-4bfb-be18-4e9bebcc49d1
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Grouping value for personnel assignments
+        name: GRPVL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: db7b885d-4a51-4307-8843-3ca86a1526c9
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8724df0b-9ab0-499e-9896-4dd9796c3c59
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET10
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a335bf53-89d3-4458-a3cd-dcfbac09fc59
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 627c49a2-99d6-420e-944b-18c3bcb1b791
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA22
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f90944b1-4889-4fd4-b7b0-9601291276cf
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 453ccb75-1ee8-419e-939b-0c1f6786fddd
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: General flag
+        name: FLAGA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b02b7dc2-8f99-470d-80d9-bd06a011e26e
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 14649574-8ca6-43f7-8db5-42ce59f1c463
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN13
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0a770127-19fc-46f3-9bd9-48c23e2e161d
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5986d471-eaee-4f16-b2df-05a7bc4f9697
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND02
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5c2737b8-2f63-41dc-867a-f378b8a276cf
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f832dfdd-0470-4426-9620-41244d323a73
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA34
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ec033c90-8aaa-4392-8928-c5e2932abc70
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 119368e3-3740-4b8d-9eb6-5c80c1ef2b79
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET22
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1db87abe-92a1-49fe-aad2-d427ec20c5d1
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 29775976-2208-4a36-ae38-9bf741166ce8
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK04
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f9f8ae67-ed67-4b66-a87a-e565d7319fd6
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 002c062c-0860-4df7-9298-ec4b563827a3
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ31
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b46983e4-72af-4a90-906c-c28d19b176e8
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9b497248-ecd2-402d-828b-dc00b8804726
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(2)
+        description: Pay scale level
+        name: TRFST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 325ee650-8d96-4aa9-a3a0-5930efdfaae4
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5c4162fc-9558-4e5e-a767-28afd1c570e6
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND06
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 985f228b-f3e8-4b9e-8d2b-5795eed7c29e
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dac803e6-bc95-403d-bdd9-1c0ae09aae9f
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ08
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7235b144-4e51-40ba-ad5e-c5782fa6b23e
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 904ffdde-2f9c-49e3-a5be-ad7cc6a418be
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(2)
+        description: Pay scale type
+        name: TRFAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e6685f2a-5f1e-4caf-8148-1987ec63e09a
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6ac4a87e-5260-4d17-b635-091b5292550a
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN25
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 748de6fb-e84c-4f2a-ae9e-c469fa439d4e
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 98562f12-92bf-4098-897d-3e542b07a523
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK16
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 772c43f9-901d-4cb0-b9ba-994570dee537
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 54881f44-2f62-45f1-aaf1-bbbce465a15c
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA21
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cc649e0c-9cb5-4614-9f31-c8131fdb0d22
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9b657f37-8110-4f6c-bf35-1bead3ed9e9a
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND26
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4f9d9606-cd1e-4afd-9c81-3fc97b3b6f19
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5af518ad-bf4f-4fd5-85ac-367c5d5e0a8e
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN12
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: df2a35d3-94ec-4951-a39a-dfbdaba961dd
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dba7ed84-04e5-4b75-a4da-320df440af84
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA33
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bd406582-1683-4575-8b1c-a4f3a99dbe1a
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: df6bdaea-c8b0-4929-b3f0-cb3b397f9f18
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK03
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 58ad1276-d3ac-4cbe-b63f-893879c3fb96
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5f01e30a-9ffa-4b05-9a36-47eaf742e1fb
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET21
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e1238de9-229e-4c81-a50e-438affda0f5e
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 990a9ed5-e3f1-4a7e-b619-54d9862f432f
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ07
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 36e9bc98-efd4-45c7-a8be-627e4426834d
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 556f8417-a29b-4378-b5cd-2069086c29c9
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK15
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a0afe43d-f55f-4fe0-93a9-8855be96ff8b
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0e81755c-f356-49fa-9829-e8c362a1bbb6
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA20
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ef3c8147-a152-4eff-811e-a60c904b6dc9
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f468b47b-a29d-420d-b41f-eb39b68051ca
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND12
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 36c51836-485d-4752-8a47-8477795e8692
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 47fd5021-79c5-4433-8e21-47f0b2024ac1
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN39
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 60cd74d7-24dd-4baa-b7bc-92a14980f558
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1a717de-307d-4ddd-a4e6-e7175667efa4
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN11
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ed060622-5532-46f9-a81d-0ccbbe5bb137
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 26874cbd-45d8-4378-ad42-c5e84d16e4d3
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(2)
+        description: Comparison pay scale area
+        name: VGLGB
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 37874f85-3861-451c-9fd7-54658aed66da
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 571a5e5f-e909-472d-80b2-79a9e6e5ede2
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK02
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a82b6f26-8292-49be-b22e-1a23199998f9
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 790d20ca-942c-48e2-9802-bcbb1904900c
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET20
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 131be58d-8918-44ff-a19d-337240930da1
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 86256464-d0c7-4246-9288-c73a37e8a66d
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK40
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d6aefbcf-7c06-4de6-a671-1c39b665e95b
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ccbd3491-2c99-4665-b274-4d0999d5910b
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA09
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e040ca8e-1301-4d5f-830e-78b5b3f2532a
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ea97f43-b4f9-4e9d-89e5-a755736f3e23
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND36
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d9a6c1e4-eb3a-4b35-8d0b-fb040b25c2d9
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f28adc0a-68e7-42d2-a0fe-197d85c65322
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ06
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ee8d463a-5c99-46c4-96ea-97622e2d624c
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92162e4c-d4d1-481e-95a8-d5b8d296306b
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(256)
+        description: Pay scale group
+        name: TRFGR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3f519947-3337-47f2-bfa0-7aaee9d35995
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a9dc3457-4bb4-4e8e-b1e5-ed2df837d44c
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN38
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b8be9ced-9f28-42ca-a684-ab966b449e26
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 34bba85a-221a-495d-afb6-049d4a26b5a2
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET09
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6680fe63-7eae-4038-9122-bb33434e43f1
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 40d8f11f-ab83-41f1-a16f-8240e7335933
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK29
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e68ef26e-109c-460e-9348-94180b13e346
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec8d573b-488f-4ef2-be94-ca61add50737
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(2)
+        description: Reserved field/unused field of length 2
+        name: RESE1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 774e5e85-5cb9-496b-b0fd-988e102748c9
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 928653a5-8fc4-4b6d-bd05-7be5f3f60dc7
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN10
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 20cc369d-b66b-413f-9359-2a5cecc877d4
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a3a5573f-9735-49b0-b3ba-e7d61ec1d66b
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Reserved field/unused field
+        name: FLAG1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dca92d3e-aa15-4921-8ed7-2347bd92ffb3
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3bcab1ac-de63-41e9-9a67-07b3e72eb186
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK01
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 80d75e85-119b-4a88-a4a0-1417268ffa11
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d658308-090b-42eb-97b1-55d49278025e
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(2)
+        description: Infotype screen control
+        name: ITBLD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d955b0cd-9bd6-4584-808e-c28515210924
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 22d179ad-f195-43de-8566-8c5fbae7e35a
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA08
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 30c2a4ee-fe57-48c8-aa70-023b9fc6e5e8
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 808e8511-4be6-4dae-9008-8efea28af411
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND22
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 17cbdf80-3e3f-4d6e-80ca-ba36e5527aca
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 407f8718-d9c3-4d1f-892e-d4fb49e09344
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ05
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c74fdb42-6a1d-46a1-9550-804f13df4598
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 11a2f912-0ab8-4fdf-8235-549d84449f96
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET34
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0d6a8022-2661-4ea3-816e-923ccfb6d185
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7c1fca1e-291f-449e-970f-f42e71c93f0a
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND09
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 64ed031d-e5fd-4dbf-9e9f-a79307c971dd
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fdf3aca4-14cc-4828-9788-d4f5acb534ef
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN37
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f425bf40-001a-48eb-856e-db487adae000
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7c3670e4-038b-420c-9613-fb1ab50686dd
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET08
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 25116650-0800-4bd8-a40b-0e2c1c93f40f
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3a95ecc-1358-4cfa-a6f6-34dfce420c53
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND29
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 14b5ade4-fb37-4540-8155-54f13b6fb2b3
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5a48f305-7fd0-4ec6-9203-08617dcbe2d8
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Operation indicator for wage types
+        name: OPK28
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0dc387f8-74cf-4b42-9f88-2d6d8aaaada7
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c8642dd9-2853-42fd-873e-0a000f33420b
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ30
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1edce149-b60c-4cb3-842f-3afcb889fe52
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f92ccda7-04c1-4a9f-b502-f244417982e0
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN24
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2ce52de4-ad27-4775-9c8a-3537f0b616ea
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d3b5433b-33f7-4286-9527-20839ec1333b
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA07
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 01ff26de-a2cd-4cb4-9cbb-b93867ccf067
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0ef69afa-7cdb-4fbe-adb0-9ea7c6ab4ce5
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ04
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0a89c190-3ba9-4def-ab5f-a8cfe3f150db
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 41fb0052-a939-43f5-91ea-1136ba7b1b81
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET33
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e4f2c0c7-474f-4030-a1ee-07e21741d915
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4623425a-1f22-4078-8abb-77ee97769b82
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Number/unit
+        name: ANZ19
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 97a643f5-8e12-4b57-ac24-7bc09e587580
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b58534c2-664b-4fe9-bd18-66c0c7c816c8
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(3)
+        description: Time/measurement unit
+        name: EIN36
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f800d371-258b-454f-b857-e0cfa79585b8
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0a9ddec1-9175-47fc-b341-540a3eef46ed
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(6)
+        description: Case group
+        name: FALGR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 59f1b2f2-b77e-4e21-8508-368fe5de524a
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d114d9da-038c-4db3-84c2-bc96c4ddd206
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Wage type amount for payments
+        name: BET07
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 18773fcc-4ba6-473f-a867-e7dbbfa1de31
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0ffb98d8-7733-4fdd-a4a6-9e8f6e0467a6
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND32
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a05f0ced-9f9d-49bd-98d2-a19394164086
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 076b7793-1f50-4679-83fc-f12ec6c552a2
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator for indirect valuation
+        name: IND15
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ce2d265a-073e-4118-8c43-0f988ede4612
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f257bd59-7007-432d-bb5a-2c5c6153349f
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Planned compensation type
+        name: CPIND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a7bd0069-7195-45e7-bda0-1d472acbb801
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 18dc3ffe-9133-4860-8ebf-fb7bed1b4dfc
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Wage type
+        name: LGA32
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5148b980-8c46-454b-9c13-2216838262f6
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a08ee44-6407-4267-8089-e769291459f9
+          stepCounter: 3c697990-38d0-4077-97ca-27a719bdce94
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a94daede-9dc5-4982-b501-548ea0d18781
+                stepCounter: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          PA0008: 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_SRC
+            nodeName: PA0008
+        join:
+          joinCondition: |
+
+
+            FROM{{ ref('SAP_SRC', 'PA0008') }} "PA0008"
+              WHERE "PA0008"."_FIVETRAN_SYNCED" > 
+              (SELECT COALESCE(MAX("_FIVETRAN_SYNCED"), '1900-01-01') 
+                        FROM {{ ref_no_link('SAP_TRG', 'STG_SAP__PA0008') }} )
+        name: STG_SAP__PA0008_TMP
+        noLinkRefs:
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__PA0008
+  name: STG_SAP__PA0008_TMP
+  overrideSQL: false
+  schema: ""
+  sqlType: IDL:::230
+  type: sql
+  version: 1
+type: Node

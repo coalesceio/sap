@@ -1,0 +1,607 @@
+fileVersion: 1
+id: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+name: DIM_SAP__0EMPLOYEE_ATTR
+operation:
+  config:
+    groupByAll: false
+    insertStrategy: UNION ALL
+    orderby: false
+    orderbycolumn:
+      items:
+        - {}
+    postSQL: ""
+    preSQL: ""
+    selectDistinct: false
+    testsEnabled: true
+    truncateBefore: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAP_TRG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 50768683-d206-4453-b94a-f1238872af68
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        isSurrogateKey: true
+        name: DIM_INT_SAP__0EMPLOYEE_DATE_CHANGES_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6540dd98-f7fa-4c2a-8b7a-d401e2d7f0c4
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_VERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 539bb0fa-e6e1-47f4-98af-a2f929d9a941
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_CURRENT_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 34bf8725-12cd-40f0-91fd-ffe9fd184afb
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_START_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7e8b2312-ffa0-4075-a5eb-21c868c3eb44
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_END_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 66ea05e6-95b0-47bc-ac09-c2780374493c
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 79e2109f-b051-4492-af32-91cb9b8e5937
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f7fb01c-f9e4-40f9-b5c4-69895dd3c6e2
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: Vaild from date
+        isBusinessKey: true
+        name: BEGDA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c942b46a-39a3-4cc3-8450-594420a079bc
+                stepCounter: 34a46187-d222-4361-a626-48f8211e4383
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a230c1e-9cb2-4230-b831-593fdb520731
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: Valid to date
+        isBusinessKey: true
+        name: ENDDA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 69e81ed9-0bc3-46f1-8ecc-b9eb1a66298a
+                stepCounter: 34a46187-d222-4361-a626-48f8211e4383
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 649c5413-aa5e-4577-a281-e8c290e8fe77
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(8)
+        description: Personnel number
+        isBusinessKey: true
+        name: PERNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b7e7a7b8-d2ec-4bd9-a39e-d455b643e847
+                stepCounter: 93cd56e2-f441-4049-a95c-72977730810f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 24066aec-8133-4fc0-a55c-864a68986203
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(8)
+        description: Reference personnel number
+        name: RFPNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7f2bbad5-0fe3-477b-8f24-c298e7e87188
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+              - columnCounter: 8413bf3e-e9ff-4a2a-a29f-1b0be9fac13f
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+              - columnCounter: 9e5af15a-fd5d-4ec5-9a2a-692e8665d12d
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+              - columnCounter: 80596ef4-0f85-4bd5-91b1-5556457fb533
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+              - columnCounter: e7ad9f3e-0d9b-4217-ad7a-dffdd3646c87
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+              - columnCounter: c4b67098-766c-4c51-bcc4-f685c38cbf96
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+              - columnCounter: 2d2659d8-7985-49a2-9f1b-2cbe4f8c1162
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+              - columnCounter: f57d3e5f-3a34-4797-b5a9-d45aa2dde420
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+              - columnCounter: 0ac370b1-13fe-4b63-8117-53d2e85839e2
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+              - columnCounter: 1842ce86-a496-4b45-a272-a5caf6fd6eb6
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+              - columnCounter: 4053eb0c-2192-4247-bd84-3bff096ecbe2
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+              - columnCounter: c115de74-4cb7-4748-a3b0-0868fbb5a799
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+              - columnCounter: 60c62095-1e25-42f2-bb88-39529a9a20fd
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+              - columnCounter: 053dbc58-d21b-46ca-8e13-65017866b67f
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+              - columnCounter: edd10661-7f00-4487-b2d1-158ddf583c2a
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+              - columnCounter: f4e950da-a6ff-429d-97f9-8313c3dacdd5
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+              - columnCounter: 07f167dc-6b35-42eb-880a-a9c0c64553f8
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+              - columnCounter: 78a5160a-5773-426c-a8f5-42711f2e6835
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+              - columnCounter: 69994863-0bda-4faf-a0e8-ff853b118ef0
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+              - columnCounter: 41394a5e-06e4-4dd7-9707-dd08cefed6f1
+                stepCounter: 87881e96-3331-4a95-974b-25c66dbfeb79
+            transform: |2-
+               coalesce("STG_SAP__PA0031".RFP01, "STG_SAP__PA0031".RFP02, "STG_SAP__PA0031".RFP03, "STG_SAP__PA0031".RFP04, "STG_SAP__PA0031".RFP05,
+                      "STG_SAP__PA0031".RFP06, "STG_SAP__PA0031".RFP07, "STG_SAP__PA0031".RFP08, "STG_SAP__PA0031".RFP09, "STG_SAP__PA0031".RFP10,
+                      "STG_SAP__PA0031".RFP11, "STG_SAP__PA0031".RFP12, "STG_SAP__PA0031".RFP13, "STG_SAP__PA0031".RFP14, "STG_SAP__PA0031".RFP15,
+                      "STG_SAP__PA0031".RFP16, "STG_SAP__PA0031".RFP17, "STG_SAP__PA0031".RFP18, "STG_SAP__PA0031".RFP19, "STG_SAP__PA0031".RFP20)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cc107083-bf22-4f78-9203-c4d7cd07a507
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Company code
+        name: BUKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e48b8a01-0994-4462-8abc-b85d092516cb
+                stepCounter: f8804b5e-1bef-4b43-8883-07d52979df8e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dbb7f0b2-49ab-4135-94c0-a13a85afe067
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Personnel area
+        name: WERKS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f538e0dd-cef3-4f4c-99f8-9ae050dc7f93
+                stepCounter: f8804b5e-1bef-4b43-8883-07d52979df8e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2949855d-f594-44b3-94d5-947ee081eecf
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Personnel subarea
+        name: BTRTL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: af0e62db-41c2-45bd-b38f-ba88a809534e
+                stepCounter: f8804b5e-1bef-4b43-8883-07d52979df8e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d2e53b42-ccc6-45dc-bb0c-bd358ad06203
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Employee group
+        name: PERSG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aad95983-4cbf-43df-bed4-e60e2d2f11b0
+                stepCounter: f8804b5e-1bef-4b43-8883-07d52979df8e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 622c9941-e3b2-4410-ad6b-97bb6eb7f351
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(2)
+        description: Employee subgroup
+        name: PERSK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 08ba8992-6444-4c68-a5b6-2af33f0930e9
+                stepCounter: f8804b5e-1bef-4b43-8883-07d52979df8e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a9cf54f4-429a-4fbd-9ad5-b49cfda49fe1
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(8)
+        description: Organizational unit
+        name: ORGEH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0d52a9f9-304b-4425-9a69-0c87d5e178c8
+                stepCounter: f8804b5e-1bef-4b43-8883-07d52979df8e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2485978d-454b-48fe-ba60-0d592f9e3971
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(8)
+        description: Job
+        name: STELL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0a5c63b4-a450-4faf-b2bb-9d853d6e684e
+                stepCounter: f8804b5e-1bef-4b43-8883-07d52979df8e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 699c9669-dfd5-44e3-91ea-1845ae691477
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(8)
+        description: Position
+        name: PLANS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9447efb3-3ff7-4108-aa42-54b659bf1729
+                stepCounter: f8804b5e-1bef-4b43-8883-07d52979df8e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 621a3207-a330-467f-b3a0-7073b1af1174
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(4)
+        description: Controlling area of master cost center
+        name: KOKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6c67ded7-36ac-43c1-b8ed-b9ffd477d9cd
+                stepCounter: f8804b5e-1bef-4b43-8883-07d52979df8e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38ca2d4f-9212-420e-8b9c-0d1bc290719a
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(10)
+        description: Master cost center
+        name: KOSTL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5f2b8a3c-717b-4cf7-9dda-d3470d5ac9a8
+                stepCounter: f8804b5e-1bef-4b43-8883-07d52979df8e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 61d3385f-0af4-4502-a1f3-11328cc75b2c
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(256)
+        description: Payroll area
+        name: ABKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ea330f7a-c6f3-475a-8793-23a7f7847491
+                stepCounter: f8804b5e-1bef-4b43-8883-07d52979df8e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4182045f-607c-41d5-82f6-dd296f5cfef6
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(2)
+        description: Pay scale type
+        name: TRFAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7dd99433-c06d-44ea-80f3-73510d6acd12
+                stepCounter: 51331646-7d2a-4ee7-8974-8bc91aacbff8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 59a78d3f-e169-4e11-b57a-1b618b793f8f
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(2)
+        description: Pay scale area
+        name: TRFGB
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7cf15af6-6320-4f36-a3c8-b861e1de89a6
+                stepCounter: 51331646-7d2a-4ee7-8974-8bc91aacbff8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bf63dc50-5671-4717-8370-3df2f796692c
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Employee subgroup grouping for collective agreement provisions
+        name: TRFKZ
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8058b573-f739-4ed2-aad5-b41013b0e955
+                stepCounter: d7890e80-9b01-470f-a3e7-4f83fda7b18f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 36efa241-2291-4c81-b38e-c227d432825f
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(256)
+        description: Pay scale group
+        name: TRFGR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f912a157-70a6-430d-9dee-a7a6801f80e1
+                stepCounter: 51331646-7d2a-4ee7-8974-8bc91aacbff8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4a8d5ce-5a10-40db-becd-21ede992f078
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(2)
+        description: Pay scale level
+        name: TRFST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3c163353-d4aa-46f1-98a6-3ae011e58725
+                stepCounter: 51331646-7d2a-4ee7-8974-8bc91aacbff8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4c9210e9-09c6-469b-aa04-12c0473c881a
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: NUMBER(5,2)
+        description: Capacity utilization level
+        name: BSGRD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 797efb84-09cf-4f1b-a8a9-7979fe8635e7
+                stepCounter: 51331646-7d2a-4ee7-8974-8bc91aacbff8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7fc2dc74-aaf3-4b6e-b760-02af60e87697
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(5)
+        description: Currency key for annual salary
+        name: ANCUR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e18af075-adb0-4bc7-b496-825af0eeebd0
+                stepCounter: 51331646-7d2a-4ee7-8974-8bc91aacbff8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ae76b416-2e7d-4b97-bcef-1a65df104996
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: NUMBER(5,2)
+        description: Employment percentage
+        name: EMPCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3e93c9ce-e7f2-4587-8bd2-73bc3ea323bd
+                stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ef55f87-1a76-4582-bb3a-bbc60278721a
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(1)
+        description: Employment status
+        name: STAT2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 747c3813-03df-4b63-a499-b5a269cbd097
+                stepCounter: 93cd56e2-f441-4049-a95c-72977730810f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9fd4d8a7-af18-48a8-89da-0b8902166990
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(2)
+        description: Work contract
+        name: ANSVH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: be0b2a3e-308b-44c8-897b-f4dcbd72bdf9
+                stepCounter: f8804b5e-1bef-4b43-8883-07d52979df8e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5378a9b3-da21-4f1e-bb89-a160e1c31e60
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(14)
+        description: Organizational key
+        name: VDSK1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0a9267cd-1a28-450e-a040-8168e4d1170e
+                stepCounter: f8804b5e-1bef-4b43-8883-07d52979df8e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4b3406f6-d1a4-466e-ad7b-3cd45f73a493
+          stepCounter: b45b7e52-cef3-4ac1-95a9-990ad3648f94
+        config: {}
+        dataType: VARCHAR(256)
+        description: Employee's name (sortable, LASTNAME, FIRSTNAME)
+        name: SNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32418bce-5474-4243-a902-cb45e88a9514
+                stepCounter: f8804b5e-1bef-4b43-8883-07d52979df8e
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          STG_SAP__PA0000: 93cd56e2-f441-4049-a95c-72977730810f
+          STG_SAP__PA0001: f8804b5e-1bef-4b43-8883-07d52979df8e
+          STG_SAP__PA0007: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+          STG_SAP__PA0008: 51331646-7d2a-4ee7-8974-8bc91aacbff8
+          STG_SAP__PA0031: 87881e96-3331-4a95-974b-25c66dbfeb79
+          STG_SAP__T503: d7890e80-9b01-470f-a3e7-4f83fda7b18f
+          V_INT_SAP__0EMPLOYEE_DATE_CHANGES: 34a46187-d222-4361-a626-48f8211e4383
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__PA0000
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__PA0001
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__PA0007
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__PA0008
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__PA0031
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__T503
+          - locationName: SAP_TRG
+            nodeName: V_INT_SAP__0EMPLOYEE_DATE_CHANGES
+        join:
+          joinCondition: |-
+            FROM {{ ref('SAP_TRG', 'STG_SAP__PA0000') }} "STG_SAP__PA0000"
+            left join {{ ref('SAP_TRG', 'V_INT_SAP__0EMPLOYEE_DATE_CHANGES') }} "V_INT_SAP__0EMPLOYEE_DATE_CHANGES"
+                on "STG_SAP__PA0000".pernr = "V_INT_SAP__0EMPLOYEE_DATE_CHANGES".pernr
+                and "STG_SAP__PA0000".begda < "V_INT_SAP__0EMPLOYEE_DATE_CHANGES".endda
+                and "STG_SAP__PA0000".endda > "V_INT_SAP__0EMPLOYEE_DATE_CHANGES".begda
+            left join {{ ref('SAP_TRG', 'STG_SAP__PA0001') }} "STG_SAP__PA0001"
+                on "STG_SAP__PA0001".pernr = "V_INT_SAP__0EMPLOYEE_DATE_CHANGES".pernr 
+                and "STG_SAP__PA0001".begda < "V_INT_SAP__0EMPLOYEE_DATE_CHANGES".endda 
+                and "STG_SAP__PA0001".endda > "V_INT_SAP__0EMPLOYEE_DATE_CHANGES".begda 
+            left join {{ ref('SAP_TRG', 'STG_SAP__PA0007') }} "STG_SAP__PA0007"  
+                on "STG_SAP__PA0007".pernr = "V_INT_SAP__0EMPLOYEE_DATE_CHANGES".pernr
+                and "STG_SAP__PA0007".begda < "V_INT_SAP__0EMPLOYEE_DATE_CHANGES".endda 
+                and "STG_SAP__PA0007".endda > "V_INT_SAP__0EMPLOYEE_DATE_CHANGES".begda 
+            left join {{ ref('SAP_TRG', 'STG_SAP__PA0008') }} "STG_SAP__PA0008"
+                on "STG_SAP__PA0008".pernr = "V_INT_SAP__0EMPLOYEE_DATE_CHANGES".pernr
+                and "STG_SAP__PA0008".begda < "V_INT_SAP__0EMPLOYEE_DATE_CHANGES".endda
+                and "STG_SAP__PA0008".endda > "V_INT_SAP__0EMPLOYEE_DATE_CHANGES".begda 
+            left join {{ ref('SAP_TRG', 'STG_SAP__PA0031') }} "STG_SAP__PA0031"
+                on "STG_SAP__PA0031".pernr = "V_INT_SAP__0EMPLOYEE_DATE_CHANGES".pernr
+                and "STG_SAP__PA0031".begda < "V_INT_SAP__0EMPLOYEE_DATE_CHANGES".endda
+                and "STG_SAP__PA0031".endda > "V_INT_SAP__0EMPLOYEE_DATE_CHANGES".begda
+            inner join {{ ref('SAP_TRG', 'STG_SAP__T503') }} "STG_SAP__T503"
+                on "STG_SAP__PA0001".mandt = "STG_SAP__T503".mandt
+                and "STG_SAP__PA0001".persg = "STG_SAP__T503".persg  
+                and "STG_SAP__PA0001".persk = "STG_SAP__T503".persk 
+        name: DIM_SAP__0EMPLOYEE_ATTR
+        noLinkRefs: []
+  name: DIM_SAP__0EMPLOYEE_ATTR
+  overrideSQL: false
+  schema: ""
+  sqlType: BNT112:::194
+  type: sql
+  version: 1
+type: Node

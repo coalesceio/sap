@@ -1,0 +1,205 @@
+fileVersion: 1
+id: a2374235-9142-4edc-bb1e-88decc06d4be
+name: STG_SAP__T001
+operation:
+  config:
+    groupByAll: false
+    insertStrategy: INSERT
+    orderby: false
+    orderbycolumn:
+      items:
+        - {}
+    postSQL: ""
+    preSQL: ""
+    selectDistinct: false
+    testsEnabled: false
+    truncateBefore: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAP_TRG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c3d979a4-35c2-4d5e-9ca2-fcda78181cdb
+          stepCounter: a2374235-9142-4edc-bb1e-88decc06d4be
+        config: {}
+        dataType: VARCHAR(256)
+        description: Company code
+        isBusinessKey: true
+        name: BUKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2530fd49-e418-4ae5-a52a-d16035380429
+                stepCounter: fd4665de-9c5a-4792-aa76-021484bd3183
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5e73a88d-3c13-438c-89a6-2cf3e575f65b
+          stepCounter: a2374235-9142-4edc-bb1e-88decc06d4be
+        config: {}
+        dataType: VARCHAR(256)
+        description: Client
+        isBusinessKey: true
+        name: MANDT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bb58164b-1328-4fb7-9240-bce2bdc3ea77
+                stepCounter: fd4665de-9c5a-4792-aa76-021484bd3183
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d2c1e26-79bd-4e1d-a124-1902a5aef452
+          stepCounter: a2374235-9142-4edc-bb1e-88decc06d4be
+        config: {}
+        dataType: VARCHAR(256)
+        description: Name of company code or company
+        name: BUTXT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6bbbba56-1f52-4d56-87bf-c0fd288540d9
+                stepCounter: fd4665de-9c5a-4792-aa76-021484bd3183
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1becb37f-8939-4fe2-a760-cdad53965f86
+          stepCounter: a2374235-9142-4edc-bb1e-88decc06d4be
+        config: {}
+        dataType: VARCHAR(256)
+        description: Country key
+        name: LAND1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c24a72b0-56c5-4252-a40f-3b2d8b9412d0
+                stepCounter: fd4665de-9c5a-4792-aa76-021484bd3183
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9137c63a-7b04-4580-b109-8fbab10ece81
+          stepCounter: a2374235-9142-4edc-bb1e-88decc06d4be
+        config: {}
+        dataType: VARCHAR(256)
+        description: Currency key
+        name: WAERS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e220f03d-fdc1-4529-9408-fb8195ae230d
+                stepCounter: fd4665de-9c5a-4792-aa76-021484bd3183
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5eb1c77d-ef2d-4d5c-8d23-ea2c20bb7504
+          stepCounter: a2374235-9142-4edc-bb1e-88decc06d4be
+        config: {}
+        dataType: VARCHAR(256)
+        description: Language key
+        name: SPRAS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6dfc29bc-19e1-4f3b-966d-11ae6360ade8
+                stepCounter: fd4665de-9c5a-4792-aa76-021484bd3183
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f44fcafe-686b-448b-a7d2-a89ebef9b922
+          stepCounter: a2374235-9142-4edc-bb1e-88decc06d4be
+        config: {}
+        dataType: VARCHAR(256)
+        description: Chart of accounts
+        name: KTOPL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c7a92f7a-7758-4787-a430-e2fe3e46d19b
+                stepCounter: fd4665de-9c5a-4792-aa76-021484bd3183
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 05ffb188-b907-40a3-8c92-8937141ce526
+          stepCounter: a2374235-9142-4edc-bb1e-88decc06d4be
+        config: {}
+        dataType: VARCHAR(256)
+        description: Fiscal year variant
+        name: PERIV
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4edfae0e-9489-4db5-a2c1-0e8534f058f4
+                stepCounter: fd4665de-9c5a-4792-aa76-021484bd3183
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c70617e9-0e8a-4aed-a4be-669299167680
+          stepCounter: a2374235-9142-4edc-bb1e-88decc06d4be
+        config: {}
+        dataType: VARCHAR(256)
+        description: Company
+        name: RCOMP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 65d3dfd4-5399-450f-9154-90b99786b04d
+                stepCounter: fd4665de-9c5a-4792-aa76-021484bd3183
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 714a9f51-c69f-44ee-b1a1-de223db3f113
+          stepCounter: a2374235-9142-4edc-bb1e-88decc06d4be
+        config: {}
+        dataType: VARCHAR(256)
+        description: Credit control area
+        name: KKBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 17c58f20-c4b3-4c75-b2a0-c3531ac77adf
+                stepCounter: fd4665de-9c5a-4792-aa76-021484bd3183
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bbd22225-dcb5-429d-8f1d-2cbe56335ade
+          stepCounter: a2374235-9142-4edc-bb1e-88decc06d4be
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9279f017-defa-4150-9964-d9f7bfe0a96e
+                stepCounter: fd4665de-9c5a-4792-aa76-021484bd3183
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          STG_SAP__T001_TMP: fd4665de-9c5a-4792-aa76-021484bd3183
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__T001_TMP
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'STG_SAP__T001_TMP') }} "STG_SAP__T001_TMP"
+        name: STG_SAP__T001
+        noLinkRefs: []
+  name: STG_SAP__T001
+  overrideSQL: false
+  schema: ""
+  sqlType: BNT112:::173
+  type: sql
+  version: 1
+type: Node

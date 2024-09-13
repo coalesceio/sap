@@ -1,0 +1,354 @@
+fileVersion: 1
+id: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+name: INC_STG_SAP__SKA1_TMP
+operation:
+  config:
+    downstreamOption: false
+    groupByAll: false
+    incColumn:
+      columnCounter: f3af9d65-57aa-407f-be88-280324a6843b
+      stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+    initialize: null
+    insertStrategy: INSERT
+    persistTableLocation: SAP_TRG
+    persistTableName: DIM_SAP__0GL_ACCOUNT_ATTR1
+    postSQL: ""
+    preSQL: ""
+    refTable: true
+    refresh_mode: AUTO
+    selectDistinct: false
+    testsEnabled: true
+    truncateBefore: true
+    warehouseName: null
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAP_TRG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f7bb0d96-e8b2-45f8-8da3-98929ecb824f
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f7fec433-241d-4441-a528-9a04c8e12892
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f797c69e-0baf-48a6-b4ae-c96a1cca8b57
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: MCOD1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 166fadf1-747b-4281-84e2-3972fa84433e
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 50b2aafc-c0c9-4a8f-b7a4-cd06a46802f5
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_SAP_ARCHIVED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1fb1fc7b-b1c9-4b84-b281-4ff83de0a4f3
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 93a0673e-0464-4cff-a89c-2ab3deb73d97
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: KTOPL
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3bbce978-071b-46a0-afa7-23c6f8a6394d
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a0eafdb-ea77-4f0f-aec9-ffae4e6de173
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: VARCHAR(3)
+        description: ""
+        name: MANDT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fa073005-15e8-4bc7-a182-cf487784d178
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7506a1c5-81cb-4b23-ad18-2cae8f4bfa2b
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: SAKNR
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6439a4ea-85a3-463f-a879-7ebce5ed8664
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0c6367e4-9fb4-43ff-a978-7ad1f9d792d5
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: XSPEB
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c6fcfb9a-a837-44ae-9339-3d7e0cca3cc0
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9938c51d-47d2-42c6-9cf9-b6639ce40e14
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: BILKT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a783fbbb-f7b5-45da-b537-7c64e221da73
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d201dc2-71d3-4bce-bb83-2a7c1bf49428
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: MUSTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 90cc0148-d832-4420-b638-59f3f80f51e1
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2f89377b-dec9-4b9a-a3ae-5ecfb0e13918
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: XBILK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ac286f89-0e40-4164-8df5-13c1b6ad7dd7
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 916612f0-78e7-47f2-8775-9280544310f4
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: SAKAN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b7bdd9f2-c3de-4c65-b31c-670b498b421d
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5577c1e5-0883-4dac-b4e5-115ef7df6a9d
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: VARCHAR(6)
+        description: ""
+        name: VBUND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 051086fe-c033-408f-b794-e0f83ec0b2b0
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1745505-3dc1-4ed9-9808-f509bc3639c1
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: GVTYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fd0542bf-cf2c-4c55-8f61-83a0299958d3
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ef0676ec-5c7b-42bb-9c5c-21f177c5d398
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: XSPEA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5f4a83ab-f72f-43c3-b2df-6e305ca15b00
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bdb83903-0889-41cb-85b9-79ec71f8297f
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: KTOKS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c08dc688-e35e-4cf2-8351-9659fe8c5528
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 33a61bc0-717d-4bca-99a8-177415d87358
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: ERDAT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 232bc9ee-4797-483b-adc4-0527fb570d37
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9cc5b3bb-41f7-402c-8b92-9ec1d81661cb
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: VARCHAR(12)
+        description: ""
+        name: ERNAM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bcfdd82f-5fc7-40f4-8557-2f7c4b6f820d
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3837bd85-1ad9-4650-b642-7149811ff574
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: XLOEV
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 19c9947e-ef5c-4f25-a128-30ca24bfb7a9
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0eb22496-d49e-4bcf-9f9b-832b999d0211
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: VARCHAR(16)
+        description: ""
+        name: FUNC_AREA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 10872488-6341-4ce0-8ffa-6a782a05013e
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6b81d215-6046-4e9d-8f7d-23d834123961
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: XSPEP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ce3a70e9-04b5-4fb6-a9d9-81fe01484cac
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f3af9d65-57aa-407f-be88-280324a6843b
+          stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3be396d3-09f4-4cbd-803d-4b9ff91ccadc
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          SKA1: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_SRC
+            nodeName: SKA1
+        join:
+          joinCondition: |
+
+
+            FROM{{ ref('SAP_SRC', 'SKA1') }} "SKA1"
+              WHERE "SKA1"."_FIVETRAN_SYNCED" > 
+              (SELECT COALESCE(MAX("_FIVETRAN_SYNCED"), '1900-01-01') 
+                        FROM {{ ref_no_link('SAP_TRG', 'DIM_SAP__0GL_ACCOUNT_ATTR1') }} )
+        name: INC_STG_SAP__SKA1_TMP
+        noLinkRefs:
+          - locationName: SAP_TRG
+            nodeName: DIM_SAP__0GL_ACCOUNT_ATTR1
+  name: INC_STG_SAP__SKA1_TMP
+  overrideSQL: false
+  schema: ""
+  sqlType: IDL:::230
+  type: sql
+  version: 1
+type: Node

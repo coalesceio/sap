@@ -1,0 +1,9 @@
+fileVersion: 1
+id: "104"
+name: DIM_SAP__0MATERIAL_ATTR
+steps:
+  - 84d5eaba-991a-4308-b3eb-d3f7b08a3d8a
+  - b864ffb9-0009-4643-82b7-07c5e3246b1f
+  - d32fab23-29e1-42af-b0ae-e8bd328dee4e
+type: Subgraph
+version: 1

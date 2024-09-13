@@ -1,0 +1,827 @@
+fileVersion: 1
+id: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+name: STG_SAP__PA0001_TMP
+operation:
+  config:
+    incColumn:
+      columnCounter: 00b7e071-c91c-4aab-9a4e-f40d78f5efc8
+      stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+    insertStrategy: INSERT
+    persistTableLocation: SAP_TRG
+    persistTableName: STG_SAP__PA0001
+    postSQL: ""
+    preSQL: ""
+    refTable: true
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAP_TRG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4d800ca3-5760-4585-9bfe-d3c5796b47d0
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 52410555-198c-41ee-ad2b-0ec065d575a1
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 47096e6b-cbd4-492c-b9ec-1d7a6e7a6290
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_SAP_ARCHIVED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f2224e04-32fc-44d4-b210-a6dbd5eae110
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d40d5ccb-0616-4bcb-95a3-91e479c76214
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(8)
+        description: Start date
+        name: BEGDA
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 372157f1-088d-4c24-b7f2-bd57e20af879
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fdfacabd-7969-4cc0-a448-baa1d2db5b5f
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(8)
+        description: End date
+        name: ENDDA
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cd8f4909-2557-4904-a5ec-e4bbb4a2ccfb
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a16a127c-8562-4551-8ce2-0312ef6b839c
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(3)
+        description: Client
+        name: MANDT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: afaf8768-049f-4314-90f9-54a23ec91184
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1bc1e54a-d934-4f49-b27e-4af3afe395b6
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(2)
+        description: Object identification
+        name: OBJPS
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2342dd3e-f0ea-4883-b16c-729929165aa7
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1978cf55-6f98-4f45-a417-7192544ea7ff
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(8)
+        description: Personnel number
+        name: PERNR
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0ae8f41c-8ee8-4691-a0c0-e0ac8856902a
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5892c1e5-e274-409c-8766-b75cd79d10e5
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(3)
+        description: Number of infotype record with same key
+        name: SEQNR
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f64706b7-152a-477c-aac1-b9d5179358a6
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3f9ab42-4a9c-4996-b790-b6b4b447461a
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(1)
+        description: Lock indicator for HR master data record
+        name: SPRPS
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 34aa00c7-5098-4441-95d9-a6c2f23d001a
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32644ddd-de19-45f4-bb86-ecd120f3ae7d
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(4)
+        description: Subtype
+        name: SUBTY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5f93e623-4f95-4e04-ad0b-abc0b5a41859
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff014c18-ab9d-4800-9233-8b224fed152f
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(20)
+        description: Grant
+        name: GRANT_NBR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 17a7ac31-f0d3-4bf3-ba02-0fab7e9e200c
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ef8d8c4-44ec-4d12-b8e1-5921fe602e99
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(10)
+        description: Cost center
+        name: KOSTL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3b062af5-2135-45a9-8cdd-88d493571600
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8741586b-abf8-4b9d-bdac-807dbd8b24e8
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(16)
+        description: Funds center
+        name: FISTL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3a402379-4317-49c5-be40-3d07f1fa645d
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1c1fa7fd-f73f-4c66-b79c-843f28573476
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(2)
+        description: Reserved field/unused field of length 2
+        name: RESE2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 258f086d-da7d-43d9-b860-2ed7a5e70349
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ea0e9607-bec0-45f5-b226-c1d09aaf3cf3
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(8)
+        description: Supervisor area
+        name: MSTBR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 92a4d5cf-0583-4860-8120-76428f5501fe
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3f22d482-cc96-45c8-940a-e4e0c0fb18d5
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(4)
+        description: Personnel area
+        name: WERKS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c3afb932-3c84-4b02-a63d-ea110426d73d
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 09f17025-90d0-4a02-9d4e-32d9823e180a
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(4)
+        description: Business area
+        name: GSBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c457d676-e0b0-4a9b-afc8-f535e2bd4caa
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e5456f03-af2b-48a9-80e0-6bbf874f68c9
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(14)
+        description: Organizational key
+        name: VDSK1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d8b41cc0-2561-4f0d-9230-bc8b8fbdb8f1
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 42327147-c667-48ad-8c5b-728c6e08a502
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(8)
+        description: Job
+        name: STELL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7103ee67-f1ad-4be1-93ba-d21351d01a0b
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fe73945d-4354-4f36-9cd9-4f467703d548
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(16)
+        description: Functional area
+        name: FKBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 982cef7e-1c61-429d-934b-141ee7ae2b6b
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 74617a6e-49ae-4700-b286-5b68fc46ae3c
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(2)
+        description: Employee subgroup
+        name: PERSK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bb94034c-b666-441d-9667-87f52e6f3a4b
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eea02d59-b8e5-4765-8fe7-e35f62493fb8
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(1)
+        description: Confirmation fields exist
+        name: ORDEX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bf407089-df81-4aec-8360-52e97c0965d6
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e15e0933-6236-4e20-bf4a-8d76fffe44ec
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(1)
+        description: Reserved field/unused field
+        name: FLAG1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9e0e1be5-dccc-4c2d-8f04-0a71b9646adc
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 852fcbb2-7b38-4e85-b0d4-3efd8c265f1d
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(3)
+        description: Administrator for time recording
+        name: SACHZ
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6fa59fca-e636-421d-9c7e-4ae3e3b6f198
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dd925042-39c7-48bd-a485-01c1668f5f25
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(4)
+        description: Controlling area
+        name: KOKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 96b0fbe1-2bb3-405e-aa6d-f8c4fe18d867
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b84b6bb1-083d-4e3e-9af4-3cc10e95cee9
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(4)
+        description: Grouping value for personnel assignments
+        name: GRPVL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 17bbe91e-c487-498d-8640-3dce2405052e
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 841c8aaf-4caa-493f-a4ec-1fdd453ba35d
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(12)
+        description: Name of person who changed object
+        name: UNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 56d6eb9a-d1c4-430c-94e8-247a27b976bf
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 23f95441-8632-4578-9a71-c2fd78647b7f
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(3)
+        description: Payroll administrator
+        name: SACHA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6dcdcdbc-0eca-4f3f-a889-a0afc91f82c6
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a7024ee2-f687-48f3-9643-fe1617b3afb2
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(2)
+        description: Infotype screen control
+        name: ITBLD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2d3a04b6-a845-44f0-b3c2-1f2571ba0b5b
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3227b182-f705-4b03-b9b7-3a5a82f81f74
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(1)
+        description: Employee group
+        name: PERSG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 96d0f5e4-7c93-4e91-bf6c-81e08322a7e4
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ec4d7db-53cc-47b3-8658-0025dd882dec
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(4)
+        description: Company code
+        name: BUKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cb420ded-e504-453b-af04-a6b17138c689
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 268a2056-ec70-4a07-bb90-cb7d564bf263
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(256)
+        description: Payroll area
+        name: ABKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 813c0249-9591-4cf3-9934-df4c47e064e5
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b8a0d39c-4347-4df1-bc28-5b65835c551d
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(10)
+        description: Segment for segmental reporting
+        name: SGMNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5ae05883-099c-4117-99b4-c8840ec3048c
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4170c68e-a6bb-497b-bcfd-584b9f17e543
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(1)
+        description: Reserved field/unused field
+        name: FLAG2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3ed4a9f4-ff39-4856-8ccf-6c8ba2f51405
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c6fe7b21-af6d-4025-a874-f3cca3e98855
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(3)
+        description: Administrator for HR master data
+        name: SACHP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f224e205-aa0e-44cb-9f01-d9042dab8394
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9e1f110a-af89-477e-8568-27ad05db6d81
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(2)
+        description: Work contract
+        name: ANSVH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3018fd9b-1501-4855-a18c-07cb4b611e54
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eb76b7c6-6cc9-4692-a51a-a8bcbebefbb3
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(8)
+        description: Organizational unit
+        name: ORGEH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8aa8d8e8-3f0d-4055-b29a-f6ec4841efbd
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7a3bc085-c8e2-4af3-ad0c-89892cfa8402
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(2)
+        description: Object type
+        name: OTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 69e45600-8e00-4353-9b7b-024a9cff1cb0
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 58739e5b-b4d6-41bc-9938-b7c63b5b3cba
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(2)
+        description: Reason for changing master data
+        name: PREAS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b33a809c-d851-4e7a-8862-3359dc5a3b73
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ecf7976a-06fd-4b42-8301-f51e86c3f187
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(10)
+        description: FM--Budget period
+        name: BUDGET_PD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 144684d8-bee5-45e5-8c29-3bbf550e9724
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 29839632-73de-462a-9bf4-3ad6373901b8
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(1)
+        description: Reference fields exist (primary/secondary costs)
+        name: REFEX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bdaee615-3040-44c3-b80f-ee67a635b364
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 00e3852d-74de-4769-be93-c4cb46fbf0be
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(1)
+        description: Reserved field/unused field
+        name: FLAG3
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 17b9d086-a2df-450d-82f5-d01f609bd86f
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4001d532-94dd-429a-8afd-ce711db4a552
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(8)
+        description: Position
+        name: PLANS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ba317138-3816-454a-ad7e-830d3a55d7ee
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bc829f32-c4d7-4b34-b710-804217de119f
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(10)
+        description: Fund
+        name: GEBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bc15c208-f52a-4bdd-a9d7-e6b4a97cd895
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ca3b3737-180c-46c9-8e1f-18023e3ef307
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(4)
+        description: Legal person
+        name: JUPER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2e2b2994-e0d0-4d6b-afda-92033bd16dda
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9b4d1ad8-ffb8-4af3-b000-ca6cc34ea35a
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(40)
+        description: Formatted name of employee or applicant
+        name: ENAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 22c870aa-b5c8-4327-986a-8fb9efee4132
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38cbfd76-8a2f-41b0-be5b-8c11ae0d2b8d
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(8)
+        description: Changed on
+        name: AEDTM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8c8b02fa-b4d8-48bf-9a8f-0381369c151f
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6570c897-e50a-4664-9734-70fab2716197
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(4)
+        description: Personnel subarea
+        name: BTRTL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 77dc0bb9-b9bd-4370-86d1-14878bd315ef
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4ac92dc-da5c-4a97-bd13-1942bf383847
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(256)
+        description: Employee's name (Sortable by LAST NAME FIRST NAME)
+        name: SNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: df2fff12-ca42-440e-a6a5-904c39a1ea98
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1ff2655d-ef51-4be9-981d-a4b51816c767
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(4)
+        description: Administrator group
+        name: SBMOD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 444f6113-0a4a-4d12-b665-8cfa60df372c
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fbcc3b6d-075e-4b76-b4d5-86a846559e97
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(2)
+        description: Reserved field/unused field of length 2
+        name: RESE1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 639e0b77-2690-4631-abf1-45bb5bed09b8
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 33f45cd4-faf9-48bb-937d-f2e44207eaaa
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(1)
+        description: Historical record flag
+        name: HISTO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fba64384-e437-4c5a-a89c-e8c507828b28
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 134ca544-d39d-4877-abf8-1740ffe21e06
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(1)
+        description: Text exists for infotype
+        name: ITXEX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bf77ea80-aaa7-4d81-9674-7e135532302d
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec1ded96-8ffc-48bb-8c35-ae576179708c
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: VARCHAR(1)
+        description: Reserved field/unused field
+        name: FLAG4
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 22e8aaee-aad0-4da0-bfe0-0830862085ae
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 00b7e071-c91c-4aab-9a4e-f40d78f5efc8
+          stepCounter: 12edbe0c-b84f-4ee3-b8f1-a9332ebf82a7
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ff621e72-1989-454e-8651-e1008a19156a
+                stepCounter: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          PA0001: db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_SRC
+            nodeName: PA0001
+        join:
+          joinCondition: |
+
+
+            FROM{{ ref('SAP_SRC', 'PA0001') }} "PA0001"
+              WHERE "PA0001"."_FIVETRAN_SYNCED" > 
+              (SELECT COALESCE(MAX("_FIVETRAN_SYNCED"), '1900-01-01') 
+                        FROM {{ ref_no_link('SAP_TRG', 'STG_SAP__PA0001') }} )
+        name: STG_SAP__PA0001_TMP
+        noLinkRefs:
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__PA0001
+  name: STG_SAP__PA0001_TMP
+  overrideSQL: false
+  schema: ""
+  sqlType: IDL:::230
+  type: sql
+  version: 1
+type: Node

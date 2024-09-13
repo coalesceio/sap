@@ -1,0 +1,9 @@
+fileVersion: 1
+id: "103"
+name: DIM_SAP__0COMPANY_TEXT
+steps:
+  - a88cfc07-e38e-49f4-abe6-d1d63de33b1d
+  - ba443883-a751-4964-9ac8-a727f04fa3fd
+  - e3eb0f48-b9b2-4907-9eba-84dc5850cae6
+type: Subgraph
+version: 1

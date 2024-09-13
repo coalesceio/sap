@@ -1,0 +1,100 @@
+fileVersion: 1
+id: 42c5bccd-f910-4d38-9fcb-ec85a3c1e19c
+name: V_INT_SAP__0EMPLOYEE_DATE_CHANGES_3
+operation:
+  config:
+    clusterKey: false
+    clusterKeyConfig:
+      items:
+        - {}
+    clusterKeyConfigExpressions:
+      items:
+        - {}
+    clusterKeyExpressions: false
+    groupByAll: false
+    insertStrategy: INSERT
+    orderby: false
+    orderbycolumn:
+      items:
+        - {}
+    postSQL: ""
+    preSQL: ""
+    selectDistinct: false
+    testsEnabled: false
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAP_TRG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 196312a4-a3c2-4c4c-9700-fbc7b7dc0836
+          stepCounter: 42c5bccd-f910-4d38-9fcb-ec85a3c1e19c
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: PERNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 244a0e68-377f-4cfb-84aa-54be33b71f18
+                stepCounter: 9d7a36f7-0381-4812-90c6-ce01a6fcd22d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 760ea487-a116-41c3-8632-06059089dd15
+          stepCounter: 42c5bccd-f910-4d38-9fcb-ec85a3c1e19c
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: BEGDA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d91826cd-f56e-4c61-a5d6-6a0a92d0a792
+                stepCounter: 9d7a36f7-0381-4812-90c6-ce01a6fcd22d
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: affe20fa-98b4-4b8c-a81d-2a659915f06f
+          stepCounter: 42c5bccd-f910-4d38-9fcb-ec85a3c1e19c
+        config: {}
+        dataType: VARCHAR(8)
+        defaultValue: ""
+        description: ""
+        name: ENDDA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: lead("V_INT_SAP__0EMPLOYEE_DATE_CHANGES_2"."CHANGE_DATE", 1) over (partition by "V_INT_SAP__0EMPLOYEE_DATE_CHANGES_2"."PERNR" order by "V_INT_SAP__0EMPLOYEE_DATE_CHANGES_2"."CHANGE_DATE")
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          V_INT_SAP__0EMPLOYEE_DATE_CHANGES_2: 9d7a36f7-0381-4812-90c6-ce01a6fcd22d
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: V_INT_SAP__0EMPLOYEE_DATE_CHANGES_2
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'V_INT_SAP__0EMPLOYEE_DATE_CHANGES_2') }} "V_INT_SAP__0EMPLOYEE_DATE_CHANGES_2"
+        name: V_INT_SAP__0EMPLOYEE_DATE_CHANGES_3
+        noLinkRefs: []
+  name: V_INT_SAP__0EMPLOYEE_DATE_CHANGES_3
+  overrideSQL: false
+  schema: ""
+  sqlType: BNT112:::188
+  type: sql
+  version: 1
+type: Node

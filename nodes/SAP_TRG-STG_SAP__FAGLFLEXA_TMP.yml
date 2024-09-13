@@ -1,0 +1,771 @@
+fileVersion: 1
+id: 93d25a85-c326-4605-a18d-09b75f9f6633
+name: STG_SAP__FAGLFLEXA_TMP
+operation:
+  config:
+    incColumn:
+      columnCounter: 05ba3352-0610-42fb-8d45-3ed007d36112
+      stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+    insertStrategy: INSERT
+    persistTableLocation: SAP_TRG
+    persistTableName: DIM_SAP__0FI_GL_14
+    postSQL: ""
+    preSQL: ""
+    refTable: true
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAP_TRG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d1c125b-717b-4d9a-bcb2-3647888c6edf
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d8e80e66-1f10-4e54-9ab7-d7b35cfbe528
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 138f82d7-1ba7-4e8d-810f-a9ad0e54c689
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_SAP_ARCHIVED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5a33df7e-ea56-40c8-9ad0-5a1d08691221
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1b598813-327b-4549-a738-21da1b23e530
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(6)
+        description: Six-character posting item for ledger
+        name: DOCLN
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7aa86ad0-ac72-4535-8cbc-f019eb4d5a20
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5c693ed9-94d2-4bf7-9529-6d7684b35723
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(10)
+        description: Accounting document number
+        name: DOCNR
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 44c7d93c-5542-42ef-aec7-7f28177759f1
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0c1f390b-6faf-4d9e-b3bb-4be89c9c0d70
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(4)
+        description: Company code
+        name: RBUKRS
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fba45bcf-b986-41dd-90ec-658565b0de2d
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 23f047c8-7d56-4475-bfd3-c2089276fb6e
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(3)
+        description: Client
+        name: RCLNT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 43ff38b4-f223-4944-8026-8785eac19879
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 717a0d28-89ce-4b2a-a40f-29fe13a223be
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(2)
+        description: Ledger in genral ledger accounting
+        name: RLDNR
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cf49809b-7eed-4b67-891b-41f958965983
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ee9f021-96a6-42a4-9ebc-2af46bd1b188
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(4)
+        description: Fiscal year
+        name: RYEAR
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad60ce95-21a5-458d-8f23-9a607f1e2644
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: decb0fcf-514a-47c8-bb81-95417c63572a
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(2)
+        description: Posting key
+        name: BSCHL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 70ac93ef-d220-4f01-bdda-b73e53dadf3a
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 682511e0-b0ad-4043-b2b3-bfe6a73e849b
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(4)
+        description: Controlling area
+        name: KOKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e7f353c7-ee59-47fb-adf0-6a46767cb65f
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1c7644f6-7d2d-48ed-a465-5d468d09ca78
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(10)
+        description: Account number
+        name: RACCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 95a45f3f-ccfb-4ae0-a7d9-49e12c0d8637
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: da298630-9da6-4fa4-bbed-e13c2b170d06
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(3)
+        description: Posting period
+        name: POPER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f4f483a3-f307-4f5f-8280-261d7975112d
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c42f7635-0f2d-4ad5-9ada-6ed30caa5673
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(10)
+        description: Logical system
+        name: LOGSYS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 389de06f-4ff8-4b79-94a0-962b57d6a756
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5bc0bf96-7fd3-4e3c-94d4-b42fee3019c6
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(10)
+        description: Segment for segmental reporting
+        name: SEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cc92a88c-e59d-4c66-823b-d8bf8a422153
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c1aed7f6-ad67-4b4a-b891-19429f813674
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(3)
+        description: Transaction type
+        name: RMVCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 98d70391-e949-4563-98ba-bb46ad973aec
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 595241f9-0f28-4d9e-937a-abfa9d677c78
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(8)
+        description: Posting date in the document
+        name: BUDAT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d250f7ba-7e4a-467a-9013-b4762535f1d4
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 69460be1-0b6d-4304-8528-42cc4532ea54
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(16)
+        description: Partner functional area
+        name: SFAREA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a21e15c6-c2f9-4280-8a1c-693849881bf3
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f714f7d9-a0c1-4d87-9998-97c48ba663f0
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(1)
+        description: Debt/credit indicator
+        name: DRCRK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 254f0d21-b9d3-4552-b8ce-128fdba8b1b6
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 042fa6af-eb1e-4959-8fa7-dbe89f34d234
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: NUMBER(15,0)
+        description: ""
+        name: TIMESTAMP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e580b322-6e0b-47e6-afea-825fb57ed817
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c0c6d20d-69a0-4f0d-9200-c10ca920af24
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: XSPLITMOD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 879fd46b-70c7-42ea-947b-f2645bbb7581
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 90f9b94d-deae-47a7-81a8-c56eeb59b680
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(5)
+        description: Currency key
+        name: RTCUR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5947e1db-8175-4b83-9584-b03c10ead6c7
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 094be4be-617c-43f2-9cca-4a63675e38f7
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(5)
+        description: Currency key of the original transaction currency
+        name: RWCUR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 324e9291-7280-4048-ba71-ccffe876786c
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 96fb9efb-4fbf-468a-b0b4-82a8ebd0dce8
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(3)
+        description: Version
+        name: RVERS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 59275ad4-36c2-40fa-b16b-0daba0abf91f
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3d54433-d172-441e-b822-ec8ccaadd886
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(6)
+        description: Company id of trading partner
+        name: RASSC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5650c4b9-1698-4a76-9700-fe3583e5a1d8
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4908baa9-5200-4d2e-ae53-3820bc05ef2b
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(4)
+        description: Trading partner's business area
+        name: SBUSA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: acf49569-ccf9-4672-b231-0d24fa754047
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5a2296b4-3327-43d5-91ab-e005a20a66c0
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(4)
+        description: Business area
+        name: RBUSA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 90e7a5c4-796c-4e6a-9763-449d47811968
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a611b8f1-5eb0-4bee-bf61-e96e5187ed82
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(5)
+        description: ""
+        name: ZZSPREG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 20bd1b0a-8c2e-4f4b-ac6c-f28fa8d0a242
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 93499bff-030c-421a-ad04-fb832e9ababf
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(3)
+        description: Number of line item within accounting document
+        name: BUZEI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2394998c-5139-4fa7-abfa-33532922be14
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b4d727bd-6a5b-441c-b5f7-0d127d5e48a7
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(5)
+        description: ""
+        name: LINETYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f1689fe0-2c94-4eec-9552-5d6289919296
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e0302a7f-ace7-4ea7-92a2-b5b91a14e42a
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(1)
+        description: Document status
+        name: BSTAT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bddbdaa8-c680-43ae-a476-2e3ed83ff7d8
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cc2cfab0-40a5-4990-bfbf-7d3154b88274
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(12)
+        description: ""
+        name: USNAM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1734c8f6-7f82-49c4-9d99-1dcbd434a405
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 350787e0-953f-4bf6-b464-a6ab50754e90
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Value in original transaction currency
+        name: WSL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: abb123c3-7c1f-4576-b11a-66bd5ca3c36e
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8de3e4e7-6fdb-4c4f-ad27-35aec8e1cd84
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(10)
+        description: Cost element
+        name: COST_ELEM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b598a91a-3232-4aca-8db0-23cc5f34da83
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 93f77338-e022-4422-8438-455cdef0352d
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Value in transaction currency
+        name: TSL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3a19c16a-d6a6-4bf9-9851-5f61d38e08c0
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9e30923b-67d9-4700-9d52-fc312a72a9af
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(10)
+        description: Partner profit center
+        name: PPRCTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b62d3c6a-8948-4db8-a40d-30392dfc22c2
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ee02bc1b-2b16-4eae-89e8-f874b6eaa6ed
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(4)
+        description: FI-SL business transaction
+        name: ACTIV
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1b85b456-3248-4bb1-80b9-ae07abdc7de2
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f66291c1-ab03-46e5-b8f3-da2981807ef1
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(1)
+        description: Record type
+        name: RRCTY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bec69a79-df08-458e-bbd6-217bd9bebf3b
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bb21ac82-8d04-4052-8109-1e81807ca836
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(4)
+        description: Fiscal year
+        name: GJAHR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dba39ed1-200d-469f-8d1d-2c9b349e6046
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7944f43a-9392-4e12-b255-bd53d06db33f
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(10)
+        description: Accounting document number
+        name: BELNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5f5c2695-c907-4088-b3fb-c2ef7c41b5f9
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f4eb779-5533-4246-b14a-833f4d5a7f7f
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(10)
+        description: Sender cost center
+        name: SCNTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d372a087-6aa2-407f-bf5c-4c24f1529ff8
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf09771d-a6c6-4cad-ba4c-f4aed70fc556
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Value in group currency
+        name: KSL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2abe37c2-078f-4c6b-86b3-f109de9b2235
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7e8ff18f-299d-4ee4-a365-0d036ce0865c
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: NUMBER(23,3)
+        description: Quantity
+        name: MSL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8dc7b716-179b-4ee8-be7f-b4ecb54923cd
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7a763203-fa54-4bc0-93c5-56010487ce3e
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Value in local currency
+        name: HSL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5de9d7bb-25a5-4a4e-9e20-2871ca9f2a63
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c47e1bf5-3f16-4e0d-87bd-e6f5e8499580
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Value in another currency
+        name: OSL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 22619fa8-5ed8-42e4-83ca-fdc033e4fb39
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b69df90a-4be2-4912-b352-311a8f6156c7
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(10)
+        description: Cost center
+        name: RCNTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4ce45c05-9051-4e8c-b92a-bceca7ad91fd
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e0372e82-dcfe-4a75-abdd-acd8a1e8370e
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(5)
+        description: Reference transaction
+        name: AWTYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ec0aa867-59e6-4442-a23e-589d78e1e1ee
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dea858b9-8ad9-45cc-99e3-4e97a0f441f0
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(3)
+        description: Base unit of measure
+        name: RUNIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6d4e630c-8f9b-4716-81e5-10097ab60b8f
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cc51eeef-362b-40ea-a562-0b035ddb6f84
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(10)
+        description: Profit center
+        name: PRCTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 395409aa-00f9-4683-a3a8-79a08ddc49a8
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7aaf089c-157a-44cf-b5b2-249a51118d69
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(16)
+        description: Functional area
+        name: RFAREA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a6b4272d-6965-4d27-935d-58f8d184aa56
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8d636f97-db04-421f-87d8-b2555e7eb12f
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: VARCHAR(10)
+        description: Partner segment for segmental reporting
+        name: PSEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a258b157-eef5-4414-b543-cd7a48e1240f
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 05ba3352-0610-42fb-8d45-3ed007d36112
+          stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 20ba9612-96da-4739-8756-7ea3f9b01560
+                stepCounter: 45a68c99-7733-435b-bd5e-9a1f081320f5
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          FAGLFLEXA: 45a68c99-7733-435b-bd5e-9a1f081320f5
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_SRC
+            nodeName: FAGLFLEXA
+        join:
+          joinCondition: |
+
+
+            FROM{{ ref('SAP_SRC', 'FAGLFLEXA') }} "FAGLFLEXA"
+              WHERE "FAGLFLEXA"."_FIVETRAN_SYNCED" > 
+              (SELECT COALESCE(MAX("_FIVETRAN_SYNCED"), '1900-01-01') 
+                        FROM {{ ref_no_link('SAP_TRG', 'DIM_SAP__0FI_GL_14') }} )
+        name: STG_SAP__FAGLFLEXA_TMP
+        noLinkRefs:
+          - locationName: SAP_TRG
+            nodeName: DIM_SAP__0FI_GL_14
+  name: STG_SAP__FAGLFLEXA_TMP
+  overrideSQL: false
+  schema: ""
+  sqlType: IDL:::230
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,199 @@
+fileVersion: 1
+id: e3eb0f48-b9b2-4907-9eba-84dc5850cae6
+name: DIM_SAP__0COMPANY_TEXT
+operation:
+  config:
+    groupByAll: false
+    insertStrategy: UNION ALL
+    orderby: false
+    orderbycolumn:
+      items:
+        - {}
+    postSQL: ""
+    preSQL: ""
+    selectDistinct: false
+    testsEnabled: false
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAP_TRG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5849a13b-8883-46cf-8c6c-94d6f0ad18f6
+          stepCounter: e3eb0f48-b9b2-4907-9eba-84dc5850cae6
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        isSurrogateKey: true
+        name: DIM_STG_SAP__T880_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d81227b-e51d-4586-8b98-2bbb7ac2db7d
+          stepCounter: e3eb0f48-b9b2-4907-9eba-84dc5850cae6
+        config: {}
+        dataType: VARCHAR(3)
+        description: Client
+        isBusinessKey: true
+        name: MANDT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d2690e0f-e481-4e83-b1aa-5e37d85fa04d
+                stepCounter: ba443883-a751-4964-9ac8-a727f04fa3fd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6be06c8c-1950-4bd4-b1db-36fc2bc4b2a1
+          stepCounter: e3eb0f48-b9b2-4907-9eba-84dc5850cae6
+        config: {}
+        dataType: VARCHAR(6)
+        description: Company
+        isBusinessKey: true
+        name: RCOMP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a81996a5-6e35-4647-a24f-de585548498c
+                stepCounter: ba443883-a751-4964-9ac8-a727f04fa3fd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1fd4434c-0770-4555-87d1-65b9c361bd82
+          stepCounter: e3eb0f48-b9b2-4907-9eba-84dc5850cae6
+        config: {}
+        dataType: VARCHAR(30)
+        description: Company name
+        name: TXTMD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fe6da23f-f889-4672-b213-e7e4e9f94899
+                stepCounter: ba443883-a751-4964-9ac8-a727f04fa3fd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3008bda9-f55d-4f03-8649-aedd1d8366c4
+          stepCounter: e3eb0f48-b9b2-4907-9eba-84dc5850cae6
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8f76a859-65ff-428b-b50b-e92b38f1faac
+                stepCounter: ba443883-a751-4964-9ac8-a727f04fa3fd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 949d1dc1-b05f-4816-b7d4-bc82e6e61f0a
+          stepCounter: e3eb0f48-b9b2-4907-9eba-84dc5850cae6
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_VERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 24ef0e62-3f8a-44ce-9149-5fa70dc08cca
+          stepCounter: e3eb0f48-b9b2-4907-9eba-84dc5850cae6
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_CURRENT_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5d80f907-bd2f-43c2-ab5d-17826c577ee7
+          stepCounter: e3eb0f48-b9b2-4907-9eba-84dc5850cae6
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_START_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d5bce5f0-a5d7-4c21-965f-8fc94023b108
+          stepCounter: e3eb0f48-b9b2-4907-9eba-84dc5850cae6
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_END_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bbacab84-c759-44f3-a373-b73a0768cce5
+          stepCounter: e3eb0f48-b9b2-4907-9eba-84dc5850cae6
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d80353df-4f89-477f-8c17-e46e8d65d494
+          stepCounter: e3eb0f48-b9b2-4907-9eba-84dc5850cae6
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          INC_STG_SAP__T880_TMP: ba443883-a751-4964-9ac8-a727f04fa3fd
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: INC_STG_SAP__T880_TMP
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'INC_STG_SAP__T880_TMP') }} "INC_STG_SAP__T880_TMP"
+        name: DIM_SAP__0COMPANY_TEXT
+        noLinkRefs: []
+  name: DIM_SAP__0COMPANY_TEXT
+  overrideSQL: false
+  schema: ""
+  sqlType: BNT112:::194
+  type: sql
+  version: 1
+type: Node

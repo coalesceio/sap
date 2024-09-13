@@ -1,0 +1,2791 @@
+fileVersion: 1
+id: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+name: DIM_SAP__0FI_GL_14
+operation:
+  config:
+    groupByAll: false
+    insertStrategy: UNION ALL
+    orderby: false
+    orderbycolumn:
+      items:
+        - {}
+    postSQL: ""
+    preSQL: ""
+    selectDistinct: false
+    testsEnabled: false
+    truncateBefore: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAP_TRG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3f3cd5f-6e84-4312-9855-73e2be8ab1c9
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 05ba3352-0610-42fb-8d45-3ed007d36112
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+              - columnCounter: bfa233c2-a33c-4d09-bac1-05d84fe95f91
+                stepCounter: a4263323-f354-4e29-875f-68ca0aca06a7
+              - columnCounter: d2a72e0e-87f1-4012-a571-b37e74e141b4
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: LEAST(STG_SAP__FAGLFLEXA_TMP._FIVETRAN_SYNCED,STG_SAP__BKPF_TMP._FIVETRAN_SYNCED,STG_SAP__BSEG_TMP._FIVETRAN_SYNCED)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9c4d29bd-aac7-4988-9f31-9d94099f8c8b
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(22)
+        description: Vein
+        isBusinessKey: true
+        name: ZZUSERFLD3
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 41159067-2d66-4c9f-a46f-fa60ddb92dfa
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 26a50732-c8da-43a5-9e52-8e90f8fd729f
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(12)
+        description: Owner/Cont.
+        isBusinessKey: true
+        name: ZZUSERFLD2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f4f95e17-353f-4531-8dfb-b8f78ddabf80
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e06a8274-8f67-42b8-9f04-a21788b41ef1
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(9)
+        description: Territory
+        isBusinessKey: true
+        name: ZZUSERFLD1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 619826fc-a878-4706-8eb1-2ff04cc8a914
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 805060ea-70e0-4616-8bf8-2f67f0bfa2e8
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(3)
+        description: State/province code
+        isBusinessKey: true
+        name: ZZSTATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 016786c6-bb7b-4e01-ae4e-604167d90ce3
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a8071377-456d-47ab-bdc5-bc149757747a
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(5)
+        description: Special region
+        isBusinessKey: true
+        name: ZZSPREG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a611b8f1-5eb0-4bee-bf61-e96e5187ed82
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b6f01e3b-8da3-459a-8581-b169454281f7
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(3)
+        description: User defined regions
+        isBusinessKey: true
+        name: ZZREGION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4ed56e63-26ab-48b4-b4c0-ed678d2517ec
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 89e5ffc1-c307-4b7d-a333-22a7327ac75b
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Product group
+        isBusinessKey: true
+        name: ZZPRODUCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: abdc8e04-614e-40f1-887e-d022cc025b54
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a72fc45-1f12-49a3-8526-2e4cc3821b72
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: City
+        isBusinessKey: true
+        name: ZZLOCA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 58340ee7-333c-4b13-902f-d60a86ccf2c5
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b057155a-e11e-4fed-8bf8-58eefd676b1b
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(7)
+        description: Business line
+        isBusinessKey: true
+        name: ZZLOB
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f6331144-ff7e-43d1-9fce-373a414cce91
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28fe93e1-4e7c-42fb-91b2-162e38efdcdf
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Distribution channel
+        isBusinessKey: true
+        name: ZZCHAN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 19bcf0f1-30e9-4144-b7ff-f3eb166b825a
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e0efdece-f130-4f58-b427-00469dde0408
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Business partner
+        isBusinessKey: true
+        name: ZZBUSPARTN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9e2c6aa5-2d9a-4847-8bf6-f52d0650300e
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b19dbd0f-053b-4136-ab1e-a1e5b53d6118
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(18)
+        description: Assignemnt number
+        isBusinessKey: true
+        name: ZUONR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aa5dc3bf-42bb-4eb2-9145-0ed77e3783e6
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9e0032af-9781-4c58-82ab-eb8339ec4196
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Terms of payment key
+        isBusinessKey: true
+        name: ZTERM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 13380b50-c62b-4c49-acff-ab69eeabeb6a
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4fc9552-9917-4149-8627-21aa7332f20d
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Payment lock key
+        isBusinessKey: true
+        name: ZLSPR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 790774d3-31cb-4208-a8ab-58a79fbf0157
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 74c7be55-926c-4f74-b1ff-ddf8d4cd7e51
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Payment method
+        isBusinessKey: true
+        name: ZLSCH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 928a368b-b060-4ddb-9026-23c863bcafc5
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 19ff9139-d62d-4bae-8a65-8ffeb3f53beb
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(8)
+        description: Baseline date for due date calculation
+        isBusinessKey: true
+        name: ZFBDT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 88e811c4-c783-4a43-a82b-900e207f9276
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 05c01bfb-7aac-4416-a073-7cff535a0997
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Fixed payment condition
+        isBusinessKey: true
+        name: ZBFIX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5efd09fa-973c-44b3-9f0b-fe50adc782d1
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 181baaf5-3e3a-4d72-beed-ef96da3dd5a4
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(3,0)
+        description: Deadline for terms of payment net
+        isBusinessKey: true
+        name: ZBD3T
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 44d7db32-d19c-4f9f-b0e8-25607cba85cb
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d3a094b9-4bd3-4979-90d3-bbe71fa67af8
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(3,0)
+        description: Cash discount days 2
+        isBusinessKey: true
+        name: ZBD2T
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 41bff4be-7344-4315-833c-be53f0db174c
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f47ef18d-3262-47fa-917c-b3fdcc4a08e7
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(5,3)
+        description: Cash discount percentage 2
+        isBusinessKey: true
+        name: ZBD2P
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 17578c21-7089-45f7-8582-f2742b3b8e7e
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c2e8db43-eac2-4424-881b-268278d14c4d
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(3,0)
+        description: Cash discount days 1
+        isBusinessKey: true
+        name: ZBD1T
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 66561f59-5680-4085-9b14-96d666ded7c1
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2fae26a0-3635-4e45-a082-1ee4347f97df
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(5,3)
+        description: Cash discount percentage 1
+        isBusinessKey: true
+        name: ZBD1P
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1b7ec8a0-b85b-4e93-9a77-46aa30e3cc63
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a97b2c23-35bb-40fe-bd5b-68adf71bad6d
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator (Is this a payment transaction?)
+        isBusinessKey: true
+        name: XZAHL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0109fc97-7500-470d-a6d8-a56a89deec89
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76a74051-78f1-4298-bd55-ac32486edc8d
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Doc. contains open item that Was transferred during reorg.
+        isBusinessKey: true
+        name: XREORG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: defa0ff1-c9df-4c94-8c62-89da6f7d3008
+                stepCounter: a4263323-f354-4e29-875f-68ca0aca06a7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 66b3a7c0-8056-4640-aa48-68bd7231981d
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(20)
+        description: Reference key for the document items
+        isBusinessKey: true
+        name: XREF3
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 253eb585-2eaf-4064-a57c-87614c54d5e8
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b983ba24-aac1-41d8-8ac4-4d3dd07ae437
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(12)
+        description: ""
+        isBusinessKey: true
+        name: XREF2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a5e9ca0c-5fce-4d34-9a96-29463b72b998
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ae995546-cdda-4e95-8960-9d1d96b660e0
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(12)
+        description: Reference key of the business partner
+        isBusinessKey: true
+        name: XREF1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9baf8c32-4171-462b-9f6f-07b554c4f263
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d9bca36f-dfe6-4e54-b85c-43aae9ef3c1a
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator (Clearing was undone)
+        isBusinessKey: true
+        name: XRAGL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 360a1f66-a690-46cf-aaa8-2501f996a772
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e23022f8-17a8-4d9a-96ad-b89f65ebf91b
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator (Payment order exists for this item)
+        isBusinessKey: true
+        name: XPYPR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: da02d1aa-ef1e-4b9b-812c-3d2bb711284d
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6e36bb30-20be-43a0-85ed-d964e020d403
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator (Open Item Management?)
+        isBusinessKey: true
+        name: XOPVW
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 88c2cc5b-e4f2-49d4-b05f-c59eb6b4072d
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1fe7911-12b1-4bdc-80c2-bc222f28a9c1
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator (negative posting)
+        isBusinessKey: true
+        name: XNEGP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: deebd63b-0542-4949-ab86-81c5cc985dc3
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3495b79d-e505-4253-a987-de8e1ba3c8be
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Clearing specific to ledger groups
+        isBusinessKey: true
+        name: XLGCLR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ab860ed4-660a-4dc2-9aa8-3a33babc09e8
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4dfa2655-f860-4c4e-b95c-0d3e5d3b9712
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(16)
+        description: Reference document number
+        isBusinessKey: true
+        name: XBLNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 601ba564-4a8d-4f1b-8a19-8f528805c11c
+                stepCounter: a4263323-f354-4e29-875f-68ca0aca06a7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b9a118e-67ba-4f6e-842e-456780ada7c6
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Type of bill of exchange usage
+        isBusinessKey: true
+        name: WVERW
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8b40cf1e-c54f-4274-85f4-7b4b5815fa27
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 41c81243-c100-48e7-8e1a-831b21dc0e71
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Amount in original transaction currency
+        isBusinessKey: true
+        name: WSL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 350787e0-953f-4bf6-b464-a6ab50754e90
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b065852f-19b2-462f-8964-9bffea471544
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Cash discount amount in document currency
+        isBusinessKey: true
+        name: WSKTO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0030ad41-d81b-42af-82bb-30a85d73638d
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4a32b2d7-ae41-440a-b45f-015de10d37c7
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Amount in document currency
+        isBusinessKey: true
+        name: WRBTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1239a7c9-59d0-4e38-9707-31bbb5aa2c03
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 45969c31-8afd-4851-92be-11b90143815c
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Plant
+        isBusinessKey: true
+        name: WERKS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 478e2dd5-075d-414a-acff-a450f8f751a7
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a128cbfe-cb8f-4d94-98d2-3aa5cdf7cb75
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(5)
+        description: Document currency (key)
+        isBusinessKey: true
+        name: WAERS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 436293fa-4dae-4f56-8b09-4937a733fbf5
+                stepCounter: a4263323-f354-4e29-875f-68ca0aca06a7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d4655e5f-0f94-4f94-a099-0294383fd2a2
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Contract type
+        isBusinessKey: true
+        name: VERTT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 637aca44-4cb4-46e4-851c-69546c9208b3
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 30ee061b-2a1d-4ba7-8d19-6df3d5c485de
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(13)
+        description: Contract number
+        isBusinessKey: true
+        name: VERTN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fa7912c9-5935-4fb3-8443-dbb5bd917841
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 896d086d-aa31-45dd-a3bb-fc5b19944d48
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(6)
+        description: Company id of trading partner
+        isBusinessKey: true
+        name: VBUND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3102010b-7b9c-46db-aa43-7c624ae6161f
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 812858aa-e194-46d0-884e-d8cd82f409d7
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Flow type
+        isBusinessKey: true
+        name: VBEWA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 46cd61bd-1355-43b5-8d07-178de7b4abde
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0152fe74-f5f1-409f-82cf-31229a9e6881
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Billing
+        isBusinessKey: true
+        name: VBELN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6f6ace94-eb2f-47a8-a178-7c589e0b6ed8
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 27d00fa0-7839-444e-9a7b-ea8d197868b7
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Sales document
+        isBusinessKey: true
+        name: VBEL2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 353874e1-101b-4c61-9edc-9f160ed6de4d
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 394a454f-a8a8-4bd0-8ff9-98d7546f95b1
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(8)
+        description: Value date
+        isBusinessKey: true
+        name: VALUT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2df53395-dfa2-43d0-8a2c-5d2aadf4e969
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 34a2bc5d-1f8f-4682-9569-86a3e27a54a9
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(2)
+        description: Additional payment method
+        isBusinessKey: true
+        name: UZAWE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 47fca388-d94d-46f6-a35e-46aab47ce77c
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f130a48-ed05-469a-b0c3-ff7f283f0d79
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Special G/L indicator
+        isBusinessKey: true
+        name: UMSKZ
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9c381688-437f-45df-a764-760646be121c
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c1dcc45-429e-4206-89a3-5102733a4dc1
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Transaction class special general ledger
+        isBusinessKey: true
+        name: UMSKS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 03daa5b8-a922-4d92-82a9-5a5ca32532f8
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8efde755-92ef-4008-a376-9f6b9d8d608d
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Amount in transaction currency
+        isBusinessKey: true
+        name: TSL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 93f77338-e022-4422-8438-455cdef0352d
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e6bbcece-e6ec-424a-8f59-87edc604d505
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_VERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 059efe4c-37ea-4101-b5b3-5ba3e0627e2d
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3f8c43e5-4481-47e2-8e65-b2c2cfc7901c
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_START_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8a8ceb07-8276-46d3-82c5-32cbc88b94a6
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_END_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9aea3576-31a2-4e67-bf06-39e748a472b2
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_CURRENT_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b336bf2-1286-4e9b-a85a-86979111e8a0
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 21f7e407-c7d9-4511-9844-0480dab98c6e
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Cash discount amount in local currency
+        isBusinessKey: true
+        name: SKNTO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 169b1203-2f2b-417c-a56f-2f42c2e13752
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e0a89c63-d447-437c-a8bf-4da13b409428
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Amount eligible for cash discount in document currency
+        isBusinessKey: true
+        name: SKFBT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2678d53c-412c-41b7-a44a-ffc9ab84a65e
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ea8c743-ca21-40a8-83d8-fc2362fe1031
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Debit/credit indicator
+        isBusinessKey: true
+        name: SHKZG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2a08c860-ce3a-422e-a9d7-396bab9663e6
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f6ed7d02-8006-438d-80f0-c6003c7628dd
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(256)
+        description: Item text
+        isBusinessKey: true
+        name: SGTXT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c197adad-1bc4-42fc-9c26-59371528ef44
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eb319ffc-32d1-4521-a7ab-f46f73bd3f29
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(16)
+        description: Functional area of partner
+        isBusinessKey: true
+        name: SFAREA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 69460be1-0b6d-4304-8528-42cc4532ea54
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: df50d3b7-36ad-4ff7-96a0-d0a9e969e817
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(16)
+        description: Segment for segment reporting
+        isBusinessKey: true
+        name: SEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5bc0bf96-7fd3-4e3c-94d4-b42fee3019c6
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 111c4e12-db74-47cc-90c8-e823c6c240a3
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Withholding tax section
+        isBusinessKey: true
+        name: SECCO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4fb4f749-614f-43b5-ad22-2a8c4caaca1b
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7205326a-60ca-42de-bf96-350629dd15d6
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Partner cost center
+        isBusinessKey: true
+        name: SCNTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4f4eb779-5533-4246-b14a-833f4d5a7f7f
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 62da6234-543b-4285-ba8e-12a71cea36b3
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Business area of business partner
+        isBusinessKey: true
+        name: SBUSA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4908baa9-5200-4d2e-ae53-3820bc05ef2b
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 107fc3ee-af94-4653-9165-b6bdccc5d1f5
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(8)
+        description: Invoice list number
+        isBusinessKey: true
+        name: SAMNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ea6db758-8e1d-4a55-927a-f0d70395cff8
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ef64481b-a93f-4f3c-8726-a3412b5844bc
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: G/L account number
+        isBusinessKey: true
+        name: SAKNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 639b10de-79e5-42f3-b2fd-a420d82190e9
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 58072e13-3a16-4906-85a0-68a212a49bc3
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Fiscal year of the general ledger
+        isBusinessKey: true
+        name: RYEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4ee9f021-96a6-42a4-9ebc-2af46bd1b188
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c5e1a6a0-c6a8-4ee4-b3f6-8945b28df424
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(5)
+        description: Document currency (key)
+        isBusinessKey: true
+        name: RWCUR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 094be4be-617c-43f2-9cca-4a63675e38f7
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 20c5dfaa-f55a-45a5-9f41-0cd9f1802fc7
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(3)
+        description: Version
+        isBusinessKey: true
+        name: RVERS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 96fb9efb-4fbf-468a-b0b4-82a8ebd0dce8
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6d7742d2-aedb-4f01-a935-e61523ee7b3d
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(3)
+        description: Base unit of measure
+        isBusinessKey: true
+        name: RUNIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dea858b9-8ad9-45cc-99e3-4e97a0f441f0
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0f62eb0c-ce52-42a0-9fc8-286b176b47be
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(5)
+        description: Transaction currency key
+        isBusinessKey: true
+        name: RTCUR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 90f9b94d-deae-47a7-81a8-c56eeb59b680
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1b4ba4ff-82cf-4f49-b0ec-d3041a7c2572
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(3)
+        description: Reason code for payments
+        isBusinessKey: true
+        name: RSTGR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fa8f3314-cd8e-4dea-9870-5965b9977677
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e5359dfc-f73b-4243-818e-9848d9119757
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Record type
+        isBusinessKey: true
+        name: RRCTY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f66291c1-ab03-46e5-b8f3-da2981807ef1
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: add5f8e7-9911-4194-8dde-fbc2e0bcd9c4
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(3)
+        description: Flow type
+        isBusinessKey: true
+        name: RMVCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c1aed7f6-ad67-4b4a-b891-19429f813674
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 450c2283-22c6-40bd-acc6-c16ef2facc16
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(2)
+        description: Ledger
+        isBusinessKey: true
+        name: RLDNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 717a0d28-89ce-4b2a-a40f-29fe13a223be
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ff17536-e99a-4de2-8510-07a663a0e7da
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(3)
+        description: Payment card item
+        isBusinessKey: true
+        name: RFZEI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 43539211-fef2-4754-b2a0-ce103aa3ba5d
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff076aa0-a822-43fe-bfa1-269a10e53b5e
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(16)
+        description: Functional area
+        isBusinessKey: true
+        name: RFAREA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7aaf089c-157a-44cf-b5b2-249a51118d69
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 281d5173-7f53-45e1-a4b9-3c2e963831be
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Type of follow-on document
+        isBusinessKey: true
+        name: REBZT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d51ccbe2-d4ec-41d5-8f4b-96f590a3eede
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8c21d8de-0bd4-47fd-9059-17162555270f
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Document number of the invoice to which the transaction belongs
+        isBusinessKey: true
+        name: REBZG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d822d642-cebe-4445-abce-db7b339be967
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4d931529-591d-4b8c-abca-1ec0c54591f0
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Cost center
+        isBusinessKey: true
+        name: RCNTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b69df90a-4be2-4912-b352-311a8f6156c7
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92d150a1-d086-4b07-9466-e25748002c55
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Business area
+        isBusinessKey: true
+        name: RBUSA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5a2296b4-3327-43d5-91ab-e005a20a66c0
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b03766a-a398-44ae-b2cf-8147fb914f75
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Company code
+        isBusinessKey: true
+        name: RBUKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0c1f390b-6faf-4d9e-b3bb-4be89c9c0d70
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 29717a41-3e3b-444e-a6d6-aff7e88a84ad
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(6)
+        description: Company id of trading partner
+        isBusinessKey: true
+        name: RASSC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b3d54433-d172-441e-b822-ec8ccaadd886
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a6d6c037-2845-49b7-ae53-8747075ee12c
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: G/L account in General Ledger Accounting
+        isBusinessKey: true
+        name: RACCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1c7644f6-7d2d-48ed-a465-5d468d09ca78
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 93b1d3ae-9af5-4d51-a193-ea900b607171
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Withholding tax base amount in document currency
+        isBusinessKey: true
+        name: QSSHB
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 77d46c89-5544-4a3b-b0d3-c0efd2ca8bce
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5739e239-0b72-48c1-87bc-8a4d7098b260
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Withholding tax exempt amount in document currency
+        isBusinessKey: true
+        name: QSFBT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f3b4d3f1-2e55-42fa-ae6d-4689804d6e51
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e46ecd5e-f30c-4d79-a36d-79db5911db54
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Withholding tax amount in document currency
+        isBusinessKey: true
+        name: QBSHB
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 869becb6-5f53-42c1-86cc-46575cb0757f
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 34419afe-ae8c-464e-a7d9-f76a0ff1ff78
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(5)
+        description: Currency for automatic payment
+        isBusinessKey: true
+        name: PYCUR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ca329616-a761-4d5a-82a7-f00ab0bc8282
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 33ebc115-6609-4354-b12a-9378814311fd
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Amount in currency for automatic payment (absolute)
+        isBusinessKey: true
+        name: PYAMT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1c050f43-e8e7-4a76-af58-5aca2abd488a
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 655565ae-686f-4e67-b550-14d5dec184d4
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(5)
+        description: ""
+        isBusinessKey: true
+        name: PSWSL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5435599c-0f5e-4234-86de-636dee3ab7d5
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cd573af1-d2e9-4bfc-b78d-a2282c619be7
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Amount for general ledger update (absolute)
+        isBusinessKey: true
+        name: PSWBT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 40518130-bf8d-49e4-846d-ee1db666b59c
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ded0203-ef82-4463-9fd5-2964db3b88ae
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Partner segment for segment reporting
+        isBusinessKey: true
+        name: PSEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8d636f97-db04-421f-87d8-b2555e7eb12f
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e66d706b-2cd4-42e2-95ba-e3485009ee1e
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(8)
+        description: WBS element in external format
+        isBusinessKey: true
+        name: PROJK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9e30e0ff-4f9a-4594-a368-3b6696f94e6a
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f2a5ec3-ba6c-48fc-90b6-e2e31d7b6d54
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Profit center
+        isBusinessKey: true
+        name: PRCTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cc51eeef-362b-40ea-a562-0b035ddb6f84
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f7a8dc9d-e702-46a5-a3c2-c0ea0c192eaf
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Partner profit center
+        isBusinessKey: true
+        name: PPRCTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9e30923b-67d9-4700-9d52-fc312a72a9af
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd011843-7d8b-4104-b637-2e6e9194b8e9
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Partner profit center
+        isBusinessKey: true
+        name: PPRCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2b0be9a9-17a5-452c-bd13-65b87499caf8
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2469631f-aa8f-458a-9030-1f25e293a0cc
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(6)
+        description: Sales document items
+        isBusinessKey: true
+        name: POSN2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4e4b5c9d-6a55-4766-8389-7a348d08aa6e
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 04fe8bb5-d54a-4de7-9641-2e17555d8046
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(3)
+        description: Posting period
+        isBusinessKey: true
+        name: POPER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: da298630-9da6-4fa4-bbed-e13c2b170d06
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b528be2-357c-4524-9d34-6801b8ba82f6
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(16)
+        description: Functional area of partner
+        isBusinessKey: true
+        name: PFKBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6e4240a3-1a63-4790-b8a9-c7c12ea4d4b4
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6c362a83-1416-4cd9-9a10-db02fd6e3372
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Business area of the business partner
+        isBusinessKey: true
+        name: PARGB
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 266901b3-9427-4b67-87e8-5b4f5619b1cd
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 27fba903-b62a-4a1f-a24f-070c3ca1fcfc
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Amount in another currency
+        isBusinessKey: true
+        name: OSL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c47e1bf5-3f16-4e0d-87bd-e6f5e8499580
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 95c2ca28-c7c0-491d-a01f-0f342f0055a5
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(2)
+        description: Tax on sales/purchases code
+        isBusinessKey: true
+        name: MWSKZ
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 703962ee-bc1b-4ec5-b620-d1d21186cf06
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 86a30ebf-c5ca-44eb-bd5b-0b63857a8c95
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(23,3)
+        description: Quantity information
+        isBusinessKey: true
+        name: MSL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7e8ff18f-299d-4ee4-a365-0d036ce0865c
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 982bb403-d038-4792-90de-74006b50e9a2
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Dunning key
+        isBusinessKey: true
+        name: MSCHL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f2173e31-aeab-40cd-a08d-ca84eaf2bc1e
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4fba7777-7ace-4c8d-8b05-c05b5c409ae2
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(2)
+        description: Fiscal period
+        isBusinessKey: true
+        name: MONAT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9cd8aef7-0534-4666-bbfe-fcfef34ea031
+                stepCounter: a4263323-f354-4e29-875f-68ca0aca06a7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7ee1ea42-cc80-41d0-a109-2dc9286b13f6
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(13,3)
+        description: Quantity
+        isBusinessKey: true
+        name: MENGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0eb0badb-b534-43e5-b899-58aed9d7e977
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5dc90260-972f-4676-b6ee-eafa05d7681a
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(3)
+        description: Base unit of measure
+        isBusinessKey: true
+        name: MEINS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 052ab433-e411-4bd3-ba30-50dbb14cfe2e
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a1f404a-3dcd-4990-8caa-734cd2b50b7a
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Dunning level
+        isBusinessKey: true
+        name: MANST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d7dcbd4f-a07d-4dbf-8db9-19b9dfa2096f
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec5ef59d-ac57-4c36-b8f7-357d6db5c5cd
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Dunning lock
+        isBusinessKey: true
+        name: MANSP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 624e4b27-1949-4c78-9e87-4525dea64fd1
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f8d88bca-87bd-4263-b795-f3786d8e532f
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(8)
+        description: Date of last dunning notices
+        isBusinessKey: true
+        name: MADAT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e700bdf7-b86b-4fc3-80e2-8a1b67dd80a5
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3c0f0fc8-dacf-4ff5-8bbb-4537dd394d9e
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(2)
+        description: Dunning area
+        isBusinessKey: true
+        name: MABER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5402ea7f-dbb3-4ea0-a6aa-68147d62f971
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b15f9e25-1338-4424-ac69-97099da4af69
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Logical system
+        isBusinessKey: true
+        name: LOGSYS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c42f7635-0f2d-4ad5-9ada-6ed30caa5673
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e882fece-3256-45f0-8af9-3df3cd16dd7a
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Account number of vendor
+        isBusinessKey: true
+        name: LIFNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4dce21eb-eb87-4fa2-91d2-c76df9bd0351
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 51f4f443-27d0-4ee5-8f34-1fd45b6593cb
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Ledger group
+        isBusinessKey: true
+        name: LDGRP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 62073d69-2589-4556-9a92-ebd7de916612
+                stepCounter: a4263323-f354-4e29-875f-68ca0aca06a7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38650f37-e9a1-442d-bfdb-99db700919db
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(9,5)
+        description: Effective exchange rate in line item
+        isBusinessKey: true
+        name: KURSF
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3e988cf8-00b4-4989-93ce-c0c4325ca572
+                stepCounter: a4263323-f354-4e29-875f-68ca0aca06a7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1e41d0ce-4549-4f97-8e25-62788b0561a4
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Customer number 1
+        isBusinessKey: true
+        name: KUNNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8078e56c-4273-4977-887b-80841f26353a
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 97fb0848-091d-4956-b42d-ccc6439a387a
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Cost element
+        isBusinessKey: true
+        name: KSTAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 506329b0-1fcb-468b-b092-2961b7fac3e4
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7837fc05-6556-415b-909a-027bfaa7e906
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Amount in global currency
+        isBusinessKey: true
+        name: KSL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cf09771d-a6c6-4cad-ba4c-f4aed70fc556
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7cbd908f-924a-4864-a523-a64596874e60
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Cost center
+        isBusinessKey: true
+        name: KOSTL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e886c9da-b244-4c8d-b8d3-84b3196987ef
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a1acb79d-26fb-46f7-b093-62f87fd95fbb
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Controlling area
+        isBusinessKey: true
+        name: KOKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 682511e0-b0ad-4043-b2b3-bfe6a73e849b
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: db1fea84-7995-4765-a782-3cce3aa54613
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Account types
+        isBusinessKey: true
+        name: KOART
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1e0cdf2a-b5b3-4ff5-9ad4-b039e0dabaa2
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0ef126f7-cca3-49c5-a1f3-0fe4a99a084a
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Credit control area
+        isBusinessKey: true
+        name: KKBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 926a7ae0-0a3a-41e5-a2cc-f81e3f3a9fa2
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a354296b-276d-430f-a98d-8bd3f1d822e9
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(30)
+        description: Payment reference
+        isBusinessKey: true
+        name: KIDNO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bc7b3678-c839-4e89-ab87-1202d56402d2
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 626eb8e1-b05d-436a-be78-6899a0780699
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(8)
+        description: Internal key for Real Estate object
+        isBusinessKey: true
+        name: IMKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 484168e1-d4be-4432-8883-745cac6e1c34
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f5dfd14c-5882-4732-a9a5-a527ffd49974
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(5)
+        description: Local currency key
+        isBusinessKey: true
+        name: HWAER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2fe9e2ee-46bb-43da-8213-bb90d993cb8d
+                stepCounter: a4263323-f354-4e29-875f-68ca0aca06a7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ed59a445-42c5-48b1-8072-a00e1f5fb2fc
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(5)
+        description: Currency key of the third local currency
+        isBusinessKey: true
+        name: HWAE3
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 34982e0a-5a4c-44bf-8571-48930f5b1935
+                stepCounter: a4263323-f354-4e29-875f-68ca0aca06a7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d66f2f9f-7cfc-4287-8a22-ffbcd98975b4
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(5)
+        description: Currency key of the second local currency
+        isBusinessKey: true
+        name: HWAE2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 40e13f4c-2be3-450f-bfe5-bb8787337af3
+                stepCounter: a4263323-f354-4e29-875f-68ca0aca06a7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9dd36abb-7179-4744-9145-e826b8021b34
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(23,2)
+        description: Amount in local currency
+        isBusinessKey: true
+        name: HSL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7a763203-fa54-4bc0-93c5-56010487ce3e
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6f5ec971-6df9-4ca0-bd4a-d6893a2ce99a
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: G/L account in general ledger accounting
+        isBusinessKey: true
+        name: HKONT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f340ee33-e644-4653-af56-77a2e92586b4
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c91e9a15-b04d-4178-898a-6690959e4303
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Business area
+        isBusinessKey: true
+        name: GSBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fd1645fd-0dae-44b2-80ca-0410eb4f0fe5
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3f5aff0b-52d4-44b7-aa58-3b06dbd93771
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Business transaction
+        isBusinessKey: true
+        name: GLVOR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7d279d8e-6c65-47c4-a2d9-9d49b71c122b
+                stepCounter: a4263323-f354-4e29-875f-68ca0aca06a7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76aaf1c5-67c8-48be-b575-681330642ddb
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Fiscal year
+        isBusinessKey: true
+        name: GJAHR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bb21ac82-8d04-4052-8109-1e81807ca836
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3a63097-0afc-48ac-9d0f-10812906590e
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(16)
+        description: Functional area (long)
+        isBusinessKey: true
+        name: FKBER_LONG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 658eec39-353b-4387-9991-32ed926d298f
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38057349-cf5f-49d9-bc81-96298aa1a49e
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Functional area
+        isBusinessKey: true
+        name: FKBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5bd2f13c-1c6c-4a82-a60c-3e0486172a63
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0f71b4c4-b20f-42d0-b198-8b4c12aa3a46
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Branch account number
+        isBusinessKey: true
+        name: FILKD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a3ffb882-fbe4-4e5b-8938-d89af70be7b1
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a93f5409-3ac1-4f81-ac90-958db7e1b3e9
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Financial management area
+        isBusinessKey: true
+        name: FIKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 21744f41-c72a-46c7-969f-3b5069a3a942
+                stepCounter: a4263323-f354-4e29-875f-68ca0aca06a7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 25284a5f-eb51-4541-866c-fc59403b5d02
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(15)
+        description: UTC time stamp in short form (YYYYMMDDhhmmss)
+        isBusinessKey: true
+        name: FAGLFLEXA_TIMESTAMP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 042fa6af-eb1e-4959-8fa7-dbe89f34d234
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7fb8867e-ecc4-4870-b094-5ef9675f0b1f
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Schedule number
+        isBusinessKey: true
+        name: ETEN2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f17afc80-f713-4a79-aa76-968413623859
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 206b8951-870e-4802-be4c-44094d03cf85
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(5)
+        description: Item number of purchasing document
+        isBusinessKey: true
+        name: EBELP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 27ec4b37-8646-403f-9db6-a0d51e159e21
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5fbe7ffc-acfc-4702-b3f6-f10d91191aaf
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Purchasing document number
+        isBusinessKey: true
+        name: EBELN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 497311b5-24b0-443c-b9a8-ad5459134c93
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d46e6aba-01da-4840-94fb-ab8f8c2cad71
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(2)
+        description: Instruction 4
+        isBusinessKey: true
+        name: DTWS4
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 965e14fc-ee78-4cdf-b652-5fdf22284962
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c67150d4-cde9-4c55-b998-3c982f7576a0
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(2)
+        description: Instruction 3
+        isBusinessKey: true
+        name: DTWS3
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 094045b2-f2d3-4314-8ea5-8e2e9a5891de
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 400d2701-028f-4e58-9554-7a98504d0499
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(2)
+        description: Instruction 2
+        isBusinessKey: true
+        name: DTWS2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6911414a-95c8-4c77-9902-41613517b665
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d31d5d6c-8cec-4942-94d4-94ebbc01948c
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(2)
+        description: Instruction 1
+        isBusinessKey: true
+        name: DTWS1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 227c86f6-2da1-4dc6-9117-31baf5a4a66f
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b0e0372-c7f8-4642-a42b-07d89e75d624
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Debit/credit indicator
+        isBusinessKey: true
+        name: DRCRK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f714f7d9-a0c1-4d87-9998-97c48ba663f0
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d8cee202-42a0-41cf-a1a5-81bd6beb3942
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Document number of the general ledger document
+        isBusinessKey: true
+        name: DOCNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5c693ed9-94d2-4bf7-9529-6d7684b35723
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 62d9aae1-4374-4d9d-b43f-cf353052a5a6
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(6)
+        description: Six-digit line item for ledger
+        isBusinessKey: true
+        name: DOCLN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1b598813-327b-4549-a738-21da1b23e530
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f18185f-b652-431f-a833-5f12bb69377e
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Amount in local currency
+        isBusinessKey: true
+        name: DMBTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 939b1b54-942c-4a4f-af0e-c92f1a4e2e30
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6de52374-f3ed-4bd9-9d6f-1adf96d10c2c
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        isSurrogateKey: true
+        name: DIM_SAP__0FI_GL_14_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 083e92c3-e0bc-402b-bf0e-9bee3faf7f77
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(8)
+        description: Asset value date for billing
+        isBusinessKey: true
+        name: DABRZ
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f726f86f-cc08-409e-a53f-0a348e4bf428
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1105c2d0-35ce-4c53-972a-f66347afa510
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(8)
+        description: Entry date of the accounting document
+        isBusinessKey: true
+        name: CPUDT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 83ec6db6-5021-4516-b6c3-6a953a4e0034
+                stepCounter: a4263323-f354-4e29-875f-68ca0aca06a7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 570366d5-c16f-42e9-8fb6-b3cc915bb49b
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Cost element
+        isBusinessKey: true
+        name: COST_ELEM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8de3e4e7-6fdb-4c4f-ad27-35aec8e1cd84
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cdedbb31-8547-4884-80d5-647f3aa5d234
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(2)
+        description: Accounts receivable pledging indicator
+        isBusinessKey: true
+        name: CESSION_KZ
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dc5f47d3-b8ce-41c9-bc70-282eb62bad14
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 179b6a34-521d-4281-aae9-13c682fb6b99
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Payment cards (Settlement run)
+        isBusinessKey: true
+        name: CCBTC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a707a7a7-4892-460e-aa18-e77a85a8595d
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1b001fec-eca4-4f9d-b3da-f3f2bc65d39d
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Identification of posting line
+        isBusinessKey: true
+        name: BUZID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d5ebacb8-ba3c-4aa7-bd56-094966cf4053
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9bbd26cc-cad7-4492-8aa6-df2486fd7a68
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(3)
+        description: Number of the line item within the accounting document
+        isBusinessKey: true
+        name: BUZEI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 93499bff-030c-421a-ad04-fb832e9ababf
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7e0b4b1b-0411-4422-b66f-97a841b3738b
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Business place
+        isBusinessKey: true
+        name: BUPLA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f8d2a2c9-e599-484a-8cc9-9886ecc260eb
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ebf4542-e124-4702-b54e-dc4d07e36f6f
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Company code
+        isBusinessKey: true
+        name: BUKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 694ead7d-555b-44a6-bbb4-479956e3a757
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cfea8948-e3e4-44de-991e-7bb2aad23707
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(8)
+        description: Posting date in document
+        isBusinessKey: true
+        name: BUDAT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 595241f9-0f28-4d9e-937a-abfa9d677c78
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6656781a-d698-4a40-b98d-4bcf0e0a4e82
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(1)
+        description: Document status
+        isBusinessKey: true
+        name: BSTAT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e0302a7f-ace7-4ea7-92a2-b5b91a14e42a
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a34158af-9744-4eb5-9b9a-fee7bbe4e940
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(2)
+        description: Posting key
+        isBusinessKey: true
+        name: BSCHL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: decb0fcf-514a-47c8-bb81-95417c63572a
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 35b023c9-77bd-4060-99d8-7d102c0afeea
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(8)
+        description: Document date in document
+        isBusinessKey: true
+        name: BLDAT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad767056-9176-4c65-9aad-70d54bc2b6a6
+                stepCounter: a4263323-f354-4e29-875f-68ca0aca06a7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 952501bc-7210-4d73-9337-971717815b66
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(2)
+        description: Document type
+        isBusinessKey: true
+        name: BLART
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 707ae3f5-3f0f-444c-bd8c-0c1c0eeb91ce
+                stepCounter: a4263323-f354-4e29-875f-68ca0aca06a7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 62b3eb62-7218-4e42-9b60-7b5a702e5a17
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(3)
+        description: Flow type
+        isBusinessKey: true
+        name: BEWAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d3dc0aa6-5e5b-4d11-8e80-182fa085ac3a
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6d74fcdc-93bf-4b6a-9223-7e80730e20e2
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Accounting document number
+        isBusinessKey: true
+        name: BELNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7944f43a-9392-4e12-b255-bd53d06db33f
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 46648438-1fb9-4165-8591-1b20ed3855c4
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Valuation difference
+        isBusinessKey: true
+        name: BDIFF
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8588e133-7955-4ecc-a2dc-21ed3fbf483e
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4c58967a-9035-481b-8e06-2c2fb5f8f097
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Valuation difference for the third local currency
+        isBusinessKey: true
+        name: BDIF3
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b18af24e-74f9-4d46-aa22-6694d8c8ec61
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ecb1bfb3-b00a-47f0-ac1c-343a8d5619da
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Valuation difference for the second local currency
+        isBusinessKey: true
+        name: BDIF2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bec3b059-9125-4793-b3f0-17c733a4f162
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 68763646-16d5-4315-a445-630836a92e15
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(5)
+        description: Reference transaction
+        isBusinessKey: true
+        name: AWTYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e0372e82-dcfe-4a75-abdd-acd8a1e8370e
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6f47e3c9-51eb-42d8-831a-00fb640cdb13
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Logical system
+        isBusinessKey: true
+        name: AWSYS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8742e48c-d663-4d57-ad2c-0606dd8ac07d
+                stepCounter: a4263323-f354-4e29-875f-68ca0aca06a7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5e3115b2-b3a8-44d3-b119-92b050c7f035
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(20)
+        description: Reference key
+        isBusinessKey: true
+        name: AWKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 31a91494-311c-4939-bb2d-0c0283801dc5
+                stepCounter: a4263323-f354-4e29-875f-68ca0aca06a7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 853db0dc-1fa8-491e-b3ac-92a1d8b18df6
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Fiscal year of clearing document
+        isBusinessKey: true
+        name: AUGGJ
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8eb0c5e3-cf39-4744-af3d-09b09e190ffb
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: abb866f6-6393-48b5-ae0c-a7e190f4aeb1
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(8)
+        description: Clearing date
+        isBusinessKey: true
+        name: AUGDT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: da32dbd9-2e1d-4a2a-a67f-ee7d5f18a075
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 283745f2-8045-4868-8bc1-95e52cc4a4ea
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(10)
+        description: Clearing document number
+        isBusinessKey: true
+        name: AUGBL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a1797712-7ad5-4622-b636-47f192c723d8
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 31429b6e-ba35-409f-a001-de61cd51f775
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(12)
+        description: Order number
+        isBusinessKey: true
+        name: AUFNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 16dd285e-cd16-4009-9701-ecea2e1bd199
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f6adc860-fe0e-408c-86ef-28bad285e926
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: Asset subnumber - new, four-digit
+        isBusinessKey: true
+        name: ANLN2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 55113309-a84a-45e6-9030-2e43ce82b92c
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c70d6bfd-dbbc-47b4-b31c-629b7a19148a
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(12)
+        description: Main asset number
+        isBusinessKey: true
+        name: ANLN1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 617e1bdb-4006-40b3-b56c-241fb395650f
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e58c8c19-d081-42a7-84a2-e49563c633ca
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(5,0)
+        description: Clearing item
+        isBusinessKey: true
+        name: AGZEI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b71bc8e0-1a9f-494d-8969-2c9c37360990
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: db65e214-d178-48d9-8500-b3f097b8d3a4
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: VARCHAR(4)
+        description: FI-SL business transaction
+        isBusinessKey: true
+        name: ACTIV
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ee02bc1b-2b16-4eae-89e8-f874b6eaa6ed
+                stepCounter: 93d25a85-c326-4605-a18d-09b75f9f6633
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 775b9a5e-7495-4fae-9918-4a0253775dfe
+          stepCounter: 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+        config: {}
+        dataType: NUMBER(13,2)
+        description: Credit Management--Guaranteed amount (absolute)
+        isBusinessKey: true
+        name: ABSBT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cfe10bb7-393b-4f8b-93c5-7c6f932c3a29
+                stepCounter: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          STG_SAP__BKPF_TMP: a4263323-f354-4e29-875f-68ca0aca06a7
+          STG_SAP__BSEG_TMP: fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+          STG_SAP__FAGLFLEXA_TMP: 93d25a85-c326-4605-a18d-09b75f9f6633
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__BKPF_TMP
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__BSEG_TMP
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__FAGLFLEXA_TMP
+        join:
+          joinCondition: |-
+            FROM {{ ref('SAP_TRG', 'STG_SAP__FAGLFLEXA_TMP') }} "STG_SAP__FAGLFLEXA_TMP"
+            INNER JOIN {{ ref('SAP_TRG', 'STG_SAP__BKPF_TMP') }} "STG_SAP__BKPF_TMP"
+                    on "STG_SAP__BKPF_TMP".bukrs = "STG_SAP__FAGLFLEXA_TMP".rbukrs
+                    and "STG_SAP__BKPF_TMP".belnr = "STG_SAP__FAGLFLEXA_TMP".belnr
+                    and "STG_SAP__BKPF_TMP".gjahr = "STG_SAP__FAGLFLEXA_TMP".gjahr
+                    and "STG_SAP__BKPF_TMP".mandt = "STG_SAP__FAGLFLEXA_TMP".rclnt
+            LEFT JOIN {{ ref('SAP_TRG', 'STG_SAP__BSEG_TMP') }} "STG_SAP__BSEG_TMP"
+                    on "STG_SAP__BKPF_TMP".mandt = "STG_SAP__BSEG_TMP".mandt
+                    and "STG_SAP__BKPF_TMP".bukrs = "STG_SAP__BSEG_TMP".bukrs
+                    and "STG_SAP__BKPF_TMP".belnr = "STG_SAP__BSEG_TMP".belnr
+                    and "STG_SAP__BKPF_TMP".gjahr = "STG_SAP__BSEG_TMP".gjahr
+                    and "STG_SAP__FAGLFLEXA_TMP".buzei = "STG_SAP__BSEG_TMP".buzei
+
+
+
+                    
+        name: DIM_SAP__0FI_GL_14
+        noLinkRefs: []
+  name: DIM_SAP__0FI_GL_14
+  overrideSQL: false
+  schema: ""
+  sqlType: BNT112:::194
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,676 @@
+fileVersion: 1
+id: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+name: STG_SAP__PA0007
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAP_TRG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6abfe665-3f7e-4497-9cba-eae021f6879d
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(8)
+        description: Changed on
+        name: AEDTM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 15bb185f-67ad-4fc7-b139-c743ff34555b
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3844e1d9-ea57-4b1f-96ce-b911aea5033b
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: NUMBER(5,2)
+        description: Daily working hours
+        name: ARBST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8bc4edeb-8f3f-454e-8c7f-1270a0f5e196
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d205a084-b38d-4e64-9362-3d392a4c41f6
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(5)
+        description: Reference transaction
+        name: AWTYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a6542d79-7414-48ea-9461-4f8e9e628ec3
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e79b58ed-424d-4bb2-a023-be84b3302659
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(8)
+        description: Start date
+        isBusinessKey: true
+        name: BEGDA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0bdb87f2-3274-417a-946c-a7999e012e9a
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2747b60c-4b26-4433-a2a1-1b5aa3324033
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(1)
+        description: Create daily work schedule dynamically
+        name: DYSCH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a8eb1e5d-d84b-4962-92b5-403be499b744
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e93c9ce-e7f2-4587-8bd2-73bc3ea323bd
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: NUMBER(5,2)
+        description: Employment percentage
+        name: EMPCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7f397695-0c40-4898-88f2-41461b7ac2a4
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f49e6ffe-4687-48df-bd22-596ee13d3118
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(8)
+        description: End date
+        isBusinessKey: true
+        name: ENDDA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e7839a0c-89bf-4048-9db6-8fefa7062b0a
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1f0db2e-ab31-4901-952d-d60ce298715a
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(1)
+        description: Reserved field/unused field
+        name: FLAG1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad9c3cf2-f7ed-4b28-8239-453f17b34b31
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ac84887a-70e9-4381-aa72-14e0f1f71d83
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(1)
+        description: Reserved field/unused field
+        name: FLAG2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2cdbc545-b8b5-48ad-b767-77242b6753c6
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 48ed8cea-0d22-4cfb-adde-4d253f7fd3e7
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(1)
+        description: Reserved field/unused field
+        name: FLAG3
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f00c12c8-2caa-4b32-9965-a66ccdea1f0e
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 65654975-1e03-4072-9d26-c63713431f15
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(1)
+        description: Reserved field/unused field
+        name: FLAG4
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1a80575a-fc17-4179-b1ff-cf58be5aec7d
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 55c41623-18d9-4f43-8c4d-573493f0d122
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(4)
+        description: Grouping value for personnel assignments
+        name: GRPVL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1b82e6ce-4849-418a-8df4-aaf76613c7b5
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b5a92ca5-6678-4f98-b342-5f57bc91f808
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(1)
+        description: Historical record flag
+        name: HISTO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 70ee49eb-f205-421f-9828-bd9d5093a138
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4e2e9534-cbae-4645-b018-c9efa3366c79
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(2)
+        description: Infotype screen control
+        name: ITBLD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7b200638-cbaa-41ae-9d46-8337019f6c2a
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f36af052-68ce-40ac-b21c-c19672d78318
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(1)
+        description: Text exists for infotype
+        name: ITXEX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bc161a0b-f319-46cb-9c9d-e5db84b52909
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c4dbb46-252d-4b72-a9f5-bbea4e816d16
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Annual working hours
+        name: JRSTD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dd77f9ab-0e3f-481f-8a8c-117c1cdaef21
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a490341e-b834-4bd3-b2c2-c2b477a5dbfe
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(2)
+        description: Additional indicator for time management
+        name: KZTIM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b3f141ea-ae2f-4298-9bea-d431507e5fd1
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2e00d4c4-489d-4177-bbce-a228508f08d3
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(3)
+        description: Client
+        name: MANDT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5a159924-7907-4ac4-8c2e-f580f762e12c
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d5a42908-be00-4699-a202-12ee84fdcfc4
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Maximum number of working hours per year
+        name: MAXJA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5027d81f-419e-4102-bdf4-da51adc188fa
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d5811052-66d3-4481-9b80-88d5bafabdb6
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: NUMBER(5,2)
+        description: Maximum number of work hours per month
+        name: MAXMO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 43d7cd55-129b-46f5-b54e-606543b5ac82
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cee9c3a9-aaed-461a-8405-1f75db25faba
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: NUMBER(5,2)
+        description: Maximum number of work hours per day
+        name: MAXTA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 943cec4b-a2f7-43fd-b625-4062d7d8dec3
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f3f6247b-431e-41fd-a821-018f48dd8211
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: NUMBER(5,2)
+        description: Maximum number of work hours per week
+        name: MAXWO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: efa046f8-fc8f-4975-a186-acb5c2004983
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 95d96500-ffbc-49fa-9059-945b8ec51ce2
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: NUMBER(7,2)
+        description: Minimum annual working hours
+        name: MINJA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a9372ec9-0dc0-4812-b79b-e872fde0f109
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 070aaf5b-d3d3-428a-9748-35b44f47726a
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: NUMBER(5,2)
+        description: Minimum number of work hours per month
+        name: MINMO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 53b7e009-ab66-47a0-be14-7101dbfe5474
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 537eddb1-4905-4200-aa66-79586248d7ee
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: NUMBER(5,2)
+        description: Minimum number of work hours per day
+        name: MINTA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 52e79bb9-4112-4ac5-bb8a-fe5866d5079c
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: be2bcc98-c9b6-40fc-a2a5-0bc31c582db9
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: NUMBER(5,2)
+        description: Minimum weekly working hours
+        name: MINWO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 56701bcb-3786-4ee6-bd6e-263cac12cca8
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3647b64b-1598-47c5-9527-30fa55c102df
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: NUMBER(5,2)
+        description: Monthly hours
+        name: MOSTD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: de9a6d22-61ea-4c6b-bb7b-6dd6aa94289a
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b5add0d-6c8c-4d45-a033-11af60115cea
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(2)
+        description: Object identification
+        name: OBJPS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fa80c23b-42f1-477a-8565-cecbe3e21872
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1ee8ae21-ea60-4f31-b8a4-2b040cc75aa3
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(1)
+        description: Confirmation fields exist
+        name: ORDEX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c572267b-0ebc-43cd-9149-a6aa7ecd45ee
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 826c9f68-c8db-4c19-9d5e-47f275e2379c
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(8)
+        description: Personnel number
+        isBusinessKey: true
+        name: PERNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e45653ca-a4fb-42e1-97d5-f05f2e9e058c
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5e584f7e-3fdb-4d78-96b7-ec55b27cc813
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(2)
+        description: Reason for changing master data
+        name: PREAS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 92f39be3-7c75-4222-b980-c757a6eeedbf
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c081c6e1-5b59-4dfc-ac31-34db0c11c3b2
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(1)
+        description: Reference fields exist (primary/secondary costs)
+        name: REFEX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f7644220-76af-47b6-ba81-fa2e6fdf3b18
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 97700c23-86ed-4f40-98c7-5d49cc693f8c
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(2)
+        description: Reserved field/unused field of length 2
+        name: RESE1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 376139a7-14b2-4c8f-b0fe-8ddfa9c42261
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5e14bba8-aac5-44d5-9141-4021e50aff86
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(2)
+        description: Reserved field/unused field of length 2
+        name: RESE2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 10671c26-9938-40a5-897c-517a80778402
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fb6aba98-04c6-4167-8592-40318bf6b74a
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(8)
+        description: Work schedule rule
+        name: SCHKZ
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2e9df808-dd93-4302-b4fe-0906e2949071
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e1edd60c-30b1-41c2-8385-2f45b439f8f1
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(3)
+        description: Number of infotype record with same key
+        name: SEQNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3b5196cb-e050-4e6f-8c1e-ad08aaf8e286
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f3d33523-2b83-4e66-9501-a0d8b22c1b36
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(1)
+        description: Lock indicator for HR master data record
+        name: SPRPS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 92f24ea0-a311-45fc-8102-a99c11cd2d86
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b6ab2f33-2723-488d-a981-ed150cebf18d
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(4)
+        description: Subtype
+        name: SUBTY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a7f2ea2a-19a1-45d8-a132-135546146548
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 046839ea-9bb9-4b4c-804d-528598bf513b
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator part-time employee
+        name: TEILK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6ede3789-d6ba-4cef-84f6-1f902d23af45
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c1d375dd-bd28-4c1b-8d42-2ecdb8a6c131
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(12)
+        description: Name of person who changed objects
+        name: UNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1b26a9c4-b0a5-40c9-a629-a0c07dcf81fe
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0eaa280e-8502-4559-9166-e90c1f78c613
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: NUMBER(4,2)
+        description: Weekly workdays
+        name: WKWDY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 82753e7c-aa7a-4535-9139-f696e289a328
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ffa7ec98-5139-4636-8314-5b8f99325965
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: NUMBER(5,2)
+        description: Hours per week
+        name: WOSTD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 84d9a921-55d8-4a54-8527-50e193ddbf51
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5c4eca66-1862-47a5-b214-bcd12b431c27
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(2)
+        description: Working week
+        name: WWEEK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2f2faa77-89ae-47e0-a1eb-f871ae6d5bdf
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 630b5bbb-aa5b-4542-88d1-bf89d59c4c6d
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: VARCHAR(1)
+        description: Employee time management status
+        name: ZTERF
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 429e95a5-eeef-4048-95ca-c68ce69dc22e
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 93374df2-60ce-469e-a0ac-0e1224b877c1
+          stepCounter: 136e55fb-ddbd-40e0-a231-46c1aee2d91f
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ed126d47-bead-4754-b30c-054272fdf487
+                stepCounter: 0f19052b-6111-4b4c-b665-b78c12709bde
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          STG_SAP__PA0007_TMP: 0f19052b-6111-4b4c-b665-b78c12709bde
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: STG_SAP__PA0007_TMP
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'STG_SAP__PA0007_TMP') }} "STG_SAP__PA0007_TMP"
+        name: STG_SAP__PA0007
+        noLinkRefs: []
+  name: STG_SAP__PA0007
+  overrideSQL: false
+  schema: ""
+  sqlType: BNT112:::173
+  type: sql
+  version: 1
+type: Node

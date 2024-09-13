@@ -1,0 +1,15 @@
+fileVersion: 1
+id: "109"
+name: FCT_SAP__0FI_GL_10
+steps:
+  - 316b7e31-4e71-48c7-9af4-001a33dff7a0
+  - 484ffa44-f50e-4d83-b372-5b6b2bff6693
+  - 50228741-a65f-4e2c-835d-324ed0815a29
+  - 559917f4-8719-47f7-86ef-162b53ed8eb3
+  - a2374235-9142-4edc-bb1e-88decc06d4be
+  - a9a3a322-9b51-46d2-a290-2954b1fb8303
+  - b3404b92-750b-4bed-9af8-b7c8baaca089
+  - fd4665de-9c5a-4792-aa76-021484bd3183
+  - fe20aca1-fcaa-486b-9802-ec8ad01c7164
+type: Subgraph
+version: 1

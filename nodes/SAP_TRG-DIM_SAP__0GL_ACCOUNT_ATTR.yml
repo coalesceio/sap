@@ -1,0 +1,396 @@
+fileVersion: 1
+id: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+name: DIM_SAP__0GL_ACCOUNT_ATTR
+operation:
+  config:
+    groupByAll: false
+    insertStrategy: UNION ALL
+    orderby: false
+    orderbycolumn:
+      items:
+        - {}
+    postSQL: ""
+    preSQL: ""
+    selectDistinct: false
+    testsEnabled: false
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAP_TRG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f167031d-1206-473b-948c-cb3aec156ea3
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        isSurrogateKey: true
+        name: DIM_STG_SAP__SKA1_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cec15088-422b-4037-90ff-ab7babca8788
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_VERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 30dc81d5-4b96-4dc2-9c8e-40506edc04fa
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_CURRENT_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 90bc73bb-5cc5-4716-ac5d-e5118c5b3128
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_START_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d6a86d13-f426-45f5-ae29-59e979b2b357
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_END_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a47e4d25-3daa-4b80-b3e2-e1096bcb1a1f
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e03be1f4-9708-4a4e-8e87-1eeaadabd340
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3f71c2ba-ae47-4c85-872e-451cc130a4c8
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: VARCHAR(4)
+        description: Chart of accounts
+        isBusinessKey: true
+        name: KTOPL
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 93a0673e-0464-4cff-a89c-2ab3deb73d97
+                stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1fdef35f-60cf-481a-bf68-4af5f420908d
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: VARCHAR(3)
+        description: Client
+        isBusinessKey: true
+        name: MANDT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6a0eafdb-ea77-4f0f-aec9-ffae4e6de173
+                stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3cfc4f3f-a899-4775-9965-c6ec4db80e21
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: VARCHAR(10)
+        description: G/L account number
+        isBusinessKey: true
+        name: SAKNR
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7506a1c5-81cb-4b23-ad18-2cae8f4bfa2b
+                stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 83f0328d-32e6-4b4b-8384-d71c611098a9
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator (Is account blocked for posting?)
+        name: XSPEB
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0c6367e4-9fb4-43ff-a978-7ad1f9d792d5
+                stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c59f11ef-25e9-444d-a55e-8e87cc4de270
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: VARCHAR(10)
+        description: Group account number
+        name: BILKT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9938c51d-47d2-42c6-9cf9-b6639ce40e14
+                stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2ac92abf-0094-49a5-9780-33dd99cf716a
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: VARCHAR(10)
+        description: Number of the sample account
+        name: MUSTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3d201dc2-71d3-4bce-bb83-2a7c1bf49428
+                stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 60e1bc36-89c4-4162-a002-8bf341bb44b3
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator (account is a balance sheet account?)
+        name: XBILK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2f89377b-dec9-4b9a-a3ae-5ecfb0e13918
+                stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7d5da63e-c68b-43d2-b471-aefd9f12fca4
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: VARCHAR(10)
+        description: G/L account number, significant length
+        name: SAKAN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 916612f0-78e7-47f2-8775-9280544310f4
+                stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f6e8a9ea-83f5-427d-a52a-50506198a30f
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: VARCHAR(6)
+        description: Company id of tradiing partner
+        name: VBUND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5577c1e5-0883-4dac-b4e5-115ef7df6a9d
+                stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 51d2b9fc-fd17-4088-adf1-b3e80a94f36c
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: VARCHAR(2)
+        description: P&L statement account type
+        name: GVTYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f1745505-3dc1-4ed9-9808-f509bc3639c1
+                stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 11a40f23-f6d7-4cf6-abf8-8640037d740f
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator (account is blocked for creation?)
+        name: XSPEA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ef0676ec-5c7b-42bb-9c5c-21f177c5d398
+                stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4783a2ca-44e5-4044-a1cd-d873d7d2e24e
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: VARCHAR(4)
+        description: G/L account group
+        name: KTOKS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bdb83903-0889-41cb-85b9-79ec71f8297f
+                stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 128d7fc0-368a-40cd-b89b-19555d28b4c1
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: VARCHAR(8)
+        description: Date on which the record was created
+        name: ERDAT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 33a61bc0-717d-4bca-99a8-177415d87358
+                stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9ba3d29-6022-4e9b-9d07-d3d82815ea26
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: VARCHAR(12)
+        description: Name of person who created the object
+        name: ERNAM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9cc5b3bb-41f7-402c-8b92-9ec1d81661cb
+                stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ecd086a5-d372-40e2-9c08-7a77600567e1
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator (account marked for deletion?)
+        name: XLOEV
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3837bd85-1ad9-4650-b642-7149811ff574
+                stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ee173c5c-4586-4443-917d-0e217d6b9edc
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: VARCHAR(16)
+        description: Functional area
+        name: FUNC_AREA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0eb22496-d49e-4bcf-9f9b-832b999d0211
+                stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9c8afa24-b183-486f-b97c-45fda6ed59fe
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: VARCHAR(1)
+        description: Indicator (Account blocked for planning?)
+        name: XSPEP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6b81d215-6046-4e9d-8f7d-23d834123961
+                stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 63301b2c-1533-46d0-8315-a52ea48c2070
+          stepCounter: aa8863ca-d625-4b2a-9ff9-8d20f73f7e0f
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f3af9d65-57aa-407f-be88-280324a6843b
+                stepCounter: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          INC_STG_SAP__SKA1_TMP: 97cd0e63-d221-4ecf-b3c0-8f3ba49655b9
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: INC_STG_SAP__SKA1_TMP
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'INC_STG_SAP__SKA1_TMP') }} "INC_STG_SAP__SKA1_TMP"
+        name: DIM_SAP__0GL_ACCOUNT_ATTR
+        noLinkRefs: []
+  name: DIM_SAP__0GL_ACCOUNT_ATTR
+  overrideSQL: false
+  schema: ""
+  sqlType: BNT112:::194
+  type: sql
+  version: 1
+type: Node

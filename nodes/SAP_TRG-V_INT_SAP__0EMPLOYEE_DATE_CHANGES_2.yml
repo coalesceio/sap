@@ -1,0 +1,84 @@
+fileVersion: 1
+id: 9d7a36f7-0381-4812-90c6-ce01a6fcd22d
+name: V_INT_SAP__0EMPLOYEE_DATE_CHANGES_2
+operation:
+  config:
+    OverrideSQLCreate: false
+    clusterKey: false
+    groupByAll: true
+    insertStrategy: UNION
+    orderby: true
+    orderbycolumn:
+      items:
+        - sortColName:
+            columnCounter: fd1a5a8b-db19-410c-aa91-72bd970d440c
+            stepCounter: e766a6c2-afc4-4cfb-aa6d-c6ca42393cdd
+          sortOrder: asc
+        - sortColName:
+            columnCounter: 526df11c-b91f-4394-b23e-f16db671bd74
+            stepCounter: e766a6c2-afc4-4cfb-aa6d-c6ca42393cdd
+          sortOrder: asc
+    postSQL: null
+    preSQL: null
+    secureoption: false
+    selectDistinct: false
+    testsEnabled: false
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAP_TRG
+  materializationType: transient table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 244a0e68-377f-4cfb-84aa-54be33b71f18
+          stepCounter: 9d7a36f7-0381-4812-90c6-ce01a6fcd22d
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: PERNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: eab8d58f-13d0-44be-b155-d025ae6adb91
+                stepCounter: a8195b5c-c18b-49a5-ba91-2c59ab00b412
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d91826cd-f56e-4c61-a5d6-6a0a92d0a792
+          stepCounter: 9d7a36f7-0381-4812-90c6-ce01a6fcd22d
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: CHANGE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 224f650a-8beb-43b1-a01e-e57bc3a0fd3d
+                stepCounter: a8195b5c-c18b-49a5-ba91-2c59ab00b412
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          V_INT_SAP__0EMPLOYEE_DATE_CHANGES_1: a8195b5c-c18b-49a5-ba91-2c59ab00b412
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: V_INT_SAP__0EMPLOYEE_DATE_CHANGES_1
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'V_INT_SAP__0EMPLOYEE_DATE_CHANGES_1') }} "V_INT_SAP__0EMPLOYEE_DATE_CHANGES_1"
+        name: V_INT_SAP__0EMPLOYEE_DATE_CHANGES_2
+        noLinkRefs: []
+  name: V_INT_SAP__0EMPLOYEE_DATE_CHANGES_2
+  overrideSQL: false
+  schema: ""
+  sqlType: BNT112:::188
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,13 @@
+fileVersion: 1
+id: "110"
+name: DIM_SAP__0FI_GL_14
+steps:
+  - 2dc1d5eb-7263-4983-aa70-a7a8b6f51895
+  - 432ccbf5-f849-428d-9a20-4247f0044a53
+  - 45a68c99-7733-435b-bd5e-9a1f081320f5
+  - 93d25a85-c326-4605-a18d-09b75f9f6633
+  - a4263323-f354-4e29-875f-68ca0aca06a7
+  - ce6a9a76-4f12-4ad6-ba48-edf0fb0325c8
+  - fa3f01d2-24ca-4a21-9eec-4e2583f5b4ce
+type: Subgraph
+version: 1
