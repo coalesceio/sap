@@ -11,7 +11,7 @@
 
 # SAP Transformation Coalesce Pipeline ([Docs](https://github.com/coalesceio/sap/))
 # What does this Coalesce pipeline do?
-- Produces modeled tables that leverage SAP data from [Fivetran's connector](https://fivetran.com/docs/applications/jira) in the format described by [this ERD](https://fivetran.com/docs/applications/jira#schemainformation).
+- Produces modeled tables that leverage SAP data from [Fivetran's connector](https://fivetran.com/docs/applications) in the format described by [this ERD](https://fivetran.com/docs/applications).
 - Enables you to better understand the workload, performance, and velocity of your team's work using SAP issues. It performs the following actions:
   - Creates a daily issue history table so you can quickly create agile reports, such as burndown charts, along any issue field.
   - Enriches the core issue table with relevant data regarding its workflow and current state.
