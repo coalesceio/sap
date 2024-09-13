@@ -1,0 +1,9 @@
+fileVersion: 1
+id: "115"
+name: DT_DIM_SAP__0VENDOR_TEXT
+steps:
+  - 151abd2d-770f-480a-b9d7-55dfc3846b54
+  - e0ad2f04-7eeb-4337-9a64-0eb08150823b
+  - e8e80f78-0680-401a-a6cc-9ac484cb8ba9
+type: Subgraph
+version: 1

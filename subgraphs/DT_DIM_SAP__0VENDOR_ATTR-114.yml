@@ -1,0 +1,9 @@
+fileVersion: 1
+id: "114"
+name: DT_DIM_SAP__0VENDOR_ATTR
+steps:
+  - 151abd2d-770f-480a-b9d7-55dfc3846b54
+  - 300c3e59-71dc-4e85-84d6-f1fadd42710b
+  - e8e80f78-0680-401a-a6cc-9ac484cb8ba9
+type: Subgraph
+version: 1

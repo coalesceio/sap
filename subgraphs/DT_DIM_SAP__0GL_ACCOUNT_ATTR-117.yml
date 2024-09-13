@@ -1,0 +1,9 @@
+fileVersion: 1
+id: "117"
+name: DT_DIM_SAP__0GL_ACCOUNT_ATTR
+steps:
+  - 2b7df616-8144-4c37-901b-797ffa06edd6
+  - 4c8b659b-dfe1-46aa-bccf-4c9536977074
+  - e8e80f78-0680-401a-a6cc-9ac484cb8ba9
+type: Subgraph
+version: 1

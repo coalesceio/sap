@@ -1,0 +1,18 @@
+fileVersion: 1
+id: "116"
+name: DT_DIM_SAP__0EMPLOYEE_ATTR
+steps:
+  - 149c1d06-58cb-4d11-9d98-470c21a1df78
+  - 1e77d8cb-0d67-438d-a657-b66ef69f2df1
+  - 397b3f72-caf7-4313-9f83-79cfc7120550
+  - 5ff4df0f-314f-46b8-838f-712a155f02d1
+  - 7223aff0-a325-4054-acd5-5480c30769e2
+  - ab775f7c-0d5a-4c27-8c4b-b399244add0d
+  - ae31edb8-915e-4006-9171-d3f5d9436cbe
+  - db262512-adbb-4c2d-8c2d-ece07985a65a
+  - db2e123a-40b5-42b2-a1b7-f2136e7ea42c
+  - e766a6c2-afc4-4cfb-aa6d-c6ca42393cdd
+  - e8e80f78-0680-401a-a6cc-9ac484cb8ba9
+  - fb35341a-cc8e-4ac0-8913-5f82902e6edc
+type: Subgraph
+version: 1

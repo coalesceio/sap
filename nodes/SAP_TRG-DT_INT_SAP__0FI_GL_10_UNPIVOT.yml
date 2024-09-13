@@ -1,0 +1,832 @@
+fileVersion: 1
+id: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+name: DT_INT_SAP__0FI_GL_10_UNPIVOT
+operation:
+  config:
+    clusterKey: false
+    downstreamOption: true
+    groupByAll: false
+    initialize: ON_CREATE
+    insertStrategy: UNION ALL
+    lagSpecification:
+      items:
+        - {}
+    postSQL: ""
+    preSQL: ""
+    refresh_mode: INCREMENTAL
+    secureoption: false
+    selectDistinct: false
+    testsEnabled: false
+    truncateBefore: false
+    warehouseName: dev_xs_wh
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAP_TRG
+  materializationType: dynamic table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 60963b20-6e00-444c-a6bb-7947ae9a0aaa
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: RYEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 97dd6eb2-45de-4362-b704-ef96ceed4573
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 90be3843-efb1-4904-9232-61e4f10c4c08
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: ACTIV
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 15cc0871-36cb-42f2-bb44-10aceef0de87
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: affb2c21-335d-455c-a3da-e4750c202808
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(3)
+        description: ""
+        name: RMVCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bfdfdfd3-1607-4dcd-a7ab-01ab4b74c66c
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 37a71561-df7c-4cd2-b292-a8a1f892b8d6
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(5)
+        description: ""
+        name: RTCUR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 296e9b63-f32e-4f09-a22d-164871ee399b
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 61a9d0d0-af27-4271-9d7a-68185bab1d73
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(3)
+        description: ""
+        name: RUNIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aa4fda7b-a4ef-4e0a-8c74-81efb2c1e8a8
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 46cb9939-1a70-4969-97c9-1e72c159fdda
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(5)
+        description: ""
+        name: AWTYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 09491c77-3e66-426f-8e5e-4ba9f1a6bc17
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 038a5770-8683-413a-a671-82ec80b2e123
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: RLDNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 92f37e27-1c9f-4664-aea6-85eeaf53dc6e
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6e23d290-4784-43b8-b02a-49c0812f6d2e
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: RRCTY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f112d5e7-7b24-46a5-b9d8-ecd1558f17a2
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: af864cb9-620c-4de3-8ffb-f171cb85dff7
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(3)
+        description: ""
+        name: RVERS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f1b35bef-8fd3-4214-b71f-4aa5defad950
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 43d30ea9-3354-4fd9-a415-94ae2b1cf0e8
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: LOGSYS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a69282f0-1663-4547-9178-7638b7e74200
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 650507e6-5ac5-4e5a-8461-3d2d3c60b68f
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: RACCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3cd693b9-9210-4119-b2e4-f13db8515ffc
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 667e08b0-51c9-4e80-a5a6-d2fa8797e7fe
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: COST_ELEM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 51cc864d-1143-4634-b08f-cd4875540400
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d93b9b5-8bba-4d57-8c25-92078b5c0940
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: RBUKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b810a056-cffc-4e0a-b2ff-ad5bff28c378
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e2aea57d-c931-45a1-89dd-c004efbbc062
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: RCNTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 61ac9b9d-0442-4eff-b91a-84887aea2b2f
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 559afd01-bd4c-4002-b8d9-f7b0dfebc3d6
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: PRCTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 518e4b39-af05-466c-9af4-23bc26ec8ad8
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5cd3a7c5-ea3d-4914-8fbd-71bdd3eb1786
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(16)
+        description: ""
+        name: RFAREA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 29572694-c1d0-4414-a572-df3b82aeba7d
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 79a60601-a817-4e58-9387-2f8b9c78bb14
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: RBUSA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 235bc299-adba-42f8-a956-d863db8b3c35
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b15f139-a356-4cff-8026-e16943a8b574
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: KOKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6f6df052-5c11-48e8-82fb-75dfd3268f3b
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 02b1bbeb-83a8-4e1f-8b71-0ff549aa4135
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: SEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f76d054a-ade1-43cf-8e62-101d2af3d5a6
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 600bfa69-ba43-4161-9e0c-1aa40da0bba8
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: SCNTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cc88d2f9-adde-4329-9caa-e80810cd06e4
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5c41e17e-419f-4c4e-8178-60d905d04a20
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: PPRCTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d2cf0511-cab0-44de-8006-baf2b77f5862
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9267b681-0405-46ab-9fd5-861b548e301e
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(16)
+        description: ""
+        name: SFAREA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: be9de31b-df13-444d-bf78-a9ce2bba314f
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d831cded-db7a-438c-a34f-de0f13fdc70a
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: SBUSA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5069dd32-e714-4f5b-aeb8-52d5ccefe054
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 30fc4a72-3bea-4e72-acad-4e9c64644c10
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(6)
+        description: ""
+        name: RASSC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c5adffd2-d8f6-40ee-bd64-3053fb62cf49
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a9191a12-ca1d-4728-91ff-88c105341c77
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: PSEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5a3c3669-7f1c-4cf5-923b-84aee455dc12
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dac59cb9-a038-464e-95ca-8d44008ed7cf
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: NUMBER(15)
+        description: ""
+        name: FAGLFLEXT_TIMESTAMP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1f62518b-aff0-437c-99a3-141007ca5416
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 494ddc40-180c-4bd7-b278-d89bb5e0c14a
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: NUMBER(23,2)
+        description: ""
+        name: OBJNR00
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4a7b0a61-c7b0-41db-82bf-90162090769e
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cd2064dc-4b59-4bd3-a1ca-ecc37594c785
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: NUMBER(23,2)
+        description: ""
+        name: OBJNR01
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 338f028e-6689-47a7-b9fe-6e0120c19733
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b2d56a4a-13ec-43c5-ab9c-5537844c7051
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: NUMBER(23,2)
+        description: ""
+        name: OBJNR02
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9dc73fc1-9e39-46b5-becd-ea733ab6229a
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f2d7c3e-84fb-49ca-b014-abcdee563bab
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: NUMBER(23,2)
+        description: ""
+        name: OBJNR03
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f81137ce-5ce2-441c-913b-4d87f0e303e5
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9304a332-eb5b-49ef-9092-44c0a15f0b0c
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: NUMBER(23,2)
+        description: ""
+        name: OBJNR04
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4cdaaf2b-3939-4bdf-bcb3-fa39398e01d3
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 47d65d03-51bb-4be4-958d-3bf20fec9ac7
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: NUMBER(23,2)
+        description: ""
+        name: OBJNR05
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 52359b55-a840-479f-9ade-0715fd3bfadc
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4d191d49-6f5d-475e-ab8c-7ab948919e8d
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: NUMBER(23,2)
+        description: ""
+        name: OBJNR06
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6d4e0a23-b19e-402f-8bf3-ef85d66ffa89
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 338d0ea5-16e4-4f18-99a2-7abeaf01427b
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: NUMBER(23,2)
+        description: ""
+        name: OBJNR07
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f8bf5707-3fa8-433f-9bdb-4c780cfbbd34
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 699ae40f-58a6-496c-99bc-292e2853f0bd
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: NUMBER(23,2)
+        description: ""
+        name: OBJNR08
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 981d320f-bd5e-4d5c-af16-31d595cbdd21
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 843d0fc5-1ea3-43fc-836b-f202825e9a98
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: DRCRK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7b5b69ee-1b38-4059-8d4c-8a663048d6e3
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4452a19e-dda3-4b70-9fec-d7366d3b460e
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: FIELDTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5aadf523-db06-4468-89c9-05297bd7ee39
+                stepCounter: 8ca54577-2c85-4426-b9d0-5ac6601e331f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b52ac807-7325-4f81-babf-82a17cb44ff4
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: NUMERIC
+        description: ""
+        name: FIELDVALUE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5aadf523-db06-4468-89c9-05297bd7ee39
+                stepCounter: 8ca54577-2c85-4426-b9d0-5ac6601e331f
+            transform: |2-
+                  case when "SAPCOLTABLE"."COLNAME" = 'HSL01' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSL01"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSL02' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSL02"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSL03' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSL03"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSL04' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSL04"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSL05' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSL05"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSL06' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSL06"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSL07' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSL07"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSL08' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSL08"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSL09' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSL09"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSL10' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSL10"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSL11' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSL11"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSL12' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSL12"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSL13' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSL13"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSL14' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSL14"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSL15' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSL15"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSL16' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSL16"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSLVT' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSLVT"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSM01' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSM01"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSM02' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSM02"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSM03' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSM03"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSM04' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSM04"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSM05' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSM05"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSM06' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSM06"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSM07' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSM07"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSM08' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSM08"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSM09' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSM09"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSM10' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSM10"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSM11' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSM11"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSM12' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSM12"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSM13' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSM13"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSM14' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSM14"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSM15' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSM15"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSM16' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSM16"
+                       when "SAPCOLTABLE"."COLNAME" = 'HSMVT' then "DT_INT_SAP__0FI_GL_10_SUMS"."HSMVT"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSL01' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSL01"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSL02' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSL02"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSL03' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSL03"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSL04' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSL04"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSL05' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSL05"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSL06' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSL06"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSL07' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSL07"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSL08' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSL08"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSL09' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSL09"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSL10' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSL10"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSL11' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSL11"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSL12' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSL12"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSL13' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSL13"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSL14' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSL14"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSL15' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSL15"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSL16' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSL16"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSLVT' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSLVT"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSM01' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSM01"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSM02' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSM02"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSM03' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSM03"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSM04' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSM04"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSM05' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSM05"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSM06' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSM06"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSM07' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSM07"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSM08' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSM08"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSM09' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSM09"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSM10' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSM10"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSM11' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSM11"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSM12' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSM12"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSM13' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSM13"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSM14' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSM14"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSM15' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSM15"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSM16' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSM16"
+                       when "SAPCOLTABLE"."COLNAME" = 'KSMVT' then "DT_INT_SAP__0FI_GL_10_SUMS"."KSMVT"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSL01' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSL01"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSL02' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSL02"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSL03' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSL03"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSL04' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSL04"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSL05' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSL05"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSL06' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSL06"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSL07' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSL07"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSL08' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSL08"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSL09' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSL09"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSL10' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSL10"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSL11' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSL11"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSL12' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSL12"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSL13' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSL13"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSL14' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSL14"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSL15' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSL15"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSL16' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSL16"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSLVT' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSLVT"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSM01' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSM01"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSM02' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSM02"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSM03' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSM03"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSM04' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSM04"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSM05' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSM05"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSM06' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSM06"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSM07' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSM07"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSM08' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSM08"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSM09' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSM09"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSM10' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSM10"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSM11' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSM11"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSM12' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSM12"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSM13' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSM13"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSM14' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSM14"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSM15' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSM15"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSM16' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSM16"
+                       when "SAPCOLTABLE"."COLNAME" = 'OSMVT' then "DT_INT_SAP__0FI_GL_10_SUMS"."OSMVT"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSL01' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSL01"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSL02' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSL02"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSL03' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSL03"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSL04' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSL04"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSL05' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSL05"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSL06' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSL06"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSL07' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSL07"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSL08' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSL08"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSL09' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSL09"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSL10' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSL10"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSL11' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSL11"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSL12' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSL12"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSL13' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSL13"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSL14' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSL14"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSL15' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSL15"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSL16' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSL16"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSLVT' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSLVT"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSM01' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSM01"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSM02' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSM02"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSM03' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSM03"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSM04' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSM04"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSM05' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSM05"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSM06' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSM06"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSM07' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSM07"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSM08' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSM08"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSM09' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSM09"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSM10' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSM10"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSM11' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSM11"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSM12' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSM12"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSM13' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSM13"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSM14' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSM14"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSM15' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSM15"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSM16' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSM16"
+                       when "SAPCOLTABLE"."COLNAME" = 'TSMVT' then "DT_INT_SAP__0FI_GL_10_SUMS"."TSMVT"
+                  else 0 end
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 61973aac-b5ec-42de-8b4f-03a31412a8ad
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CURRENCY_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: |2-
+                  case when left("SAPCOLTABLE"."COLNAME",1) = 'T' then '00'	   
+                       when left("SAPCOLTABLE"."COLNAME",1) = 'H' then '10'
+              		 when left("SAPCOLTABLE"."COLNAME",1) = 'K' then '20' 
+              		 when left("SAPCOLTABLE"."COLNAME",1) = 'O' then '40' 
+              	end
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 20b86076-259d-4405-a18a-9ad749561f24
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: FISCAL_PERIOD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "    '0' || case when right(\"SAPCOLTABLE\".\"COLNAME\", 2) = 'VT' then '00' else right(\"SAPCOLTABLE\".\"COLNAME\", 2) end|| '.' || \"RYEAR\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 640a30f5-6e89-4941-9f01-8ce79c190fd8
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: NUMBER(38,2)
+        description: ""
+        name: DEBIT_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: |2-
+                  case when "DT_INT_SAP__0FI_GL_10_SUMS"."DRCRK" = 'S' and substring("SAPCOLTABLE"."COLNAME",3,1) = 'L' then fieldvalue 
+              		 else 0 
+              	end
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba8b8c95-cb4e-45fd-a0c4-760d03fdb018
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: NUMBER(38,2)
+        description: ""
+        name: CREDIT_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: |2-
+                  case when "DT_INT_SAP__0FI_GL_10_SUMS"."DRCRK" = 'H' and substring("SAPCOLTABLE"."COLNAME",3,1) = 'L' then fieldvalue 
+              		 else 0 
+              	end
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2bfb8a43-868f-4a22-be28-caff31b0bd37
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: NUMBER(38,2)
+        description: ""
+        name: ACCUMULATED_BALANCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: |2-
+                  case when substring("SAPCOLTABLE"."COLNAME",3,1) = 'M' then fieldvalue 
+              		 else 0 
+              	end
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 21052e57-042e-4b80-9ee8-e5f864dc340e
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: NUMBER(38,2)
+        description: ""
+        name: TURNOVER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: |2-
+                  case when substring("SAPCOLTABLE"."COLNAME",3,1) = 'L' then fieldvalue 
+              		 else 0 
+              	end
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba7cd729-9a6e-4e52-a003-d81cc0a0be67
+          stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5b451229-e219-48c9-bf39-2edfb6da54dc
+                stepCounter: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DT_INT_SAP__0FI_GL_10_SUMS: 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+          SAPCOLTABLE: 8ca54577-2c85-4426-b9d0-5ac6601e331f
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: DT_INT_SAP__0FI_GL_10_SUMS
+          - locationName: SAP_TRG
+            nodeName: SAPCOLTABLE
+        join:
+          joinCondition: |-
+            FROM {{ ref('SAP_TRG', 'DT_INT_SAP__0FI_GL_10_SUMS') }} "DT_INT_SAP__0FI_GL_10_SUMS"
+            CROSS JOIN {{ ref('SAP_TRG', 'SAPCOLTABLE') }} "SAPCOLTABLE"
+        name: DT_INT_SAP__0FI_GL_10_UNPIVOT
+        noLinkRefs: []
+  name: DT_INT_SAP__0FI_GL_10_UNPIVOT
+  overrideSQL: false
+  schema: ""
+  sqlType: DT112:::156
+  type: sql
+  version: 1
+type: Node

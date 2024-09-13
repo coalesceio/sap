@@ -1,0 +1,448 @@
+fileVersion: 1
+id: 2b7df616-8144-4c37-901b-797ffa06edd6
+name: DT_DIM_SAP__0GL_ACCOUNT_ATTR
+operation:
+  config:
+    clusterKey: false
+    clusterKeyConfig:
+      items:
+        - {}
+    clusterKeyConfigExpressions:
+      items:
+        - {}
+    clusterKeyExpressions: false
+    downstreamOption: true
+    initialize: ON_CREATE
+    lagSpecification:
+      items:
+        - {}
+    orderBy:
+      items:
+        - colName:
+            columnCounter: e6608bca-a4c8-4dbe-8978-35d8aa75c2d7
+            stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+    orderByDateTime:
+      items:
+        - {}
+    partitionBy:
+      items:
+        - partColName:
+            columnCounter: 3ba6dfde-e45e-47a6-a109-c1c5fd3fbcf4
+            stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        - partColName:
+            columnCounter: 4a38482f-f7a2-4c9a-b775-2abe256427b4
+            stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        - partColName:
+            columnCounter: c5fe4064-1821-452f-bffc-d66266b8e484
+            stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+    recordVersioning: Datetime Column
+    refresh_mode: AUTO
+    warehouseName: dev_wh_xs
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAP_TRG
+  materializationType: dynamic table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7dc35c79-f81e-4b98-855e-38e52319be9f
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        isSurrogateKey: true
+        name: DT_DIM_SKA1_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "{{ dimensionHistoryPk() }}"
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cc1365e0-ca3c-465e-bce5-a7fe2bfc58ea
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f7fec433-241d-4441-a528-9a04c8e12892
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f56168be-b764-49c8-8839-7b2159b6b6f0
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: MCOD1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 166fadf1-747b-4281-84e2-3972fa84433e
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 703cca19-b9ca-40a4-a4ba-4d0022ee4cc5
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_SAP_ARCHIVED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1fb1fc7b-b1c9-4b84-b281-4ff83de0a4f3
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4a38482f-f7a2-4c9a-b775-2abe256427b4
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: KTOPL
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3bbce978-071b-46a0-afa7-23c6f8a6394d
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ba6dfde-e45e-47a6-a109-c1c5fd3fbcf4
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: VARCHAR(3)
+        description: ""
+        name: MANDT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fa073005-15e8-4bc7-a182-cf487784d178
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c5fe4064-1821-452f-bffc-d66266b8e484
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: SAKNR
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6439a4ea-85a3-463f-a879-7ebce5ed8664
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 75e97822-6573-45ed-93cf-e88d57cf941a
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: XSPEB
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c6fcfb9a-a837-44ae-9339-3d7e0cca3cc0
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f4440f4-6e4e-4271-ae18-d703e9b93dc0
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: BILKT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a783fbbb-f7b5-45da-b537-7c64e221da73
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 64ff3051-be94-4258-a159-34167c145f8f
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: MUSTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 90cc0148-d832-4420-b638-59f3f80f51e1
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9c478f7f-5b6c-44f5-862e-395fcb7d5407
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: XBILK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ac286f89-0e40-4164-8df5-13c1b6ad7dd7
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 42fd66cf-b2f3-4d59-b1b2-65606c09df0b
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: SAKAN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b7bdd9f2-c3de-4c65-b31c-670b498b421d
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 411e544b-1a3e-41b6-9e11-bf27865470e7
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: VARCHAR(6)
+        description: ""
+        name: VBUND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 051086fe-c033-408f-b794-e0f83ec0b2b0
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 75c3d05d-28e1-4984-90f7-a6e369e3a099
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: GVTYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fd0542bf-cf2c-4c55-8f61-83a0299958d3
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: de247cfe-aeba-48ae-aa18-da2743cf6edd
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: XSPEA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5f4a83ab-f72f-43c3-b2df-6e305ca15b00
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: baf90b61-1d06-4504-8e88-ffca79e4b12b
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: KTOKS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c08dc688-e35e-4cf2-8351-9659fe8c5528
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 048aa63a-f8e1-41a8-ac55-e387d3696242
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: ERDAT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 232bc9ee-4797-483b-adc4-0527fb570d37
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d06aef1a-d462-4869-9e31-ad44db65d982
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: VARCHAR(12)
+        description: ""
+        name: ERNAM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bcfdd82f-5fc7-40f4-8557-2f7c4b6f820d
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 71149f2a-e205-4219-a601-b8cefc7027d3
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: XLOEV
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 19c9947e-ef5c-4f25-a128-30ca24bfb7a9
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 041f8053-f75c-450f-bc3b-9acfdc174ca0
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: VARCHAR(16)
+        description: ""
+        name: FUNC_AREA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 10872488-6341-4ce0-8ffa-6a782a05013e
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 431350cd-1b93-414f-be57-741619d75ad9
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: XSPEP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ce3a70e9-04b5-4fb6-a9d9-81fe01484cac
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e6608bca-a4c8-4dbe-8978-35d8aa75c2d7
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3be396d3-09f4-4cbd-803d-4b9ff91ccadc
+                stepCounter: 4c8b659b-dfe1-46aa-bccf-4c9536977074
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d1ea51b9-c19f-49ba-abfb-6584d0951297
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemStartDate: true
+        name: RECORD_START_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "{{ order_by_col() }}"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b5bf61e5-9eed-41eb-888b-49a605f528eb
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemEndDate: true
+        name: RECORD_END_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: LEAD({{ order_by_col()}}) OVER (PARTITION BY {{ partition_by() }} ORDER BY {{ order_by_col() }} asc)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 91235acd-a716-476b-b366-d867f8ae1408
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: NUMERIC
+        defaultValue: ""
+        description: ""
+        isRecordCurrent: true
+        name: RECORD_CURRENT_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CASE WHEN (LEAD({{ order_by_col()}}) OVER (PARTITION BY {{ partition_by() }} ORDER BY {{ order_by_col() }} asc)) IS NULL THEN 1 ELSE 0 END
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4366fbee-d846-4620-9a43-0601adb2367a
+          stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: RECORD_CREATED_DATE
+        nullable: true
+        recordCreated: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: FIRST_VALUE({{ order_by_col()}}) OVER (PARTITION BY {{ partition_by() }} ORDER BY {{ order_by_col() }} asc)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_SRC
+            nodeName: SKA1
+        join:
+          joinCondition: FROM {{ ref('SAP_SRC', 'SKA1') }} "SKA1"
+        name: DT_DIM_SAP__0GL_ACCOUNT_ATTR
+        noLinkRefs: []
+  name: DT_DIM_SAP__0GL_ACCOUNT_ATTR
+  overrideSQL: false
+  schema: ""
+  sqlType: DT112:::249
+  type: sql
+  version: 1
+type: Node

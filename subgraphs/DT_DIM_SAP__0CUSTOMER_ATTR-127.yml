@@ -1,0 +1,9 @@
+fileVersion: 1
+id: "127"
+name: DT_DIM_SAP__0CUSTOMER_ATTR
+steps:
+  - 1d11cc7e-5386-4a87-8263-07bc180ffb29
+  - b4a7e4d9-6d6d-4690-8704-13e5e3ceab74
+  - e8e80f78-0680-401a-a6cc-9ac484cb8ba9
+type: Subgraph
+version: 1

@@ -1,0 +1,7 @@
+excludeSelector: ""
+fileVersion: 1
+id: "23"
+includeSelector: "+{ location: EDW name: DIM_ORDERS } OR { location: SAMPLE_SOURCE name: COURSES_IT } OR { location: SAMPLE_SOURCE name: COURSES_SC } OR { location: TARGET_DB name: RV_COURSES_SC } OR { location: TARGET_DB name: RV_COURSES_IT } OR { location: TARGET_DB name: RV_COURSES_UNION1 } OR { location: TARGET_DB name: DIM_COURSES_UNION1 }"
+name: Job-runview
+type: Job
+version: 2

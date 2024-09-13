@@ -1,0 +1,13 @@
+fileVersion: 1
+id: "122"
+name: DT_FCT_SAP__0FI_GL_10
+steps:
+  - 2f673005-29a7-4cd8-a2ac-3fbe75c556c0
+  - 34855b57-d5bf-488e-9940-a1279fb0d9e1
+  - 484ffa44-f50e-4d83-b372-5b6b2bff6693
+  - 8ca54577-2c85-4426-b9d0-5ac6601e331f
+  - c69292da-5c25-4b92-90f4-b6cb1cdd6454
+  - e8e80f78-0680-401a-a6cc-9ac484cb8ba9
+  - fe20aca1-fcaa-486b-9802-ec8ad01c7164
+type: Subgraph
+version: 1

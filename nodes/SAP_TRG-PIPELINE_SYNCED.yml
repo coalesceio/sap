@@ -1,0 +1,242 @@
+fileVersion: 1
+id: e8e80f78-0680-401a-a6cc-9ac484cb8ba9
+name: PIPELINE_SYNCED
+operation:
+  config:
+    clusterKey: false
+    downstreamOption: false
+    groupByAll: false
+    initialize: ON_CREATE
+    insertStrategy: UNION ALL
+    lagSpecification:
+      items:
+        - lagPeriod: Days
+          lagValue: "1"
+    refresh_mode: AUTO
+    selectDistinct: false
+    warehouseName: dev_wh_xs
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: true
+  locationName: SAP_TRG
+  materializationType: Dynamic Table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 83e468a5-c381-414b-a857-29edc95b776a
+          stepCounter: e8e80f78-0680-401a-a6cc-9ac484cb8ba9
+        config: {}
+        dataType: STRING
+        description: ""
+        name: SOURCE_NODE_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "'DT_DIM_SAP__0COMP_CODE_TEXT'"
+          - columnReferences: []
+            transform: "'DT_DIM_SAP__0COMP_CODE_ATTR'"
+          - columnReferences: []
+            transform: "'DT_DIM_SAP__0EMPLOYEE_ATTR'"
+          - columnReferences: []
+            transform: "'DT_DIM_SAP__0COMPANY_TEXT'"
+          - columnReferences: []
+            transform: "'DT_DIM_SAP__0MATERIAL_ATTR'"
+          - columnReferences: []
+            transform: "'DT_DIM_SAP__0GL_ACCOUNT_ATTR'"
+          - columnReferences: []
+            transform: "'DT_WRK_SAP__0FI_GL_14'"
+          - columnReferences: []
+            transform: "'DT_DIM_SAP__0CUSTOMER_ATTR'"
+          - columnReferences: []
+            transform: "'DT_DIM_SAP__0VENDOR_TEXT'"
+          - columnReferences: []
+            transform: "'DT_DIM_SAP__0VENDOR_ATTR'"
+          - columnReferences: []
+            transform: "'DT_FCT_SAP__0FI_GL_10'"
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8b00d767-80f0-4ca9-94e4-796a1744b838
+          stepCounter: e8e80f78-0680-401a-a6cc-9ac484cb8ba9
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d7fd390d-025c-4cae-97b5-4e582db241e5
+                stepCounter: d3de1e20-9e5a-4ef7-8178-949906432faa
+            transform: max("DT_DIM_SAP__0COMP_CODE_TEXT"."_FIVETRAN_SYNCED")
+          - columnReferences:
+              - columnCounter: f5080bf3-cd63-460e-9153-c22c79f4700e
+                stepCounter: 449ee72f-9522-470c-98db-5bd5cd9ce4b5
+            transform: max("DT_DIM_SAP__0COMP_CODE_ATTR"."_FIVETRAN_SYNCED")
+          - columnReferences:
+              - columnCounter: ee43c55e-ec69-4912-b3e9-0572073f045f
+                stepCounter: 149c1d06-58cb-4d11-9d98-470c21a1df78
+            transform: max("DT_DIM_SAP__0EMPLOYEE_ATTR"."_FIVETRAN_SYNCED")
+          - columnReferences:
+              - columnCounter: fe514cfe-aa89-491d-a40f-fd1d99c18b36
+                stepCounter: 6967e7bb-aa70-42d8-9b87-906912ba8c6c
+            transform: max("DT_DIM_SAP__0COMPANY_TEXT"."_FIVETRAN_SYNCED")
+          - columnReferences:
+              - columnCounter: f67b0f11-eb62-4cfc-9642-d37c2077194f
+                stepCounter: 4da4f78f-38a6-4bb4-9b67-d3ffb1b80f11
+            transform: max("DT_DIM_SAP__0MATERIAL_ATTR"."_FIVETRAN_SYNCED")
+          - columnReferences:
+              - columnCounter: e6608bca-a4c8-4dbe-8978-35d8aa75c2d7
+                stepCounter: 2b7df616-8144-4c37-901b-797ffa06edd6
+            transform: max("DT_DIM_SAP__0GL_ACCOUNT_ATTR"."_FIVETRAN_SYNCED")
+          - columnReferences:
+              - columnCounter: 82b30d41-0959-451b-9fb8-4c63552628e1
+                stepCounter: 940150f3-d337-4274-ac1c-62a1da99e004
+            transform: max("DT_WRK_SAP__0FI_GL_14"."_FIVETRAN_SYNCED")
+          - columnReferences:
+              - columnCounter: 4c015e0f-8224-4870-b624-7a3e2eec3567
+                stepCounter: b4a7e4d9-6d6d-4690-8704-13e5e3ceab74
+            transform: max("DT_DIM_SAP__0CUSTOMER_ATTR"."_FIVETRAN_SYNCED")
+          - columnReferences:
+              - columnCounter: 5b717a3c-bdac-4b83-bde5-ae6e270330a4
+                stepCounter: e0ad2f04-7eeb-4337-9a64-0eb08150823b
+            transform: max("DT_DIM_SAP__0VENDOR_TEXT"."_FIVETRAN_SYNCED")
+          - columnReferences:
+              - columnCounter: 816e1648-11b1-4311-b522-ac8609cd4b0a
+                stepCounter: 300c3e59-71dc-4e85-84d6-f1fadd42710b
+            transform: max("DT_DIM_SAP__0VENDOR_ATTR"."_FIVETRAN_SYNCED")
+          - columnReferences:
+              - columnCounter: 2ea17291-acf3-4fd3-b66d-3bf9580ca240
+                stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+            transform: max("DT_FCT_SAP__0FI_GL_10"."_FIVETRAN_SYNCED")
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: DT_DIM_SAP__0COMP_CODE_TEXT
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'DT_DIM_SAP__0COMP_CODE_TEXT') }} "DT_DIM_SAP__0COMP_CODE_TEXT"
+        name: DT_WRK_SAP__0COMP_CODE_TEXT
+        noLinkRefs: []
+      - aliases:
+          DT_DIM_SAP__0COMP_CODE_ATTR: 449ee72f-9522-470c-98db-5bd5cd9ce4b5
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: DT_DIM_SAP__0COMP_CODE_ATTR
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'DT_DIM_SAP__0COMP_CODE_ATTR') }} "DT_DIM_SAP__0COMP_CODE_ATTR"
+        name: DT_DIM_SAP__0COMP_CODE_ATTR
+        noLinkRefs: []
+      - aliases:
+          DT_DIM_SAP__0EMPLOYEE_ATTR: 149c1d06-58cb-4d11-9d98-470c21a1df78
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: DT_DIM_SAP__0EMPLOYEE_ATTR
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'DT_DIM_SAP__0EMPLOYEE_ATTR') }} "DT_DIM_SAP__0EMPLOYEE_ATTR"
+        name: DT_DIM_SAP__0EMPLOYEE_ATTR
+        noLinkRefs: []
+      - aliases:
+          DT_DIM_SAP__0COMPANY_TEXT: 6967e7bb-aa70-42d8-9b87-906912ba8c6c
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: DT_DIM_SAP__0COMPANY_TEXT
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'DT_DIM_SAP__0COMPANY_TEXT') }} "DT_DIM_SAP__0COMPANY_TEXT"
+        name: DT_DIM_SAP__0COMPANY_TEXT
+        noLinkRefs: []
+      - aliases:
+          DT_DIM_SAP__0MATERIAL_ATTR: 4da4f78f-38a6-4bb4-9b67-d3ffb1b80f11
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: DT_DIM_SAP__0MATERIAL_ATTR
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'DT_DIM_SAP__0MATERIAL_ATTR') }} "DT_DIM_SAP__0MATERIAL_ATTR"
+        name: DT_DIM_MARA
+        noLinkRefs: []
+      - aliases:
+          DT_DIM_SAP__0GL_ACCOUNT_ATTR: 2b7df616-8144-4c37-901b-797ffa06edd6
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: DT_DIM_SAP__0GL_ACCOUNT_ATTR
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'DT_DIM_SAP__0GL_ACCOUNT_ATTR') }} "DT_DIM_SAP__0GL_ACCOUNT_ATTR"
+        name: DT_WRK_SAP__0FI_GL_14
+        noLinkRefs: []
+      - aliases:
+          DT_WRK_SAP__0FI_GL_14: 940150f3-d337-4274-ac1c-62a1da99e004
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: DT_WRK_SAP__0FI_GL_14
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'DT_WRK_SAP__0FI_GL_14') }} "DT_WRK_SAP__0FI_GL_14"
+        name: DT_WRK_SAP__0FI_GL_14
+        noLinkRefs: []
+      - aliases:
+          DT_DIM_SAP__0CUSTOMER_ATTR: b4a7e4d9-6d6d-4690-8704-13e5e3ceab74
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: DT_DIM_SAP__0CUSTOMER_ATTR
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'DT_DIM_SAP__0CUSTOMER_ATTR') }} "DT_DIM_SAP__0CUSTOMER_ATTR"
+        name: DT_DIM_SAP__0CUSTOMER_ATTR
+        noLinkRefs: []
+      - aliases:
+          DT_DIM_SAP__0VENDOR_TEXT: e0ad2f04-7eeb-4337-9a64-0eb08150823b
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: DT_DIM_SAP__0VENDOR_TEXT
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'DT_DIM_SAP__0VENDOR_TEXT') }} "DT_DIM_SAP__0VENDOR_TEXT"
+        name: DT_DIM_SAP__0VENDOR_TEXT
+        noLinkRefs: []
+      - aliases:
+          DT_DIM_SAP__0VENDOR_ATTR: 300c3e59-71dc-4e85-84d6-f1fadd42710b
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: DT_DIM_SAP__0VENDOR_ATTR
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'DT_DIM_SAP__0VENDOR_ATTR') }} "DT_DIM_SAP__0VENDOR_ATTR"
+        name: DT_DIM_SAP__0VENDOR_ATTR
+        noLinkRefs: []
+      - aliases:
+          DT_FCT_SAP__0FI_GL_10: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: DT_FCT_SAP__0FI_GL_10
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'DT_FCT_SAP__0FI_GL_10') }} "DT_FCT_SAP__0FI_GL_10"
+        name: DT_INT_SAP__0FI_GL_10_UNPIVOT
+        noLinkRefs: []
+  name: PIPELINE_SYNCED
+  overrideSQL: false
+  schema: ""
+  sqlType: DT112:::156
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,508 @@
+fileVersion: 1
+id: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+name: DT_FCT_SAP__0FI_GL_10
+operation:
+  config:
+    clusterKey: false
+    clusterKeyExpressions: false
+    downstreamOption: true
+    groupByAll: true
+    initialize: ON_CREATE
+    insertStrategy: UNION ALL
+    lagSpecification:
+      items:
+        - {}
+    refresh_mode: AUTO
+    selectDistinct: false
+    warehouseName: dev_wh_xs
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAP_TRG
+  materializationType: Dynamic Table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a33c262e-447a-4f51-98bd-729149e0f4ea
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: RYEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 60963b20-6e00-444c-a6bb-7947ae9a0aaa
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6f042d02-4cdf-4a47-a47c-9cebcfc0d272
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: ACTIV
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 90be3843-efb1-4904-9232-61e4f10c4c08
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b67a77b4-78f8-4126-b60d-e1207c4a18be
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(3)
+        description: ""
+        name: RMVCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: affb2c21-335d-455c-a3da-e4750c202808
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 992db636-eca8-4a8b-9f77-778fe43a4d96
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(5)
+        description: ""
+        name: RTCUR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 37a71561-df7c-4cd2-b292-a8a1f892b8d6
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cebda255-2892-4d92-83e6-054464433efc
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(3)
+        description: ""
+        name: RUNIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 61a9d0d0-af27-4271-9d7a-68185bab1d73
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 379f8e05-df47-4f2f-a9a3-6ba5aac729f6
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(5)
+        description: ""
+        name: AWTYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 46cb9939-1a70-4969-97c9-1e72c159fdda
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 59a60f4d-7edf-49f7-abc9-9844f2b0109c
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: RLDNR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 038a5770-8683-413a-a671-82ec80b2e123
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a43cb242-f12f-480d-8bcf-21430740dc7d
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: RRCTY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6e23d290-4784-43b8-b02a-49c0812f6d2e
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a6c031ff-7374-4a29-be2a-b49e34a45af5
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(3)
+        description: ""
+        name: RVERS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: af864cb9-620c-4de3-8ffb-f171cb85dff7
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ffc723f1-a859-405d-aa83-4b8ab94342f2
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: LOGSYS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 43d30ea9-3354-4fd9-a415-94ae2b1cf0e8
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 17b888da-a1c1-4c10-8a78-bc2e0e77e399
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: RACCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 650507e6-5ac5-4e5a-8461-3d2d3c60b68f
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0c55984a-b9fc-483c-ab98-b5c6c63a4571
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: COST_ELEM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 667e08b0-51c9-4e80-a5a6-d2fa8797e7fe
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a1d4c2d8-85a3-48f8-a551-cacbe022d8eb
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: RBUKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9d93b9b5-8bba-4d57-8c25-92078b5c0940
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 35935789-e5dc-4a07-a7ae-cfd06914c664
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: RCNTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e2aea57d-c931-45a1-89dd-c004efbbc062
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 474bb4e9-0fbd-4fe9-b0fd-8ff2397c4d8e
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: PRCTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 559afd01-bd4c-4002-b8d9-f7b0dfebc3d6
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd8df73c-6898-4522-a9e2-7dbe78c0bdb2
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(16)
+        description: ""
+        name: RFAREA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5cd3a7c5-ea3d-4914-8fbd-71bdd3eb1786
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d8ec475e-23af-4ca4-9c95-8cb5d9ef6a61
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: RBUSA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 79a60601-a817-4e58-9387-2f8b9c78bb14
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eb160b79-94af-4975-b644-f440544a9390
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: KOKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0b15f139-a356-4cff-8026-e16943a8b574
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b90d464-99f4-4d31-aca0-c609ee73973e
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: SEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 02b1bbeb-83a8-4e1f-8b71-0ff549aa4135
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 486e074c-a2ed-4fcd-a5c5-5d6afb01476c
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: SCNTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 600bfa69-ba43-4161-9e0c-1aa40da0bba8
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 52042c45-e6fe-4558-970d-94f4c620b229
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: PPRCTR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5c41e17e-419f-4c4e-8178-60d905d04a20
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f81fdb85-5f34-4a8b-9cfa-08e78fd06707
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(16)
+        description: ""
+        name: SFAREA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9267b681-0405-46ab-9fd5-861b548e301e
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5ac6b4d3-f32a-47b3-8e5c-1bd17605f74b
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: SBUSA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d831cded-db7a-438c-a34f-de0f13fdc70a
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dca470d6-b95a-4d7a-acfe-44f1b7218dc3
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(6)
+        description: ""
+        name: RASSC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 30fc4a72-3bea-4e72-acad-4e9c64644c10
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e4c0364a-2f94-4767-8ca4-1146204225a0
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: PSEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a9191a12-ca1d-4728-91ff-88c105341c77
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ed43f12-565f-4d3c-9e3b-2e9abde403ab
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: NUMBER(15)
+        description: ""
+        name: FAGLFLEXT_TIMESTAMP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dac59cb9-a038-464e-95ca-8d44008ed7cf
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: max("DT_INT_SAP__0FI_GL_10_UNPIVOT"."FAGLFLEXT_TIMESTAMP")
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 163b9de2-9e80-4672-9cf9-de404a4aaf13
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CURRENCY_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 61973aac-b5ec-42de-8b4f-03a31412a8ad
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4684b7f8-68df-45ae-8d10-f2b3540d3984
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: FISCAL_PERIOD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 20b86076-259d-4405-a18a-9ad749561f24
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2dd68089-45d6-4d15-925f-bd651a892e3f
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: NUMBER(38,2)
+        description: ""
+        name: DEBIT_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 640a30f5-6e89-4941-9f01-8ce79c190fd8
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: sum("DT_INT_SAP__0FI_GL_10_UNPIVOT"."DEBIT_AMOUNT")
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cc34cd7c-b685-4dbc-a2c8-e3ddf463347f
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: NUMBER(38,2)
+        description: ""
+        name: CREDIT_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ba8b8c95-cb4e-45fd-a0c4-760d03fdb018
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: sum("DT_INT_SAP__0FI_GL_10_UNPIVOT"."CREDIT_AMOUNT")
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1260894e-5947-4c92-92ee-5ea1f1bda93b
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: NUMBER(38,2)
+        description: ""
+        name: ACCUMULATED_BALANCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2bfb8a43-868f-4a22-be28-caff31b0bd37
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: sum("DT_INT_SAP__0FI_GL_10_UNPIVOT"."ACCUMULATED_BALANCE")
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ef1478ea-06ad-48fd-bd95-667f35c76d74
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: NUMBER(38,2)
+        description: ""
+        name: TURNOVER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 21052e57-042e-4b80-9ee8-e5f864dc340e
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: sum("DT_INT_SAP__0FI_GL_10_UNPIVOT"."TURNOVER")
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2ea17291-acf3-4fd3-b66d-3bf9580ca240
+          stepCounter: 34855b57-d5bf-488e-9940-a1279fb0d9e1
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ba7cd729-9a6e-4e52-a003-d81cc0a0be67
+                stepCounter: c69292da-5c25-4b92-90f4-b6cb1cdd6454
+            transform: max("DT_INT_SAP__0FI_GL_10_UNPIVOT"."_FIVETRAN_SYNCED")
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_TRG
+            nodeName: DT_INT_SAP__0FI_GL_10_UNPIVOT
+        join:
+          joinCondition: FROM {{ ref('SAP_TRG', 'DT_INT_SAP__0FI_GL_10_UNPIVOT') }} "DT_INT_SAP__0FI_GL_10_UNPIVOT"
+        name: DT_FCT_SAP__0FI_GL_10
+        noLinkRefs: []
+  name: DT_FCT_SAP__0FI_GL_10
+  overrideSQL: false
+  schema: ""
+  sqlType: DT112:::156
+  type: sql
+  version: 1
+type: Node

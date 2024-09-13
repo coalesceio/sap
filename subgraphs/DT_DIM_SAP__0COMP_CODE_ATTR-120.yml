@@ -1,0 +1,9 @@
+fileVersion: 1
+id: "120"
+name: DT_DIM_SAP__0COMP_CODE_ATTR
+steps:
+  - 449ee72f-9522-470c-98db-5bd5cd9ce4b5
+  - 484ffa44-f50e-4d83-b372-5b6b2bff6693
+  - e8e80f78-0680-401a-a6cc-9ac484cb8ba9
+type: Subgraph
+version: 1

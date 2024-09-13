@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "126"
+name: DT_WRK_SAP__0FI_GL_14
+steps:
+  - 432ccbf5-f849-428d-9a20-4247f0044a53
+  - 45a68c99-7733-435b-bd5e-9a1f081320f5
+  - 940150f3-d337-4274-ac1c-62a1da99e004
+  - ce6a9a76-4f12-4ad6-ba48-edf0fb0325c8
+  - e8e80f78-0680-401a-a6cc-9ac484cb8ba9
+type: Subgraph
+version: 1

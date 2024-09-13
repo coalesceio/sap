@@ -1,0 +1,2433 @@
+fileVersion: 1
+id: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+name: FAGLFLEXT
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SAP_SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 14bb6f75-ebe2-498f-b5bc-ada2f1a9141b
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: OBJNR00
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f8f0db54-2594-49fb-8266-260549455441
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: OBJNR01
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 98889b73-5539-4b12-9503-e46e6c6840d0
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: OBJNR02
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0bf556f1-01f5-465e-9145-35cc8dd53672
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: OBJNR03
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 97fa0b53-9b2d-4d1b-ada3-7a38bd7b0c47
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: OBJNR04
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 53e8083d-1c8a-4925-9d2a-ce5354d2c0bd
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: OBJNR05
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e7f9c953-5edc-4047-81f7-eec00fc5c931
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: OBJNR06
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d294c58e-3afe-4f55-933f-b0516f060025
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: OBJNR07
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bfdded51-e0dc-4a49-955c-be26919d977e
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: OBJNR08
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 33fef631-58fd-4ef5-8d84-e7010e89a835
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d95ac163-47d8-4999-8ea6-06f02eae72c4
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SAP_ARCHIVED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f59320d7-7f92-4224-88db-40fa3541f575
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(1)
+        defaultValue: ""
+        description: ""
+        name: DRCRK
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 80077733-7702-4833-8656-662956fc9b22
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(3)
+        defaultValue: ""
+        description: ""
+        name: RCLNT
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6af81f6a-162c-4d4c-ac78-f12c29e59d3c
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(3)
+        defaultValue: ""
+        description: ""
+        name: RPMAX
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fe82b88f-114c-4e3d-9aed-9634120f2177
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        name: RYEAR
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8248dcb8-3c3a-44c7-bfe4-046da9cffd0a
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: HSL13
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bfac8741-817a-4a29-8086-00181e71614e
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,3)
+        defaultValue: ""
+        description: ""
+        name: MSL10
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 904ebc88-6138-41e9-98b9-1f1b57383ab9
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,3)
+        defaultValue: ""
+        description: ""
+        name: MSLVT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 61b7efd1-f5ec-40c9-ba16-8366ff2b7e1e
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: OSL11
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ffaf90cf-0cc5-49e5-a67f-f00e58bdf5d9
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        name: SBUSA
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d8e2483-b5b0-4538-a504-7b4e2bffd88b
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: TSL03
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d67209ea-7cf3-4ac3-9f23-48a431e21b3f
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(10)
+        defaultValue: ""
+        description: ""
+        name: PRCTR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 18d0fd2a-959f-4a55-b3cd-dc094e90e8ac
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,3)
+        defaultValue: ""
+        description: ""
+        name: MSL08
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 58c9af42-a3e5-4a9b-9c22-eeb3b2c2d445
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: OSL09
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d08d278e-1ec3-43b7-bda8-fcb2885eb237
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: KSL16
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7fc5447a-2b72-4a17-a9ad-e139418d986d
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: HSL06
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3cb91fa-e515-4829-aaa3-582c29990da0
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(10)
+        defaultValue: ""
+        description: ""
+        name: PSEGMENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 079e4a00-f11f-4688-b143-43566c0baacb
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,3)
+        defaultValue: ""
+        description: ""
+        name: MSL03
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ada7e6ab-2905-4178-9e6b-9c3615e4d2ac
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(5)
+        defaultValue: ""
+        description: ""
+        name: ZZSPREG
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ae91fbb3-86c9-4855-b785-5e74280899ff
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: OSL04
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 56348015-88a4-42a9-a1cf-0a576d3ee8a1
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: KSL11
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d73cdbab-8c84-4e42-a603-f27e622d762f
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: HSL01
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 333d5f25-3e25-438f-8092-66394fa4a7b8
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: TSL16
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 23f5f50e-c168-4e71-ad43-c588f353e027
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: TSL11
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 030903b3-91bc-4564-aae8-e1b5f3e8f2a3
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: KSL09
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1feb8350-68d6-4c68-84a9-9d608cfbbdd2
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,3)
+        defaultValue: ""
+        description: ""
+        name: MSL16
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9085bbe3-b6d7-4909-ad18-bf7a270a87ce
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: KSL04
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b4e1c6d6-1065-4e8a-8c70-47999c1d28c5
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: TSL09
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e02368c7-033c-4e45-850a-ba17148e319d
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: HSL14
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b5560463-5cd7-4e64-a1a2-e17b25a96817
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,3)
+        defaultValue: ""
+        description: ""
+        name: MSL11
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f27df05e-8f18-4e42-a680-07315d4652b7
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: OSL12
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ebcf9dcb-598a-4694-9b99-fb0c0480632b
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(6)
+        defaultValue: ""
+        description: ""
+        name: RASSC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 751628e0-767e-4e72-b0fa-3c56e598d4c9
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: TSL04
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 89ff4ce4-0198-42fa-ac4e-5bb65fd7187d
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,3)
+        defaultValue: ""
+        description: ""
+        name: MSL09
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d442b213-f551-469d-b546-4a4c6730a58f
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: HSL07
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d1040b5e-8aa9-4f93-997a-1400ca50f431
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,3)
+        defaultValue: ""
+        description: ""
+        name: MSL04
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3573be9-fd0d-468e-8a05-be24ba28cfad
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: OSL05
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ac43d2af-88fa-41f6-89d2-7137ed3d1345
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: KSL12
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 33d72872-dbb2-4240-9bef-12d66631bc11
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: HSL02
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a56d5a4f-cdb1-40cf-8f07-630a21648fe1
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(3)
+        defaultValue: ""
+        description: ""
+        name: RUNIT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd276e65-266b-447b-acfa-230da1b903a4
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: TSL12
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cb83a095-abe8-463a-b936-0ad92acf0a96
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(10)
+        defaultValue: ""
+        description: ""
+        name: SEGMENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b4c29f0b-9e57-4307-a727-b0c67d6a7405
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: KSL05
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 080b1af4-9ad1-4337-b26e-e79a975ce527
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: HSL15
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d29eee7e-78de-4c76-a672-c0416f5b9e92
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: KSL10
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 00536627-362d-42d7-88f5-6d5d889f09a5
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,3)
+        defaultValue: ""
+        description: ""
+        name: MSL12
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 456136be-9b19-484c-b9da-86d24968ebdd
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: OSL13
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7cbfdc13-2a3d-451d-bee7-803d9ac582df
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: HSL10
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 99d20bd5-18da-4fca-997d-7abbc706c3f1
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(10)
+        defaultValue: ""
+        description: ""
+        name: COST_ELEM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 364e2d8b-c2f5-4fc7-9588-2c1efdf18dc7
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: HSLVT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 57c5bb00-8a40-4530-9c24-b66473750d8c
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: TSL05
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9413c026-4d23-469e-b9a1-e442b18a62e8
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: HSL08
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1f30e600-6fc8-4ca0-b537-9f92c7ec4b70
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,3)
+        defaultValue: ""
+        description: ""
+        name: MSL05
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a6dd318-dedf-44c0-9f89-81654dfe3dd6
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: OSL06
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f0d058f4-ba0c-438a-acd4-15fb3b36ae4b
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: KSL13
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9dc26def-8224-4ff8-b157-cda130326647
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: HSL03
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec29fb24-41b9-47dd-84c0-6f72b1fdaf93
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: OSL01
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8be87021-3530-4cb9-a993-b30fef59acad
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: TSL13
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d4ad6645-bef5-41e4-a945-cd411c29e070
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: KSL06
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5c6f361-72b0-4019-995d-8abfa9046721
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(3)
+        defaultValue: ""
+        description: ""
+        name: RMVCT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b25e4e8-be82-4269-b030-2e6727c8bbfc
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: HSL16
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 31ce8f79-6295-41d4-a7ca-8fb62c2142f8
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,3)
+        defaultValue: ""
+        description: ""
+        name: MSL13
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3cec3017-779e-4a1a-980f-6187b05af11d
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: KSL01
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 55afc1e7-a0a2-417e-b466-5eefe9841bdb
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: OSL14
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dff00ea6-a00a-488a-b4a4-4a7a0768df20
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: HSL11
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bf93b4fa-f6a6-4ed8-9d77-11a2c497c66c
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(10)
+        defaultValue: ""
+        description: ""
+        name: RCNTR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3db0b55-2501-4b95-8791-3999bc4a9f99
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: TSL06
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 723b1531-29a2-4c29-af7e-d9419a862005
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(10)
+        defaultValue: ""
+        description: ""
+        name: LOGSYS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 533cad39-0790-4cf9-8e4b-a67736eecb62
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: TSL01
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76ba4e04-22ad-4107-a8bb-2f730e49cd1f
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: HSL09
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 56359700-72f6-4372-a39d-066037e8d05a
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,3)
+        defaultValue: ""
+        description: ""
+        name: MSL06
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 31d50c2e-2927-452f-8fa3-29370081b1c3
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: OSL07
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8cb60b7f-800f-4625-8d7f-7fa1032e8b6f
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(15,0)
+        defaultValue: ""
+        description: ""
+        name: TIMESTAMP
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9f0037d6-67ff-496f-b936-10982384649f
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: KSL14
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b8035b94-098e-40f7-bdc4-01596ff743ac
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: HSL04
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c8658648-7e31-44cc-adf6-ba4702658ef0
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(16)
+        defaultValue: ""
+        description: ""
+        name: SFAREA
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e3a7d745-a784-4e21-baee-68e21329551b
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,3)
+        defaultValue: ""
+        description: ""
+        name: MSL01
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 44f3c0c8-0491-4a16-a9d2-72adca59b45d
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: OSL02
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6604af54-6e2c-4f67-8f21-f753b092b1c2
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: TSL14
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5869543e-08cd-4fdd-bbb3-2697dacb1fac
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(5)
+        defaultValue: ""
+        description: ""
+        name: AWTYP
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ea3743b8-4ed6-4cb4-9e23-ff9abd3a4703
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(3)
+        defaultValue: ""
+        description: ""
+        name: RVERS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d6d7b9e6-3ea8-4144-98fd-565c83922f24
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        name: RBUSA
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 81af9e69-a14a-4b56-9843-85d941887717
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: KSL07
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b16599a2-72ae-4c51-9b99-49ec42ace8a8
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,3)
+        defaultValue: ""
+        description: ""
+        name: MSL14
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4b76e5e-1b45-4ba3-9b5c-2f47adcb87d7
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(10)
+        defaultValue: ""
+        description: ""
+        name: PPRCTR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 60fe88fb-b5c2-40f1-bef4-aaf9f192e0c9
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: OSL15
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cbffdd49-32d4-4c2e-ab13-3893d5f55a30
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: KSL02
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 300cc2f1-1efa-4bfa-a8c8-b81f1d6745f4
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: TSL07
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 00d0fbac-b9b1-463d-bb31-5af36e0cb74d
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: HSL12
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 57dab46a-fbcd-436d-92db-0882b66ce01e
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: OSL10
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d8c09d9-81a6-4f17-b49c-692faca018e5
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: OSLVT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 038018a6-a644-44eb-9e7c-9868019bc787
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(5)
+        defaultValue: ""
+        description: ""
+        name: RTCUR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0202a0ac-11d0-4112-a422-c06c9f564c3b
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: TSL02
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2de70e51-bcdb-4f5d-a886-e088bc827903
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        name: RBUKRS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 574ce0f4-3572-4be4-b426-8eddd1d06186
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        name: ACTIV
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7df83e4a-251c-456f-a7d8-e4de9281dc69
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(1)
+        defaultValue: ""
+        description: ""
+        name: RRCTY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 494b9df9-32f1-4e30-95fb-2ebde81e488b
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,3)
+        defaultValue: ""
+        description: ""
+        name: MSL07
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 26660c19-e5a5-4c4d-92e2-63e4df1d0d18
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: OSL08
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 34990d44-a5b3-49cc-abf3-c41ef06fdd23
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        name: KOKRS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 51ffaff9-9eac-489e-bda8-e6e739043ba7
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: HSL05
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7023e083-a972-46e9-890b-e9bd32cc3972
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: KSL15
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d29a9578-e523-4eb7-a2bd-806ea5c6a46e
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(16)
+        defaultValue: ""
+        description: ""
+        name: RFAREA
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bef6157c-f33f-403a-b8d1-80edf4274d40
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,3)
+        defaultValue: ""
+        description: ""
+        name: MSL02
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: af6fedf4-1fb6-470c-a5da-ffd5686f5a55
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(10)
+        defaultValue: ""
+        description: ""
+        name: SCNTR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: adb24da2-dc53-4732-9499-f8479ed575c1
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: OSL03
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e199e969-7300-4cab-a0fc-649408cba6fe
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: KSLVT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d33c5bcd-5dc8-4189-9dc3-043a4a6fc58c
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: TSL15
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2e935847-e2bb-4c2f-832d-4a3992e1c114
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: KSL08
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 37294ab1-4ecd-4de2-bd66-fb64627b82db
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(10)
+        defaultValue: ""
+        description: ""
+        name: RACCT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8317f673-a9f2-44cf-a554-3175c5ed80f9
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: TSLVT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e3d0f8b3-80b5-49b4-8037-b2d19bd2d136
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: TSL10
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: afb9735a-674e-4504-8150-7b58c3bee684
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: VARCHAR(2)
+        defaultValue: ""
+        description: ""
+        name: RLDNR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: db4c1d72-11f5-4811-a05c-5d31f7319e0e
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,3)
+        defaultValue: ""
+        description: ""
+        name: MSL15
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e466e0e4-3d1c-4c7a-a6fe-fd97a1d22d6c
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: OSL16
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2e0ad1c6-0106-4822-a770-7671647c24ee
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: KSL03
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0fcde201-596b-4327-af8c-e36b72b67cf7
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: NUMBER(23,2)
+        defaultValue: ""
+        description: ""
+        name: TSL08
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0e9853a6-8afc-47ae-b403-0336f2daac7d
+          stepCounter: fe20aca1-fcaa-486b-9802-ec8ad01c7164
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SAP_SRC', 'FAGLFLEXT') }}
+  name: FAGLFLEXT
+  schema: ""
+  sqlType: Source
+  table: FAGLFLEXT
+  type: sourceInput
+  version: 1
+type: Node

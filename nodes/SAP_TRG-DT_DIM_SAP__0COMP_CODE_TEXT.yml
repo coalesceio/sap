@@ -1,0 +1,267 @@
+fileVersion: 1
+id: d3de1e20-9e5a-4ef7-8178-949906432faa
+name: DT_DIM_SAP__0COMP_CODE_TEXT
+operation:
+  config:
+    clusterKey: false
+    clusterKeyConfig:
+      items:
+        - {}
+    clusterKeyConfigExpressions:
+      items:
+        - {}
+    clusterKeyExpressions: false
+    downstreamOption: true
+    initialize: ON_CREATE
+    lagSpecification:
+      items:
+        - {}
+    orderBy:
+      items:
+        - colName:
+            columnCounter: d7fd390d-025c-4cae-97b5-4e582db241e5
+            stepCounter: d3de1e20-9e5a-4ef7-8178-949906432faa
+    orderByDateTime:
+      items:
+        - {}
+    partitionBy:
+      items:
+        - partColName:
+            columnCounter: e6f9d58d-4773-43eb-bf74-e8793a553f81
+            stepCounter: d3de1e20-9e5a-4ef7-8178-949906432faa
+        - partColName:
+            columnCounter: 987a04ec-0958-4d3c-9a66-28d3afd96b8f
+            stepCounter: d3de1e20-9e5a-4ef7-8178-949906432faa
+    postSQL: null
+    preSQL: null
+    recordVersioning: Datetime Column
+    refresh_mode: AUTO
+    testsEnabled: false
+    truncateBefore: false
+    warehouseName: dev_wh_xs
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SAP_TRG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4bf53928-ac3f-44f2-b0f9-97c4091bb8d4
+          stepCounter: d3de1e20-9e5a-4ef7-8178-949906432faa
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        isSurrogateKey: true
+        name: DT_DIM_T001_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "{{ dimensionHistoryPk() }}"
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4330e03b-60dc-4bda-80a1-0d0f1b72e0cd
+          stepCounter: d3de1e20-9e5a-4ef7-8178-949906432faa
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6ce4f2c8-e216-48eb-a8ed-0056ba1f4d92
+                stepCounter: 484ffa44-f50e-4d83-b372-5b6b2bff6693
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d7fd390d-025c-4cae-97b5-4e582db241e5
+          stepCounter: d3de1e20-9e5a-4ef7-8178-949906432faa
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5254b894-b4f5-4394-be39-604d71d2a777
+                stepCounter: 484ffa44-f50e-4d83-b372-5b6b2bff6693
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5922fb41-5e1b-49d9-b65f-acc7c7048662
+          stepCounter: d3de1e20-9e5a-4ef7-8178-949906432faa
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_SAP_ARCHIVED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 40b5e844-c762-4b81-a913-26f139907a09
+                stepCounter: 484ffa44-f50e-4d83-b372-5b6b2bff6693
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5c8a0cbd-03c2-48b5-b50e-40623454b676
+          stepCounter: d3de1e20-9e5a-4ef7-8178-949906432faa
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: _FIVETRAN_ROWID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 99101f78-beab-4c4f-a41f-dbfa0b31a7c0
+                stepCounter: 484ffa44-f50e-4d83-b372-5b6b2bff6693
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c61fd5e3-69ed-4422-9552-9159b3b11e33
+          stepCounter: d3de1e20-9e5a-4ef7-8178-949906432faa
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemStartDate: true
+        name: RECORD_START_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "{{ order_by_col() }}"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92faab0d-63ca-49ce-b7ef-65cb26f01f87
+          stepCounter: d3de1e20-9e5a-4ef7-8178-949906432faa
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemEndDate: true
+        name: RECORD_END_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: LEAD({{ order_by_col()}}) OVER (PARTITION BY {{ partition_by() }} ORDER BY {{ order_by_col() }} asc)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1d85d0da-f4bd-4c08-8afd-86240f76574a
+          stepCounter: d3de1e20-9e5a-4ef7-8178-949906432faa
+        config: {}
+        dataType: NUMERIC
+        defaultValue: ""
+        description: ""
+        isRecordCurrent: true
+        name: RECORD_CURRENT_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CASE WHEN (LEAD({{ order_by_col()}}) OVER (PARTITION BY {{ partition_by() }} ORDER BY {{ order_by_col() }} asc)) IS NULL THEN 1 ELSE 0 END
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 44193747-8e9c-48f5-b4cf-caee56ad48af
+          stepCounter: d3de1e20-9e5a-4ef7-8178-949906432faa
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: RECORD_CREATED_DATE
+        nullable: true
+        recordCreated: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: FIRST_VALUE({{ order_by_col()}}) OVER (PARTITION BY {{ partition_by() }} ORDER BY {{ order_by_col() }} asc)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e6f9d58d-4773-43eb-bf74-e8793a553f81
+          stepCounter: d3de1e20-9e5a-4ef7-8178-949906432faa
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: MANDT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 47cce2a0-b5f8-41b1-b86b-0856ef426625
+                stepCounter: 484ffa44-f50e-4d83-b372-5b6b2bff6693
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 987a04ec-0958-4d3c-9a66-28d3afd96b8f
+          stepCounter: d3de1e20-9e5a-4ef7-8178-949906432faa
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: BUKRS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5e8e4f02-0426-4076-a7fe-6b2d58857b22
+                stepCounter: 484ffa44-f50e-4d83-b372-5b6b2bff6693
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4d839baf-3d6b-44d8-8112-9207a7db3245
+          stepCounter: d3de1e20-9e5a-4ef7-8178-949906432faa
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: BUTXT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad1b0c1d-aa45-42fd-9ffa-5826e53a8d98
+                stepCounter: 484ffa44-f50e-4d83-b372-5b6b2bff6693
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6b1b5cad-3c8c-4eeb-acc2-56037b3c7321
+          stepCounter: d3de1e20-9e5a-4ef7-8178-949906432faa
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: SPRAS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 18a2c3ba-d2c4-4609-a7ec-adaeff0f3d23
+                stepCounter: 484ffa44-f50e-4d83-b372-5b6b2bff6693
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SAP_SRC
+            nodeName: T001
+        join:
+          joinCondition: FROM {{ ref('SAP_SRC', 'T001') }} "T001"
+        name: DT_DIM_SAP__0COMP_CODE_TEXT
+        noLinkRefs: []
+  name: DT_DIM_SAP__0COMP_CODE_TEXT
+  overrideSQL: false
+  schema: ""
+  sqlType: DT112:::249
+  type: sql
+  version: 1
+type: Node
